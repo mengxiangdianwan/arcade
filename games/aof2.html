@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>aof2 龙虎之拳2 (C) SNK 1994</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="http://jjsnake.mogu-go.com/_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="http://jjsnake.mogu-go.com/_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="http://jjsnake.mogu-go.com/_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="http://jjsnake.mogu-go.com/_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="http://jjsnake.mogu-go.com/_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="http://jjsnake.mogu-go.com/_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="aof3 龙虎之拳3 (C) SNK 1996" href="aof3.html" />
+    <link rel="prev" title="aof 龙虎之拳 (C) SNK 1992" href="aof.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="http://jjsnake.mogu-go.com/_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="aof.html" tppabs="http://jjsnake.mogu-go.com/games/aof.html" title="Previous document">aof 龙虎之拳 (C) SNK 1992</a>
+        </li>
+        <li>
+          <a href="aof3.html" tppabs="http://jjsnake.mogu-go.com/games/aof3.html" title="Next document">aof3 龙虎之拳3 (C) SNK 1996</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="aof2-2-c-snk-1994">
+<h1>aof2 龙虎之拳2 (C) SNK 1994<a class="headerlink" href="#aof2-2-c-snk-1994" title="此标题的永久链接">¶</a></h1>
+<p>龙虎之拳2 (C) SNK 1994</p>
+<p>$info=aof2</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+───────────────────────
+<span class="gi">①</span>操纵杆
+  <span class="gi">↖↑↗</span>  后跳/垂直跳/前跳
+  <span class="gi">←Ｎ→</span>  后退&amp;站立防御/回中/前进
+  <span class="gi">↙↓↘</span>  下蹲&amp;下蹲防御/下蹲/下蹲
+
+  <span class="gi">←←</span>后跃、<span class="gi">→→</span>前冲。
+
+<span class="gi">②</span>按钮
+  <span class="gi">Ａ</span>：拳(轻按是轻拳、长按是重拳)
+  <span class="gi">Ｂ</span>：脚(轻按是轻脚、长按是重脚)
+  <span class="gi">Ｃ</span>：重攻击
+  <span class="gi">Ｄ</span>：挑衅
+
+投技：<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+蓄气：<span class="gi">Ａ</span>or<span class="gi">Ｂ</span>or<span class="gi">Ｃ</span>按住不放
+倒地回避：被投时倒地瞬间<span class="gi">Ａ</span>or<span class="gi">Ｂ</span>or<span class="gi">Ｃ</span>
+
+破坏飞行道具：各种通常技、特殊技、必杀技、
+超必杀技都可以破坏普通飞行道具。
+超必杀技类飞行道具只能用超必杀技飞行道具破坏。
+
+超必杀技：气力接近4/5时便可使用
+(对CPU战刚开始，人物的气力槽并非全满状态)
+隐藏必杀技：体力1/5一下，气力槽接近4/5时
+便可使用。
+
+隐蔽技：标注<span class="gr">▲</span>的技能在正常情况下是不能使用的，
+必须进入debug菜单设置。这些招式的共同点即不消
+耗能量、攻击力奇低、对手中招必倒地。
+使用unibios载入游戏，游戏中开始键<span class="gi">ＡＢＣ</span>同时按，进
+入DEBUG DIP SETTINGS，将-DIP2-的第4项改成1。
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 指令符号说明 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 指令符号说明 ]
+───────────────────────
+以1P角色为准(即游戏角色面向右)
+
+<span class="gr">●</span>：投技
+<span class="gr">○</span>：特殊技
+<span class="gr">◎</span>：必杀技
+<span class="gr">▲</span>：隐蔽技(需设置debug菜单才能开启)
+<span class="gr">☆</span>：超必杀技(没修行成功就不能使用)
+<span class="gr">★</span>：隐藏超必杀技(体力1/4以下、气力MAX)
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>坂崎亮<a class="headerlink" href="#id3" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>坂崎亮
+───────────────────────
+Name：Ryo Sakazaki
+日文名：リョウ·サカザキ
+
+<span class="gr">●</span>巴投                        近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>上击                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>低踢                                    <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>虎煌拳                            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>空中虎煌拳(水平)              空中<span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>空中虎煌拳(斜下)              空中<span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>虎咆                              <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>暂烈拳                            <span class="gi">→←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>飞燕疾风脚                          <span class="gi">↙→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>极限流连舞拳                      <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">▲</span>霸王暂裂拳                          <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>霸王翔吼拳                  <span class="gi">→←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>龙虎乱舞(防御不能)        <span class="gi">↓↘→↘↓↙←</span>＋<span class="gi">Ｃ</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>罗伯特 加西亚<a class="headerlink" href="#id4" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>罗伯特 加西亚
+───────────────────────
+Name：Robert Garcia
+日文名：ロバート·ガルシア
+
+<span class="gr">●</span>首切投                      近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>上击                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>低踢                                    <span class="gi">ＢＣ</span>
+<span class="gr">○</span>滑踢                                前冲中<span class="gi">Ｂ</span>
+<span class="gr">◎</span>龙击拳                            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>龙牙                              <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>幻影脚                            <span class="gi">→←→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>飞燕疾风脚                          <span class="gi">↙→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>飞燕龙神脚                    空中<span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>极限流连舞拳                      <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">▲</span>挑衅三连踢                          <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>霸王翔吼拳                  <span class="gi">→←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>龙虎乱舞(防御不能)        <span class="gi">↓↘→↘↓↙←</span>＋<span class="gi">Ｃ</span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2>坂崎由莉<a class="headerlink" href="#id5" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>坂崎由莉
+───────────────────────
+Name：Yuri Sakazaki
+日文名：ユリ·サカザキ
+
+<span class="gr">●</span>美·静投                    近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">●</span>燕落                            空中近敌时<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>上击                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>踏付蹴                                  <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>虎煌拳                            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>雷煌拳                            <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>百烈掌                            <span class="gi">→←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>极限流碎破                        <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>燕舞脚                            <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">▲</span>飞燕落                              <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>霸王翔吼拳                  <span class="gi">→←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>飞燕凤凰脚(防御不能)    <span class="gi">→←→↘↓↙←</span>＋<span class="gi">ＢＣ</span>
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h2>坂崎琢磨<a class="headerlink" href="#id6" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>坂崎琢磨
+───────────────────────
+Name：Takuma Sakazaki
+日文名：タクマ·サカザキ
+
+<span class="gr">●</span>一本背负投                  近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>上击                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>低踢                                    <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>虎煌拳                            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>暂烈拳                            <span class="gi">→←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>飞燕疾风脚                          <span class="gi">↙→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>鬼神击                            <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>翔乱脚                        <span class="gi">→↘↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">▲</span>逆·翔乱脚                          <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>霸王至高拳                  <span class="gi">→←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>龙虎乱舞(防御不能)          <span class="gi">↓↘→←→</span>＋<span class="gi">ＡＣ</span>
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h2>乔<a class="headerlink" href="#id7" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>乔
+───────────────────────
+Name：John
+日文名：ジョン·クローリー
+
+<span class="gr">●</span>提投                        近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>上击                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>低踢                                    <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>快力掌风                          <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>飞翔强袭                          <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>过头踢                            <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>轰炸强踢                            <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">▲</span>闪电指                              <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>超能量弹                    <span class="gi">→←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>超能光子炮                <span class="gi">→←↙↓↘→</span>＋<span class="gi">ＢＣ</span>
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h2>京<a class="headerlink" href="#id8" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>京
+───────────────────────
+Name：King
+日文名：キング
+
+<span class="gr">●</span>足勾投                      近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>腹打                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>低踢                                    <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>毒蛇击                            <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>落地击                              <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>龙卷踢                            <span class="gi">→←→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>猛袭脚                            <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">▲</span>餐巾双击                            <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>毒蛇双击                      <span class="gi">→←→↘↓</span>＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>飞舞猛袭脚(防御不能)        <span class="gi">←→↘↓↙</span>＋<span class="gi">ＢＣ</span>
+</pre></div>
+</div>
+</section>
+<section id="id9">
+<h2>如月 影二<a class="headerlink" href="#id9" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>如月 影二
+───────────────────────
+Name：Eiji
+日文名：如月 影二
+
+<span class="gr">●</span>空中一本背负投              近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>突上打                                  <span class="gi">ＡＣ</span>
+<span class="gr">○</span>逆蹴                                    <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>气孔炮                            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>霞斩                              <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>骨破斩                            <span class="gi">→←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>流影阵(可弹返飞行道具)              <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>天马脚                              <span class="gi">↙→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>如月流连拳脚                      <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">▲</span>忍破斩                              <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>斩铁波                    <span class="gi">↓↘→↘↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>斩铁螳螂拳(防御不能)      <span class="gi">←↙↓↘→↘↓</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id10">
+<h2>杰克<a class="headerlink" href="#id10" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>杰克
+───────────────────────
+Name：Jack
+日文名：ジャック·ターナー
+
+<span class="gr">●</span>背负投                      近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">●</span>空中背负投                      空中近敌时<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>上击                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>踏付踢                            近距离<span class="gi">ＢＣ</span>
+<span class="gr">○</span>体当                              远距离<span class="gi">ＢＣ</span>
+<span class="gr">◎</span>极霸拳                            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>飞弹踢                              <span class="gi">↙↗</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>爆弹拳                            <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>炸弹拳                            <span class="gi">→←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>野熊头锤                    近敌时<span class="gi">→←→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">▲</span>炸弹踢                              <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▲</span>滑行头槌                            <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>超重压打击                  <span class="gi">←→↘↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>超重压螺旋(防御不能)    近敌时<span class="gi">→↘↓↙←</span>＋<span class="gi">Ａ</span>
+</pre></div>
+</div>
+</section>
+<section id="id11">
+<h2>李白龙<a class="headerlink" href="#id11" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>李白龙
+───────────────────────
+Name：Lee
+日文名：リー·パイロン
+
+<span class="gr">●</span>返投                        近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">●</span>空中头取                        空中近敌时<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>上击                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>踏付蹴                            近距离<span class="gi">ＢＣ</span>
+<span class="gr">○</span>虎尾脚击                          远距离<span class="gi">ＢＣ</span>
+<span class="gr">◎</span>铁之爪攻击(可破坏飞行道具)        <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>百裂拳                            <span class="gi">→←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>华中鹰爪激                          <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>华中猛腕脚                        <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">▲</span>三连踢                              <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>真空空转爪                  <span class="gi">→←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>华中飞猿爪(防御不能)      <span class="gi">↓↙←↙↓↘→</span>＋<span class="gi">Ａ</span>
+</pre></div>
+</div>
+</section>
+<section id="id12">
+<h2>米奇<a class="headerlink" href="#id12" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>米奇
+───────────────────────
+Name：Micky
+日文名：ミッキー·ロジャース
+
+<span class="gr">●</span>腹打肘击                    近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>左上击                                  <span class="gi">ＡＣ</span>
+<span class="gr">○</span>下打                                    <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>燃烧上勾拳                        <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>勾拳裂地波                        <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>闪光直拳                          <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>疯狂上击                            <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>组合连击拳１                      <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>组合连击拳２                    <span class="gi">↓↙←</span>＋<span class="gi">ＡＣ</span>
+<span class="gr">▲</span>勾拳烈地人偶                        <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>超螺旋正击拳                <span class="gi">→←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>爆炸闪光拳(防御不能)          <span class="gi">↓↙←↙↓</span>＋<span class="gi">Ａ</span>
+</pre></div>
+</div>
+</section>
+<section id="id13">
+<h2>铁木真<a class="headerlink" href="#id13" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>铁木真
+───────────────────────
+Name：Temjin
+日文名：テムジン
+
+<span class="gr">●</span>仰天投                      近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">●</span>压落投                      近敌时<span class="gi">↘</span>or<span class="gi">↙</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>三角跳                跳在空中接触到版边时<span class="gi">Ｃ</span>
+<span class="gr">○</span>首狙突拳                                <span class="gi">ＡＣ</span>
+<span class="gr">○</span>回转拂蹴                                <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>蒙古龙卷击                    <span class="gi">←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>蒙古气弹壁                        <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>蒙古连击拳                        <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>蒙古雷击弹              近敌时<span class="gi">→↘↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>蒙古大车轮投            近敌时<span class="gi">→↘↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">▲</span>蒙古援气弹                          <span class="gi">↓↑</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>蒙古猛烈破碎弹              <span class="gi">←→←↙↓↘</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>蒙古天武人乱舞(防御不能)  <span class="gi">↓↙←→↘↓</span>＋<span class="gi">ＡＣ</span>
+</pre></div>
+</div>
+</section>
+<section id="id14">
+<h2>比克<a class="headerlink" href="#id14" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>比克
+───────────────────────
+Name：Mr.Big
+日文名：<span class="gi">Ｍ</span>ｒ.ビッグ
+
+<span class="gr">●</span>棍压投                      近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>横振上                                  <span class="gi">ＡＣ</span>
+<span class="gr">○</span>下棍打                                  <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>火焰突进                          <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>飞行攻击                      <span class="gi">←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>短棍击打                            <span class="gi">↙→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>强势连击棍术                <span class="gi">←→↘↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">▲</span>光头飞弹                            <span class="gi">↓↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>雷电波                      <span class="gi">←↙↓↘→←</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>致命打击(防御不能)  近敌时<span class="gi">↓↘→↘↓↙←</span>＋<span class="gi">Ａ</span>
+</pre></div>
+</div>
+</section>
+<section id="id15">
+<h2>基斯·霍华德<a class="headerlink" href="#id15" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>基斯·霍华德
+───────────────────────
+Name：Geese Howard
+日文名：ギース·ハワード
+
+<span class="gr">●</span>巴投                        近敌时<span class="gi">→</span>or<span class="gi">←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>上击                                    <span class="gi">ＡＣ</span>
+<span class="gr">○</span>膝蹴                                    <span class="gi">ＢＣ</span>
+<span class="gr">◎</span>烈风拳                            <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>飞翔日轮斩                        <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>超能爆烈弹                        <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>雷光狱葬拳                      <span class="gi">↓↘→</span>＋<span class="gi">ＡＣ</span>
+<span class="gr">◎</span>疾风雷光狱葬拳                  <span class="gi">↓↘→</span>＋<span class="gi">ＢＣ</span>
+</pre></div>
+</div>
+</section>
+<section id="id16">
+<h2>[ 隐藏要素 ]<a class="headerlink" href="#id16" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 隐藏要素 ]
+───────────────────────
+<span class="gi">①</span>对地面上的对手使用必杀技、超必杀技、隐藏必杀
+  技K.O.，对手的衣服会爆裂。
+
+<span class="gi">②</span>所有回合获胜爆机的话，击败比克后，隐藏BOSS
+  基斯会登场挑战。
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="aof.html" tppabs="http://jjsnake.mogu-go.com/games/aof.html" title="Previous document">aof 龙虎之拳 (C) SNK 1992</a>
+        </li>
+        <li>
+          <a href="aof3.html" tppabs="http://jjsnake.mogu-go.com/games/aof3.html" title="Next document">aof3 龙虎之拳3 (C) SNK 1996</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="http://jjsnake.mogu-go.com/index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">aof2 龙虎之拳2 (C) SNK 1994</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 指令符号说明 ]</a></li>
+<li><a class="reference internal" href="#id3">坂崎亮</a></li>
+<li><a class="reference internal" href="#id4">罗伯特 加西亚</a></li>
+<li><a class="reference internal" href="#id5">坂崎由莉</a></li>
+<li><a class="reference internal" href="#id6">坂崎琢磨</a></li>
+<li><a class="reference internal" href="#id7">乔</a></li>
+<li><a class="reference internal" href="#id8">京</a></li>
+<li><a class="reference internal" href="#id9">如月 影二</a></li>
+<li><a class="reference internal" href="#id10">杰克</a></li>
+<li><a class="reference internal" href="#id11">李白龙</a></li>
+<li><a class="reference internal" href="#id12">米奇</a></li>
+<li><a class="reference internal" href="#id13">铁木真</a></li>
+<li><a class="reference internal" href="#id14">比克</a></li>
+<li><a class="reference internal" href="#id15">基斯·霍华德</a></li>
+<li><a class="reference internal" href="#id16">[ 隐藏要素 ]</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="http://jjsnake.mogu-go.com/search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, gdicnng.
+      
+      |
+      Powered by <a href="javascript:if(confirm('http://sphinx-doc.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://sphinx-doc.org/'" tppabs="http://sphinx-doc.org/">Sphinx 6.1.3</a>
+      &amp; <a href="javascript:if(confirm('https://github.com/bitprophet/alabaster  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://github.com/bitprophet/alabaster'" tppabs="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

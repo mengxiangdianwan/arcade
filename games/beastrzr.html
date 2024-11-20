@@ -1,0 +1,1232 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>beastrzr 兽化格斗 (C) Eighting/Raizing 1997</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="http://jjsnake.mogu-go.com/_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="http://jjsnake.mogu-go.com/_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="http://jjsnake.mogu-go.com/_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="http://jjsnake.mogu-go.com/_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="http://jjsnake.mogu-go.com/_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="http://jjsnake.mogu-go.com/_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="bestbest 强中至强 (C) Suna 1994" href="bestbest.html" />
+    <link rel="prev" title="bdrdown 破境怒潮 (C) G.Rev 2003" href="bdrdown.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="http://jjsnake.mogu-go.com/_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="bdrdown.html" tppabs="http://jjsnake.mogu-go.com/games/bdrdown.html" title="Previous document">bdrdown 破境怒潮 (C) G.Rev 2003</a>
+        </li>
+        <li>
+          <a href="bestbest.html" tppabs="http://jjsnake.mogu-go.com/games/bestbest.html" title="Next document">bestbest 强中至强 (C) Suna 1994</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="beastrzr-c-eighting-raizing-1997">
+<h1>beastrzr 兽化格斗 (C) Eighting/Raizing 1997<a class="headerlink" href="#beastrzr-c-eighting-raizing-1997" title="此标题的永久链接">¶</a></h1>
+<p>兽化格斗 (C) Eighting/Raizing 1997</p>
+<p>$info=beastrzr,bldyroar</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+─────────────────────────
+·方向
+　<span class="gi">↖↑↗</span>  后跳/垂直跳/前跳
+  <span class="gi">←Ｎ→</span>  后退&amp;上段防御/回中&amp;上段防御/前进
+  <span class="gi">↙↓↘</span>  下蹲后退&amp;下段防御/下蹲&amp;下段防御/下蹲前进
+
+·按键
+  拳：拳
+  脚：脚
+  <span class="gi">Ｂ</span>：兽化
+
+·防御系统
+  上段防御                            <span class="gi">←</span>or<span class="gi">Ｎ</span>
+  下段防御                            <span class="gi">↙</span>or<span class="gi">↓</span>
+  空中防御(仅可１次)              空中<span class="gi">←</span>or<span class="gi">Ｎ</span>
+
+·防御回避                防御敌人的攻击中<span class="gi">→</span>
+·受身                    浮空or吹飞中拳＋脚
+·倒地回避                  倒地中任意方向键
+·起身反击                          起身时脚
+
+·前冲                                  <span class="gi">→→</span>
+·疾退                                  <span class="gi">←←</span>
+·奔跑                          <span class="gi">→→</span>·按住<span class="gi">→</span>
+·趴下                          <span class="gi">↓↓</span>·按住<span class="gi">↓</span>
+·蹲进                                按住<span class="gi">↘</span>
+·蹲退                                按住<span class="gi">↙</span>
+·三角跳                          空中版边<span class="gi">→</span>
+※三角跳必须兽化模式
+
+·站立投技(对站立敌人有效)            拳＋脚
+·下蹲投技(对下蹲敌人有效)        <span class="gi">↓</span>＋拳＋脚
+
+·倒地追打
+  拳追打                    敌人倒地中<span class="gi">↓</span>＋拳
+  脚追打                    敌人倒地中<span class="gi">↓</span>＋脚
+  兽化追打                  敌人倒地中<span class="gi">↓</span>＋<span class="gi">Ｂ</span>
+  兽化重击          敌人倒地中<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｂ</span>or<span class="gi">Ｃ</span>
+※兽化追打和兽化重击必须兽化模式
+
+·兽化系统
+
+  [兽化能量槽]
+  增加<span class="gi">→</span>人类时发动攻击以及受到攻击
+  减少<span class="gi">→</span>兽人时受到攻击
+
+  [兽化]
+  兽化能量槽的[<span class="gi">Ｂ</span>]标志闪烁中按<span class="gi">Ｂ</span>发动兽化
+  兽化时有以下特点：
+
+  １增加<span class="gi">Ｂ</span>键攻击
+  ２浮空技浮空高度提升
+  ３体重变重
+  ４可发动特定连携技
+  ５体力恢复一部分
+  ６跳跃能力提升，可使用三角跳
+
+  [兽化解除]
+  兽化能量槽消耗完时受到击倒攻击会解除。
+
+·特殊崩坏
+  １站立反击崩坏                站立时反击
+  ２蹲下反击崩坏                蹲下时反击
+  ３防御崩坏                防御状态时攻击
+  ４转身攻击崩坏            命中时强制反击
+  １～３情况下摇杆和按键恢复可能
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 指令符号说明 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 指令符号说明 ]
+─────────────────────────
+所选角色面朝右的情况
+
+<span class="gr">◇</span>：转身攻击
+<span class="gr">◆</span>：倒地攻击
+<span class="gr">△</span>：上段投技
+<span class="gr">▽</span>：下段投技
+<span class="gr">▲</span>：空中投技
+<span class="gr">▼</span>：背后投技 (站立or下蹲投技均可)
+<span class="gr">○</span>：指令技
+<span class="gr">◎</span>：指令技 (防御攻击)
+</pre></div>
+</div>
+</section>
+<section id="yugo">
+<h2>ＹＵＧＯ<a class="headerlink" href="#yugo" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span><span class="gi">ＹＵＧＯ</span>
+─────────────────────────
+[人类时基本技]
+                                                 拳
+                                               <span class="gi">→</span>拳
+                                               <span class="gi">←</span>拳
+                                               <span class="gi">↓</span>拳
+                                               <span class="gi">↘</span>拳
+                                               <span class="gi">↙</span>拳
+                                               <span class="gi">↑</span>拳
+                                             <span class="gi">→→</span>拳
+  回蹴                                           脚
+                                               <span class="gi">→</span>脚
+                                               <span class="gi">←</span>脚
+                                               <span class="gi">↓</span>脚
+                                               <span class="gi">↘</span>脚
+                                               <span class="gi">↙</span>脚
+                                               <span class="gi">↑</span>脚
+                                             <span class="gi">→→</span>脚
+                                           跳跃中拳
+                                           跳跃中脚
+                                         跳跃中<span class="gi">→</span>拳
+                                         跳跃中<span class="gi">→</span>脚
+                                     跳跃着地时<span class="gi">↓</span>拳
+                                     跳跃着地时<span class="gi">↓</span>脚
+                                           趴下中拳
+                                           趴下中脚
+                                           奔跑中拳
+                                           奔跑中脚
+<span class="gr">◇</span>                                   敌人在背后时拳
+<span class="gr">◇</span>                                   敌人在背后时脚
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓</span>拳
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓</span>脚
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓</span>拳
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓</span>脚
+<span class="gr">△</span>背负投                                     拳＋脚
+<span class="gr">▽</span>                                         <span class="gi">↓</span>拳＋脚
+<span class="gr">▼</span>里投                         在敌人的背后时拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→</span>拳
+<span class="gr">○</span>月下翔                                   <span class="gi">↓↘→</span>脚
+<span class="gr">◎</span>银狼拳                                   <span class="gi">↓↙←</span>拳
+<span class="gr">○</span>                                         <span class="gi">↓↙←</span>脚
+
+[兽化时追加攻击]
+                                                 <span class="gi">Ｂ</span>
+                                               <span class="gi">→Ｂ</span>
+  满月斩                                       <span class="gi">←Ｂ</span>
+  弧月返                                       <span class="gi">↓Ｂ</span>
+  地擂斩                                       <span class="gi">↘Ｂ</span>
+  舞狼脚                                       <span class="gi">↙Ｂ</span>
+                                               <span class="gi">↑Ｂ</span>
+                                             <span class="gi">→→Ｂ</span>
+                                           跳跃中<span class="gi">Ｂ</span>
+                                         跳跃中<span class="gi">→Ｂ</span>
+                                     跳跃着地时<span class="gi">↓Ｂ</span>
+                                           趴下中<span class="gi">Ｂ</span>
+                                           奔跑中<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                   敌人在背后时<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                       敌人倒地中<span class="gi">↑</span>拳or<span class="gi">↑</span>脚or<span class="gi">↑Ｂ</span>
+<span class="gr">△</span>旋血牙                                     拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→Ｂ</span>
+<span class="gr">○</span>                                         <span class="gi">↓↙←Ｂ</span>
+
+[人类时连携技]
+拳·拳
+拳·拳·拳
+拳·拳·拳·脚
+拳·拳·拳·<span class="gi">↓</span>脚
+拳·拳·<span class="gi">→</span>拳
+拳·拳·脚
+拳·拳·<span class="gi">↓</span>脚
+拳·脚
+拳·脚·脚
+拳·脚·<span class="gi">↓</span>脚
+<span class="gi">←</span>拳·<span class="gi">←</span>拳
+<span class="gi">←</span>拳·<span class="gi">←</span>拳·<span class="gi">←</span>拳
+<span class="gi">←</span>拳·<span class="gi">←</span>拳·<span class="gi">↓</span>拳
+<span class="gi">←</span>拳·<span class="gi">↓</span>拳
+<span class="gi">↓</span>拳·脚
+<span class="gi">↓</span>拳·<span class="gi">↓</span>脚
+<span class="gi">↘</span>拳·<span class="gi">↘</span>拳
+<span class="gi">↘</span>拳·<span class="gi">↘</span>拳·<span class="gi">↘</span>拳
+<span class="gi">↘</span>拳·<span class="gi">↘</span>拳·<span class="gi">↘</span>拳·<span class="gi">↘</span>拳
+脚·脚
+脚·<span class="gi">↓</span>脚
+<span class="gi">↓</span>脚·<span class="gi">↓</span>脚
+<span class="gi">↓</span>脚·拳
+<span class="gi">↓</span>脚·拳·脚
+<span class="gi">→→</span>脚·<span class="gi">↓</span>脚
+趴下中脚·脚
+<span class="gi">↓↘→</span>拳·<span class="gi">→</span>拳
+<span class="gi">↓↘→</span>拳·<span class="gi">→</span>拳·<span class="gi">→</span>拳
+
+[兽化时追加连携技]
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">↓</span>拳
+<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚
+<span class="gi">Ｂ</span>·拳·拳
+<span class="gi">Ｂ</span>·拳·拳·<span class="gi">→</span>拳
+<span class="gi">Ｂ</span>·拳·拳·脚
+<span class="gi">Ｂ</span>·拳·拳·<span class="gi">↓</span>脚
+<span class="gi">Ｂ</span>·拳·拳·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·拳·拳·拳
+<span class="gi">Ｂ</span>·拳·拳·拳·<span class="gi">↓Ｂ</span>
+<span class="gi">Ｂ</span>·拳·拳·拳·脚
+<span class="gi">Ｂ</span>·拳·拳·拳·<span class="gi">↓</span>脚
+<span class="gi">Ｂ</span>·拳·脚
+<span class="gi">Ｂ</span>·拳·脚·脚
+<span class="gi">Ｂ</span>·拳·脚·<span class="gi">↓</span>脚
+<span class="gi">Ｂ</span>·脚
+<span class="gi">Ｂ</span>·脚·脚
+<span class="gi">Ｂ</span>·脚·<span class="gi">↓</span>脚
+<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚
+<span class="gi">↘Ｂ</span>·<span class="gi">↘</span>拳
+<span class="gi">↙Ｂ</span>·<span class="gi">↙Ｂ</span>
+<span class="gi">←</span>拳·<span class="gi">←</span>拳·<span class="gi">←Ｂ</span>
+<span class="gi">↓↙←Ｂ</span>·拳or脚or<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="alice">
+<h2>ＡＬＩＣＥ<a class="headerlink" href="#alice" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span><span class="gi">ＡＬＩＣＥ</span>
+─────────────────────────
+[人类时基本技]
+                                                 拳
+                                               <span class="gi">→</span>拳
+                                               <span class="gi">←</span>拳
+                                               <span class="gi">↓</span>拳
+                                               <span class="gi">↘</span>拳
+                                               <span class="gi">↙</span>拳
+                                               <span class="gi">↑</span>拳
+                                             <span class="gi">→→</span>拳
+                                                 脚
+                                               <span class="gi">→</span>脚
+                                               <span class="gi">←</span>脚
+                                               <span class="gi">↓</span>脚
+                                               <span class="gi">↘</span>脚
+                                               <span class="gi">↙</span>脚
+                                               <span class="gi">↑</span>脚
+                                             <span class="gi">→→</span>脚
+                                           跳跃中拳
+                                           跳跃中脚
+                                         跳跃中<span class="gi">→</span>拳
+                                         跳跃中<span class="gi">→</span>脚
+                                     跳跃着地时<span class="gi">↓</span>拳
+                                     跳跃着地时<span class="gi">↓</span>脚
+                                           趴下中拳
+                                           趴下中脚
+                                           奔跑中拳
+                                           奔跑中脚
+<span class="gr">◇</span>                                   敌人在背后时拳
+<span class="gr">◇</span>                                   敌人在背后时脚
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓</span>拳
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓</span>脚
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓</span>拳
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓</span>脚
+<span class="gr">△</span>                                           拳＋脚
+<span class="gr">▽</span>                                         <span class="gi">↓</span>拳＋脚
+<span class="gr">▲</span>                               空中近敌时<span class="gi">↓</span>拳＋脚
+<span class="gr">▼</span>                             在敌人的背后时拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→</span>拳
+<span class="gr">○</span>                                         <span class="gi">↓↘→</span>脚
+<span class="gr">◎</span>                                         <span class="gi">↓↙←</span>拳
+<span class="gr">○</span>                                         <span class="gi">↓↙←</span>脚
+
+[兽化时追加攻击]
+                                                 <span class="gi">Ｂ</span>
+                                               <span class="gi">→Ｂ</span>
+                                               <span class="gi">←Ｂ</span>
+                                               <span class="gi">↓Ｂ</span>
+                                               <span class="gi">↘Ｂ</span>
+                                               <span class="gi">↙Ｂ</span>
+                                               <span class="gi">↑Ｂ</span>
+                                             <span class="gi">→→Ｂ</span>
+                                           跳跃中<span class="gi">Ｂ</span>
+                                         跳跃中<span class="gi">→Ｂ</span>
+                                     跳跃着地时<span class="gi">↓Ｂ</span>
+                                           趴下中<span class="gi">Ｂ</span>
+                                           奔跑中<span class="gi">Ｂ</span>
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                           敌人倒地中<span class="gi">↑</span>拳or脚or<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                   敌人在背后时<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓Ｂ</span>
+<span class="gr">△</span>                                           拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→Ｂ</span>
+<span class="gr">○</span>                                         <span class="gi">↓↙←Ｂ</span>
+
+[人类时连携技]
+拳·拳
+拳·拳·拳
+拳·拳·拳·<span class="gi">→</span>拳
+拳·拳·拳·<span class="gi">↓</span>拳
+拳·拳·拳·<span class="gi">←</span>脚
+拳·脚
+拳·脚·脚
+拳·脚·脚·<span class="gi">→</span>脚
+拳·脚·脚·<span class="gi">←</span>脚
+拳·脚·脚·<span class="gi">↓</span>脚
+<span class="gi">→</span>拳·<span class="gi">→</span>拳
+<span class="gi">←</span>拳·拳
+<span class="gi">←</span>拳·脚
+<span class="gi">↓</span>拳·<span class="gi">↓</span>脚
+<span class="gi">↓</span>拳·<span class="gi">↓</span>脚·脚
+<span class="gi">↓</span>拳·<span class="gi">↓</span>脚·<span class="gi">↓</span>脚
+<span class="gi">↘</span>拳·拳
+<span class="gi">↙</span>拳·<span class="gi">↓</span>脚
+敌人在背后时拳·拳
+脚·脚
+脚·脚·<span class="gi">→</span>脚
+脚·脚·<span class="gi">←</span>脚
+脚·脚·<span class="gi">↓</span>脚
+<span class="gi">→</span>脚·<span class="gi">←</span>脚
+<span class="gi">→</span>脚·<span class="gi">↓</span>脚
+<span class="gi">→</span>脚·<span class="gi">↓</span>脚·<span class="gi">↓</span>拳
+<span class="gi">↓</span>脚·脚
+<span class="gi">↓</span>脚·<span class="gi">↓</span>脚
+趴下中脚·<span class="gi">→</span>脚
+<span class="gi">↓↙←</span>脚·<span class="gi">←</span>脚
+
+[兽化时追加连携技]
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">←Ｂ</span>
+<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↓</span>脚
+<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↓</span>脚·<span class="gi">↓</span>拳
+<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↓</span>脚·<span class="gi">↓Ｂ</span>
+<span class="gi">↘</span>拳·拳·<span class="gi">Ｂ</span>
+<span class="gi">↘</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚
+<span class="gi">↘</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">↘</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">↘</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+<span class="gi">↘</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">←Ｂ</span>
+<span class="gi">↘</span>脚·<span class="gi">↘Ｂ</span>
+<span class="gi">↘</span>脚·<span class="gi">↘Ｂ</span>·<span class="gi">↘Ｂ</span>
+<span class="gi">↓↙←</span>脚·<span class="gi">←</span>脚·<span class="gi">←Ｂ</span>
+拳·拳·拳·<span class="gi">→</span>拳·<span class="gi">Ｂ</span>
+拳·拳·拳·<span class="gi">→</span>拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+拳·拳·拳·<span class="gi">→</span>拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+拳·拳·拳·<span class="gi">→</span>拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚
+拳·拳·拳·<span class="gi">→</span>拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+拳·拳·拳·<span class="gi">→</span>拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+拳·拳·拳·<span class="gi">→</span>拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">←Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="fox">
+<h2>ＦＯＸ<a class="headerlink" href="#fox" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span><span class="gi">ＦＯＸ</span>
+─────────────────────────
+[人类时基本技]
+                                                 拳
+                                               <span class="gi">→</span>拳
+                                               <span class="gi">←</span>拳
+                                               <span class="gi">↓</span>拳
+                                               <span class="gi">↘</span>拳
+                                               <span class="gi">↙</span>拳
+                                               <span class="gi">↑</span>拳
+                                             <span class="gi">→→</span>拳
+                                                 脚
+                                               <span class="gi">→</span>脚
+                                               <span class="gi">←</span>脚
+                                               <span class="gi">↓</span>脚
+                                               <span class="gi">↘</span>脚
+                                               <span class="gi">↙</span>脚
+                                               <span class="gi">↑</span>脚
+                                             <span class="gi">→→</span>脚
+                                           跳跃中拳
+                                           跳跃中脚
+                                         跳跃中<span class="gi">→</span>拳
+                                         跳跃中<span class="gi">→</span>脚
+                                     跳跃着地时<span class="gi">↓</span>拳
+                                     跳跃着地时<span class="gi">↓</span>脚
+                                           趴下中拳
+                                           趴下中脚
+                                           奔跑中拳
+                                           奔跑中脚
+<span class="gr">◇</span>                                   敌人在背后时拳
+<span class="gr">◇</span>                                   敌人在背后时脚
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓</span>拳
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓</span>脚
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓</span>拳
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓</span>脚
+<span class="gr">△</span>                                           拳＋脚
+<span class="gr">▽</span>                                         <span class="gi">↓</span>拳＋脚
+<span class="gr">▼</span>                             在敌人的背后时拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→</span>拳
+<span class="gr">○</span>                                         <span class="gi">↓↘→</span>脚
+<span class="gr">◎</span>                                         <span class="gi">↓↙←</span>拳
+<span class="gr">○</span>                                         <span class="gi">↓↙←</span>脚
+
+[兽化时追加基本技]
+                                                 <span class="gi">Ｂ</span>
+                                               <span class="gi">→Ｂ</span>
+                                               <span class="gi">←Ｂ</span>
+                                               <span class="gi">↓Ｂ</span>
+                                               <span class="gi">↘Ｂ</span>
+                                               <span class="gi">↙Ｂ</span>
+                                               <span class="gi">↑Ｂ</span>
+                                             <span class="gi">→→Ｂ</span>
+                                           跳跃中<span class="gi">Ｂ</span>
+                                         跳跃中<span class="gi">→Ｂ</span>
+                                     跳跃着地时<span class="gi">↓Ｂ</span>
+                                           趴下中<span class="gi">Ｂ</span>
+  <span class="gi">Ｆ</span>．<span class="gi">Ｏ</span>．<span class="gi">Ｘ</span>                               奔跑中<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                   敌人在背后时<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                           敌人倒地中<span class="gi">↑</span>拳or脚or<span class="gi">Ｂ</span>
+<span class="gr">△</span>                                           拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→Ｂ</span>
+<span class="gr">○</span>                                         <span class="gi">↓↙←Ｂ</span>
+
+[人类时连携技]
+拳·拳
+拳·拳·拳
+拳·拳·拳·拳
+拳·脚
+拳·拳·脚
+拳·拳·拳·脚
+拳·拳·拳·<span class="gi">↓</span>脚
+<span class="gi">→</span>拳·拳
+<span class="gi">→</span>拳·拳·<span class="gi">↓</span>脚
+<span class="gi">→</span>拳·拳·拳
+<span class="gi">→</span>拳·拳·拳·脚
+<span class="gi">→</span>拳·拳·拳·<span class="gi">↓</span>脚
+<span class="gi">→</span>拳·拳·拳·<span class="gi">↑</span>脚
+<span class="gi">↘</span>拳·拳
+<span class="gi">↑</span>拳·拳
+<span class="gi">↑</span>拳·<span class="gi">↑</span>拳
+<span class="gi">←</span>脚·脚
+<span class="gi">←</span>脚·脚·<span class="gi">↓</span>脚
+<span class="gi">↓</span>脚·脚
+<span class="gi">↓</span>脚·<span class="gi">↓</span>脚
+<span class="gi">→→</span>脚·脚
+<span class="gi">→</span>拳·拳·拳·<span class="gi">←</span>脚    (背转技中可移动)
+<span class="gi">→</span>拳·拳·拳·<span class="gi">←</span>脚·<span class="gi">↖</span>拳
+<span class="gi">↖</span>脚(可连续输入４次)
+<span class="gi">↗</span>脚(可连续输入４次)
+<span class="gi">↖</span>拳
+<span class="gi">↗</span>脚·<span class="gi">↗</span>脚·<span class="gi">↗</span>拳
+<span class="gi">↗</span>脚·<span class="gi">↗</span>脚·<span class="gi">↑</span>拳·拳
+<span class="gi">↓↘→</span>拳·拳
+
+[兽化时追加连携技]
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↑</span>脚
+<span class="gi">→Ｂ</span>·<span class="gi">Ｂ</span>
+拳·拳·<span class="gi">Ｂ</span>
+拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+拳·拳·<span class="gi">↓Ｂ</span>
+(<span class="gi">↖</span>脚or<span class="gi">↗</span>脚输入２次以上后)<span class="gi">↑</span>拳·<span class="gi">Ｂ</span>
+<span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">↑</span>拳·<span class="gi">Ｂ</span>
+<span class="gi">↖</span>脚·<span class="gi">↑</span>拳·<span class="gi">Ｂ</span>
+<span class="gi">↗</span>脚·<span class="gi">↑</span>拳·<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="bakuryu">
+<h2>ＢＡＫＵＲＹＵ<a class="headerlink" href="#bakuryu" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span><span class="gi">ＢＡＫＵＲＹＵ</span>
+─────────────────────────
+[人类时基本技]
+  短刀                                           拳
+  流闪刃横斩                                   <span class="gi">→</span>拳
+  流闪刃纵斩                                   <span class="gi">←</span>拳
+  闪破                                         <span class="gi">↓</span>拳
+  流影刃                                       <span class="gi">↘</span>拳
+  草薙刀                                       <span class="gi">↙</span>拳
+  浮身返                                       <span class="gi">↑</span>拳
+  双击破                                     <span class="gi">→→</span>拳
+  流牙脚                                         脚
+  半月落                                       <span class="gi">→</span>脚
+  影刃脚                                       <span class="gi">←</span>脚
+  低刺蹴                                       <span class="gi">↓</span>脚
+  胫打                                         <span class="gi">↘</span>脚
+  影拂                                         <span class="gi">↙</span>脚
+  日轮脚                                       <span class="gi">↑</span>脚
+  风裂脚                                     <span class="gi">→→</span>脚
+  飞短刀                                   跳跃中拳
+  裂空脚                                   跳跃中脚
+  飞龙斩击                               跳跃中<span class="gi">→</span>拳
+  飞龙弹                                 跳跃中<span class="gi">→</span>脚
+  地闪刀                             跳跃着地时<span class="gi">↓</span>拳
+  地闪脚                             跳跃着地时<span class="gi">↓</span>脚
+  旋肘                                     趴下中拳
+  爆龙炮                                   趴下中脚
+  地擂刀                                   奔跑中拳
+  震空脚                                   奔跑中脚
+<span class="gr">◇</span>目溃                               敌人在背后时拳
+<span class="gr">◇</span>背迅脚                             敌人在背后时脚
+<span class="gr">◇</span>回身短刀                         敌人在背后时<span class="gi">↓</span>拳
+<span class="gr">◇</span>足挂                             敌人在背后时<span class="gi">↓</span>脚
+<span class="gr">◆</span>苦无刺                             敌人倒地中<span class="gi">↓</span>拳
+<span class="gr">◆</span>追突蹴                             敌人倒地中<span class="gi">↓</span>脚
+<span class="gr">△</span>崩身转击                                   拳＋脚
+<span class="gr">▽</span>里转                                     <span class="gi">↓</span>拳＋脚
+<span class="gr">▲</span>饭纲落                         空中近敌时<span class="gi">↓</span>拳＋脚
+<span class="gr">▼</span>里饭纲落                     在敌人的背后时拳＋脚
+<span class="gr">○</span>雷光饭纲落                               <span class="gi">↓↘→</span>拳
+<span class="gr">○</span>烟幕弹                                   <span class="gi">↓↘→</span>脚
+<span class="gr">◎</span>硬气流击破                               <span class="gi">↓↙←</span>拳
+<span class="gr">○</span>烟阵螺旋脚                               <span class="gi">↓↙←</span>脚
+
+[兽人时追加基本技]
+  毒搔                                           <span class="gi">Ｂ</span>
+  毒突                                         <span class="gi">→Ｂ</span>
+  影斩击                                       <span class="gi">←Ｂ</span>
+  下段毒搔                                     <span class="gi">↓Ｂ</span>
+  地擂弹                                       <span class="gi">↘Ｂ</span>
+  搔上                                         <span class="gi">↙Ｂ</span>
+  急袭毒击破                                   <span class="gi">↑Ｂ</span>
+  双毒击破                                   <span class="gi">→→Ｂ</span>
+  空刃脚                                   跳跃中<span class="gi">Ｂ</span>
+  冲空斩击                               跳跃中<span class="gi">→Ｂ</span>
+  虚空毒搔                           跳跃着地时<span class="gi">↓Ｂ</span>
+  足首落                                   趴下中<span class="gi">Ｂ</span>
+  双毒龙卷破                               奔跑中<span class="gi">Ｂ</span>
+  骸裂敌人                               倒地中<span class="gi">↓Ｂ</span>
+<span class="gr">◇</span>腹裂                               敌人在背后时<span class="gi">Ｂ</span>
+<span class="gr">◇</span>离影                             敌人在背后时<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>浮身踏脚                   敌人倒地中<span class="gi">↑</span>拳or脚or<span class="gi">Ｂ</span>
+<span class="gr">△</span>斩灭龙卷激                                 拳＋脚
+<span class="gr">○</span>头豪苦突                                 <span class="gi">↓↘→Ｂ</span>
+<span class="gr">○</span>升天搔上                                 <span class="gi">↓↙←Ｂ</span>
+
+[人类时连携技]
+连刀                  拳·拳
+三连刀                拳·拳·拳
+三连刀螺旋斩          拳·拳·拳·拳
+螺旋流影刃            拳·拳·拳·拳·<span class="gi">→</span>拳
+连牙                  拳·脚
+连牙落槌脚            拳·脚·脚
+连牙落槌旋风击        拳·脚·脚·脚
+连牙落槌半月落        拳·脚·脚·<span class="gi">→</span>脚
+连牙落槌月影刃脚      拳·脚·脚·<span class="gi">→</span>脚·<span class="gi">←</span>脚
+连牙落槌月影返        拳·脚·脚·<span class="gi">→</span>脚·<span class="gi">←</span>脚·<span class="gi">↑</span>拳
+连牙落槌圆月蹴        拳·脚·脚·<span class="gi">←</span>脚
+连刀迅脚              拳·拳·脚
+连刀落刃脚            拳·拳·脚·脚
+连刀刈足              拳·拳·脚·<span class="gi">↓</span>脚
+连刀圆月蹴            拳·拳·<span class="gi">←</span>脚
+连刀螺旋拂            拳·拳·<span class="gi">↓</span>脚
+连刀螺旋里肘          拳·拳·<span class="gi">↓</span>脚·拳
+连刀浮身返            拳·拳·拳·<span class="gi">↑</span>拳
+三连刀螺旋拂          拳·拳·拳·<span class="gi">↓</span>脚
+三连刀螺旋里肘        拳·拳·拳·<span class="gi">↓</span>脚·拳
+流影崩激              <span class="gi">↘</span>拳·拳
+流影日轮脚            <span class="gi">↘</span>拳·脚
+流牙落槌脚            脚·脚
+流牙落槌旋风击        脚·脚·脚
+流牙落槌半月落        脚·脚·<span class="gi">→</span>脚
+流牙落槌月影刃脚      脚·脚·<span class="gi">→</span>脚·<span class="gi">←</span>脚
+流牙落槌月影返        脚·脚·<span class="gi">→</span>脚·<span class="gi">←</span>脚·<span class="gi">↑</span>拳
+流牙落槌圆月蹴        脚·脚·<span class="gi">←</span>脚
+月影刃脚              <span class="gi">→</span>脚·<span class="gi">←</span>脚
+月影返                <span class="gi">→</span>脚·<span class="gi">←</span>脚·<span class="gi">↑</span>拳
+裂迅翔脚              <span class="gi">↘</span>脚·脚
+裂迅雷崩蹴            <span class="gi">↘</span>脚·脚·脚
+裂迅刈蹴              <span class="gi">↘</span>脚·<span class="gi">→</span>脚
+裂迅草擂蹴            <span class="gi">↘</span>脚·<span class="gi">↓</span>脚
+疾风二段蹴            <span class="gi">→→</span>脚·脚
+疾风三日月落          <span class="gi">→→</span>脚·脚·脚
+疾风雷龙击            <span class="gi">→→</span>脚·脚·脚·<span class="gi">↓</span>脚
+疾风闪电落            <span class="gi">→→</span>脚·脚·脚·<span class="gi">↓</span>脚·脚
+疾风螺旋连脚          <span class="gi">→→</span>脚·脚·<span class="gi">↓↙←</span>脚
+落雷                  趴下中脚·脚
+
+[兽化时追加连携技]
+毒搔支转脚            <span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+连搔                  <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+连搔转倒炮            <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+连搔胫打              <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚
+连搔翔脚              <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚·脚
+连搔雪崩蹴            <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚·脚·脚
+连搔刈蹴              <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚·<span class="gi">→</span>脚
+连搔草擂蹴            <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓</span>脚·<span class="gi">↓</span>脚
+毒爪影斩击            <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+连突                  <span class="gi">→Ｂ</span>·<span class="gi">Ｂ</span>
+毒闪转倒炮            <span class="gi">→Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+三连毒突              <span class="gi">→Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+毒爪四连突            <span class="gi">→Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+毒爪爆铳连击          <span class="gi">→Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+毒突支转脚            <span class="gi">→Ｂ</span>·<span class="gi">↓Ｂ</span>
+毒闪                  <span class="gi">→Ｂ</span>·脚
+毒闪落槌脚            <span class="gi">→Ｂ</span>·脚·脚
+毒闪落槌旋风击        <span class="gi">→Ｂ</span>·脚·脚·脚
+毒闪落槌半月落        <span class="gi">→Ｂ</span>·脚·脚·<span class="gi">→</span>脚
+毒闪落槌月影刃脚      <span class="gi">→Ｂ</span>·脚·脚·<span class="gi">→</span>脚·<span class="gi">←</span>脚
+毒闪落槌月影返        <span class="gi">→Ｂ</span>·脚·脚·<span class="gi">→</span>脚·<span class="gi">←</span>脚·<span class="gi">↑</span>拳
+毒闪落槌圆月蹴        <span class="gi">→Ｂ</span>·脚·脚·<span class="gi">←</span>脚
+骸裂                  敌人倒地中<span class="gi">↓Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="long">
+<h2>ＬＯＮＧ<a class="headerlink" href="#long" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span><span class="gi">ＬＯＮＧ</span>
+─────────────────────────
+[人类时基本技]
+  掌打                                           拳
+  上步掌拳                                     <span class="gi">→</span>拳
+  虎扑把                                       <span class="gi">←</span>拳
+  伏掌打                                       <span class="gi">↓</span>拳
+  紫燕抄水                                     <span class="gi">↘</span>拳
+  横拳                                         <span class="gi">↙</span>拳
+  腾空斜捶                                     <span class="gi">↑</span>拳
+  里门顶肘                                   <span class="gi">→→</span>拳
+  劈腿                                           脚
+  双扣腿                                       <span class="gi">→</span>脚
+  后旋腿                                       <span class="gi">←</span>脚
+  前扫腿                                       <span class="gi">↓</span>脚
+  侧腿                                         <span class="gi">↘</span>脚
+  后扫腿                                       <span class="gi">↙</span>脚
+  旋风脚                                       <span class="gi">↑</span>脚
+  疾地扫腿                                   <span class="gi">→→</span>脚
+  腾捶                                     跳跃中拳
+  飞刺腿                                   跳跃中脚
+  落双捶                                 跳跃中<span class="gi">→</span>拳
+  风门倒坏                               跳跃中<span class="gi">→</span>脚
+  地扫捶                             跳跃着地时<span class="gi">↓</span>拳
+  落旋脚                             跳跃着地时<span class="gi">↓</span>脚
+  斩捶                                     趴下中拳
+  穿弓腿                                   趴下中脚
+  箭疾步                                   奔跑中拳
+  神龙脚                                   奔跑中脚
+<span class="gr">◇</span>顶心肘                             敌人在背后时拳
+<span class="gr">◇</span>转身旋腿                           敌人在背后时脚
+<span class="gr">◇</span>转身崩捶                         敌人在背后时<span class="gi">↓</span>拳
+<span class="gr">◇</span>转身扫腿                         敌人在背后时<span class="gi">↓</span>脚
+<span class="gr">◆</span>击地捶                             敌人倒地中<span class="gi">↓</span>拳
+<span class="gr">◆</span>震脚                               敌人倒地中<span class="gi">↓</span>脚
+<span class="gr">△</span>炮身发劲                                   拳＋脚
+<span class="gr">▽</span>封跪膝                                   <span class="gi">↓</span>拳＋脚
+<span class="gr">▼</span>里投                         在敌人的背后时拳＋脚
+<span class="gr">○</span>绝招步法                                 <span class="gi">↓↘→</span>拳
+<span class="gr">○</span>连环腿                                   <span class="gi">↓↘→</span>脚
+<span class="gr">◎</span>外门顶肘                                 <span class="gi">↓↙←</span>拳
+<span class="gr">○</span>无影脚                                   <span class="gi">↓↙←</span>脚
+
+[兽化时追加基本技]
+  虎爪击                                         <span class="gi">Ｂ</span>
+  猛虎踏腿                                     <span class="gi">→Ｂ</span>
+  背身龙尾                                     <span class="gi">←Ｂ</span>
+  伏虎斩                                       <span class="gi">↓Ｂ</span>
+  伏虎双爪                                     <span class="gi">↘Ｂ</span>
+  天边挂月                                     <span class="gi">↙Ｂ</span>
+  描身宙脚                                     <span class="gi">↑Ｂ</span>
+  罗汉鞭                                     <span class="gi">→→Ｂ</span>
+  兽登脚                                   跳跃中<span class="gi">Ｂ</span>
+  描身宙击                               跳跃中<span class="gi">→Ｂ</span>
+  地扫爪                             跳跃着地时<span class="gi">↓Ｂ</span>
+  狮子冲天炮                               趴下中<span class="gi">Ｂ</span>
+  疯兽咆哮                                 奔跑中<span class="gi">Ｂ</span>
+<span class="gr">◇</span>铁山靠                             敌人在背后时<span class="gi">Ｂ</span>
+<span class="gr">◇</span>振竹爪                           敌人在背后时<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>饿虎扑食                           敌人倒地中<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>黑鹰落蹴                   敌人倒地中<span class="gi">↑</span>拳or脚or<span class="gi">Ｂ</span>
+<span class="gr">△</span>踏身金刚捶                                 拳＋脚
+<span class="gr">○</span>颈绝牙                                   <span class="gi">↓↘→Ｂ</span>
+<span class="gr">○</span>金刚捣堆                                 <span class="gi">↓↙←Ｂ</span>
+
+[人类时连携技]
+连捶                                         拳·拳
+连掌腿                                       拳·脚
+鹞子栽肩                               趴下中拳·拳
+
+六合鸿轮式
+
+  １ 崩  拳(<span class="gi">→</span>拳) <span class="gi">←→</span> ６ 斧刃脚(<span class="gi">↓</span>脚)
+         <span class="gi">↑</span>                   <span class="gi">↑</span>
+         <span class="gi">↓</span>                   <span class="gi">↓</span>
+  ２ 右踹脚( 脚 )      ５ 打  开( 拳 )
+         <span class="gi">↑</span>                   <span class="gi">↑</span>
+         <span class="gi">↓</span>                   <span class="gi">↓</span>
+  ３ 日月把(<span class="gi">↓</span>拳) <span class="gi">←→</span> ４ 侧中脚(<span class="gi">→</span>脚)
+
+  ※六合鸿轮式以其中任一技开始均可
+  ※单方向递进、不能重复使用技
+  ※任意技可以派生结束技
+
+<span class="gi">→</span>六合鸿轮式结束技(六合鸿轮式的派生)
+  ·翻身连脚                        <span class="gi">←</span>脚
+  ·半月刃                        <span class="gi">→→</span>脚
+  ·前扫幻脚                      <span class="gi">↓↓</span>脚
+  ·连珠炮动                      <span class="gi">↓↓</span>拳
+  ·鹞子穿林                      <span class="gi">→→</span>拳
+  ·七寸靠                          <span class="gi">←</span>拳
+
+掌打旋脚                    拳·脚·<span class="gi">↓</span>脚
+    (<span class="gi">←</span>脚·和<span class="gi">←</span>拳以外的六合鸿轮式结束技的派生)
+
+(※以下的连携技后的()对应六合鸿轮式派生)
+连捶崩拳                      拳·拳·<span class="gi">→</span>拳(＝１)
+上步连脚                      <span class="gi">→</span>拳·脚    (＝２)
+高蹴日月把                    脚·<span class="gi">↓</span>拳    (＝３)
+连捶腿                        拳·拳·<span class="gi">→</span>脚(＝４)
+连捶挑领                      拳·拳·拳  (＝５)
+上步连开                      <span class="gi">→</span>拳·拳    (＝５)
+连斧腿                        脚·<span class="gi">↓</span>脚    (＝６)
+
+[兽化时追加连携技]
+十字劈手            <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+环云十字破          <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+十字罗汉            <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+虎爪旋脚            <span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+伏虎十字双          <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+天边连华山          <span class="gi">↙Ｂ</span>·<span class="gi">Ｂ</span>
+伏虎日月把          <span class="gi">↓Ｂ</span>·<span class="gi">↓</span>拳
+伏虎斧刃            <span class="gi">↓Ｂ</span>·<span class="gi">↓</span>脚
+金刚双扣腿          <span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>
+金刚双扣无影脚      <span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓↙←</span>脚
+金刚连扣腿          <span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+金刚连扣无影脚      <span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓↙←</span>脚
+金刚双扣腿(三)      <span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+金刚双扣无影脚(三)  <span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓↙←</span>脚
+金刚双扣日月把      <span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+金刚连扣日月把      <span class="gi">↓↙←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+
+简易六合鸿轮式
+※通常的六合鸿轮式的结束技同样可以派生
+·金刚鸿轮式(阳) <span class="gi">↓↙←Ｂ</span>后<span class="gi">→Ｂ</span>×1～6(从１左转)
+·金刚鸿轮式(地) <span class="gi">↓↙←Ｂ</span>后<span class="gi">↓Ｂ</span>×1～6(从３左转)
+·金刚鸿轮式(阴) <span class="gi">↓↙←Ｂ</span>后<span class="gi">←Ｂ</span>×1～6(从４左转)
+·金刚鸿轮式(天) <span class="gi">↓↙←Ｂ</span>后<span class="gi">↑Ｂ</span>×1～6(从６左转)
+
+<span class="gi">→</span>兽化六合鸿轮式结束技(六合鸿轮式的派生)
+·六合劈手                                <span class="gi">Ｂ</span>
+·鸿轮云                              <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+·六合冲天炮                        <span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+·六合伏虎                          <span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+
+(※以下的连携技后的()对应六合鸿轮式的派生)
+爪掌打                              <span class="gi">Ｂ</span>·拳(＝５)
+</pre></div>
+</div>
+</section>
+<section id="gado">
+<h2>ＧＡＤＯ<a class="headerlink" href="#gado" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span><span class="gi">ＧＡＤＯ</span>
+─────────────────────────
+[人类时基本技]
+                                                拳
+                                              <span class="gi">→</span>拳
+                                              <span class="gi">←</span>拳
+                                              <span class="gi">↓</span>拳
+                                              <span class="gi">↘</span>拳
+                                              <span class="gi">↙</span>拳
+                                              <span class="gi">↑</span>拳
+                                            <span class="gi">→→</span>拳
+                                                脚
+                                              <span class="gi">→</span>脚
+                                              <span class="gi">←</span>脚
+                                              <span class="gi">↓</span>脚
+                                              <span class="gi">↘</span>脚
+                                              <span class="gi">↙</span>脚
+                                              <span class="gi">↑</span>脚
+                                            <span class="gi">→→</span>脚
+                                          跳跃中拳
+                                          跳跃中脚
+                                        跳跃中<span class="gi">→</span>拳
+                                        跳跃中<span class="gi">→</span>脚
+                                    跳跃着地时<span class="gi">↓</span>拳
+                                    跳跃着地时<span class="gi">↓</span>脚
+                                          趴下中拳
+                                          趴下中脚
+                                          奔跑中拳
+                                          奔跑中脚
+<span class="gr">◇</span>                                  敌人在背后时拳
+<span class="gr">◇</span>                                  敌人在背后时脚
+<span class="gr">◇</span>                                敌人在背后时<span class="gi">↓</span>拳
+<span class="gr">◇</span>                                敌人在背后时<span class="gi">↓</span>脚
+<span class="gr">◆</span>                                  敌人倒地中<span class="gi">↓</span>拳
+<span class="gr">◆</span>                                  敌人倒地中<span class="gi">↓</span>脚
+<span class="gr">△</span>                                          拳＋脚
+<span class="gr">▽</span>                                        <span class="gi">↓</span>拳＋脚
+<span class="gr">▼</span>                            在敌人的背后时拳＋脚
+<span class="gr">○</span>                                        <span class="gi">↓↘→</span>拳
+<span class="gr">○</span>                                        <span class="gi">↓↘→</span>脚
+<span class="gr">○</span>                                        <span class="gi">↓↙←</span>拳
+<span class="gr">◎</span>                                        <span class="gi">↓↙←</span>脚
+
+[兽化时追加攻击]
+                                                <span class="gi">Ｂ</span>
+                                              <span class="gi">→Ｂ</span>
+                                              <span class="gi">←Ｂ</span>
+                                              <span class="gi">↓Ｂ</span>
+                                              <span class="gi">↘Ｂ</span>
+                                              <span class="gi">↙Ｂ</span>
+                                              <span class="gi">↑Ｂ</span>
+                                            <span class="gi">→→Ｂ</span>
+                                          跳跃中<span class="gi">Ｂ</span>
+                                        跳跃中<span class="gi">→Ｂ</span>
+                                    跳跃着地时<span class="gi">↓Ｂ</span>
+                                          趴下中<span class="gi">Ｂ</span>
+                                          奔跑中<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                  敌人在背后时<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                敌人在背后时<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                                  敌人倒地中<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                          敌人倒地中<span class="gi">↑</span>拳or脚or<span class="gi">Ｂ</span>
+<span class="gr">△</span>                                          拳＋脚
+<span class="gr">○</span>                                        <span class="gi">↓↘→Ｂ</span>
+<span class="gr">○</span>                                        <span class="gi">↓↙←Ｂ</span>
+
+[人类时连携技]
+拳·拳
+拳·拳·<span class="gi">→</span>拳
+ 拳·拳·<span class="gi">→</span>脚
+<span class="gi">→</span>拳·拳
+<span class="gi">→</span>拳·拳·拳
+<span class="gi">→</span>拳·脚
+<span class="gi">←</span>拳·拳
+<span class="gi">↘</span>拳·拳
+<span class="gi">↘</span>拳·<span class="gi">↘</span>脚
+趴下中拳·拳
+脚·脚·脚
+脚·脚·<span class="gi">→</span>脚
+脚·脚·<span class="gi">→</span>脚·脚
+脚·脚·<span class="gi">→</span>脚·脚·脚
+脚·脚·<span class="gi">→</span>脚·<span class="gi">→</span>脚
+脚·脚·<span class="gi">→</span>脚·<span class="gi">→</span>脚·脚
+脚·脚·<span class="gi">→</span>脚·<span class="gi">↓</span>脚
+脚·脚·<span class="gi">→</span>脚·<span class="gi">↓</span>脚·脚
+脚·<span class="gi">←</span>拳
+脚·<span class="gi">←</span>拳·拳
+<span class="gi">→</span>脚·脚
+<span class="gi">→</span>脚·脚·脚
+<span class="gi">→</span>脚·<span class="gi">→</span>脚
+<span class="gi">→</span>脚·<span class="gi">→</span>脚·脚
+<span class="gi">→</span>脚·<span class="gi">↓</span>脚
+<span class="gi">→</span>脚·<span class="gi">↓</span>脚·脚
+<span class="gi">↓↘→</span>拳·攻击时脚
+<span class="gi">↓↘→</span>拳·攻击时<span class="gi">↓</span>脚
+
+[兽化时追加连携技]
+<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">→Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">→Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">↘Ｂ</span>·<span class="gi">↓↘→Ｂ</span>
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">→</span>脚
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">→</span>脚·脚
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">→</span>脚·脚·脚
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">→</span>脚·<span class="gi">→</span>脚
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">→</span>脚·<span class="gi">→</span>脚·脚
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">→</span>脚·<span class="gi">↓</span>脚
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">→</span>脚·<span class="gi">↓</span>脚·脚
+脚·<span class="gi">←</span>拳·拳·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+拳·拳·<span class="gi">↓Ｂ</span>
+<span class="gi">↘</span>拳·<span class="gi">→Ｂ</span>
+<span class="gi">↘</span>拳·<span class="gi">→Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">↘</span>拳·<span class="gi">→Ｂ</span>·<span class="gi">↓Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="mitsuko">
+<h2>ＭＩＴＳＵＫＯ<a class="headerlink" href="#mitsuko" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span><span class="gi">ＭＩＴＳＵＫＯ</span>
+─────────────────────────
+[人类时基本技]
+  母崩                                           拳
+  地狱突                                       <span class="gi">→</span>拳
+                                               <span class="gi">←</span>拳
+                                               <span class="gi">↓</span>拳
+                                               <span class="gi">↘</span>拳
+  烈火倒                                       <span class="gi">↙</span>拳
+                                               <span class="gi">↑</span>拳
+  胁腹爆弹拳                                 <span class="gi">→→</span>拳
+  颜面蹴                                         脚
+  玉碎膝                                       <span class="gi">→</span>脚
+                                               <span class="gi">←</span>脚
+                                               <span class="gi">↓</span>脚
+  折胫踢                                       <span class="gi">↘</span>脚
+  断切剪                                       <span class="gi">↙</span>脚
+                                               <span class="gi">↑</span>脚
+  超强击蹴                                   <span class="gi">→→</span>脚
+  小石拳                                   跳跃中拳
+  大根蹴                                   跳跃中脚
+  爆击碎                                 跳跃中<span class="gi">→</span>拳
+  大炮蹴                                 跳跃中<span class="gi">→</span>脚
+  袭下拳骨                           跳跃着地时<span class="gi">↓</span>拳
+  伪下蹴                             跳跃着地时<span class="gi">↓</span>脚
+                                           趴下中拳
+  打上拳                                   趴下中脚
+  气合击                                   奔跑中拳
+  骨折飞弹                                 奔跑中脚
+<span class="gr">◇</span>里击                               敌人在背后时拳
+<span class="gr">◇</span>爆尻爆弹                           敌人在背后时脚
+<span class="gr">◇</span>足止首拳                         敌人在背后时<span class="gi">↓</span>拳
+<span class="gr">◇</span>转踢                             敌人在背后时<span class="gi">↓</span>脚
+<span class="gr">◆</span>目觉                               敌人倒地中<span class="gi">↓</span>拳
+<span class="gr">◆</span>踏击                               敌人倒地中<span class="gi">↓</span>脚
+<span class="gr">△</span>岩石固                                     拳＋脚
+<span class="gr">▽</span>强力爆弹                                 <span class="gi">↓</span>拳＋脚
+<span class="gr">▼</span>引落                         在敌人的背后时拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→</span>拳
+<span class="gr">○</span>剪刀投                                   <span class="gi">↓↘→</span>脚
+<span class="gr">◎</span>母掴                                     <span class="gi">↓↙←</span>拳
+<span class="gr">○</span>地球割                                   <span class="gi">↓↙←</span>脚
+
+[兽化时追加基本技]
+  头戳                                           <span class="gi">Ｂ</span>
+  头转袭                                       <span class="gi">→Ｂ</span>
+  突击头                                       <span class="gi">←Ｂ</span>
+  火箭固                                       <span class="gi">↓Ｂ</span>
+  炸裂头                                       <span class="gi">↘Ｂ</span>
+  足下崩                                       <span class="gi">↙Ｂ</span>
+  飞行头突                                     <span class="gi">↑Ｂ</span>
+  瞬杀固                                     <span class="gi">→→Ｂ</span>
+  野猪踢                                   跳跃中<span class="gi">Ｂ</span>
+  猛烈踢                                 跳跃中<span class="gi">→Ｂ</span>
+  突然滑走固                         跳跃着地时<span class="gi">↓Ｂ</span>
+  滑走固                                   趴下中<span class="gi">Ｂ</span>
+  爆突狮头                                 奔跑中<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                   敌人在背后时<span class="gi">Ｂ</span>
+<span class="gr">◇</span>足下刈                           敌人在背后时<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                           敌人倒地中<span class="gi">↑</span>拳or脚or<span class="gi">Ｂ</span>
+<span class="gr">△</span>骨碎机                                     拳＋脚
+<span class="gr">○</span>猪突猛进                                 <span class="gi">↓↘→Ｂ</span>
+<span class="gr">○</span>突击用意                                 <span class="gi">↓↙←Ｂ</span>
+
+[人类时连携技]
+激斩连发           拳·拳
+横尻击             拳·拳·脚
+足剪               拳·拳·<span class="gi">↓</span>脚
+母裁               拳·拳·拳
+颜打               拳·脚
+                   拳·脚·拳
+地狱蹴             <span class="gi">→</span>拳·脚
+地狱之玉溃         <span class="gi">→</span>拳·<span class="gi">→</span>脚
+地狱落             <span class="gi">→</span>拳·<span class="gi">→</span>脚·脚
+地狱下蹴           <span class="gi">→</span>拳·<span class="gi">→</span>脚·<span class="gi">↓</span>脚
+惊扑               拳·脚·<span class="gi">↓</span>拳·<span class="gi">↓</span>脚
+                   <span class="gi">↙</span>拳·拳
+                   <span class="gi">→</span>脚·脚
+顺下蹴             <span class="gi">→</span>脚·<span class="gi">↓</span>脚
+胫骨踢             <span class="gi">↘</span>脚·<span class="gi">↘</span>脚
+弁庆泣             <span class="gi">↘</span>脚·<span class="gi">↘</span>脚·<span class="gi">↘</span>脚
+胫骨喧哗           <span class="gi">↘</span>脚·<span class="gi">↘</span>脚·脚
+
+[兽化时追加连携技]
+头戳２发           <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+                   <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+足下激崩           <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+足下火箭崩         <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">Ｂ</span>
+足下崩             <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>
+奈落之头锤         <span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↑Ｂ</span>
+足下火箭固         <span class="gi">↙Ｂ</span>·<span class="gi">Ｂ</span>
+足下极上           <span class="gi">↙Ｂ</span>·<span class="gi">↓Ｂ</span>
+足下上奈落         <span class="gi">↙Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↑Ｂ</span>
+头戳击             拳·拳·<span class="gi">Ｂ</span>
+手头２击           拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+                   拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+2足下崩溃          拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+特别火箭           拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">Ｂ</span>
+特别奈落           拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>
+光子力杀           拳·拳·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↓Ｂ</span>·<span class="gi">↑Ｂ</span>
+地狱固             <span class="gi">→</span>拳·<span class="gi">↑Ｂ</span>
+猪突爆进           <span class="gi">↓↙←Ｂ</span>×10
+突贯击             <span class="gi">↓↙←Ｂ</span>·<span class="gi">→Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="greg">
+<h2>ＧＲＥＧ<a class="headerlink" href="#greg" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span><span class="gi">ＧＲＥＧ</span>
+─────────────────────────
+[人类时基本技]
+                                                 拳
+                                               <span class="gi">→</span>拳
+                                               <span class="gi">←</span>拳
+                                               <span class="gi">↓</span>拳
+                                               <span class="gi">↘</span>拳
+                                               <span class="gi">↙</span>拳
+                                               <span class="gi">↑</span>拳
+                                             <span class="gi">→→</span>拳
+                                                 脚
+                                               <span class="gi">→</span>脚
+                                               <span class="gi">←</span>脚
+                                               <span class="gi">↓</span>脚
+                                               <span class="gi">↘</span>脚
+                                               <span class="gi">↙</span>脚
+                                               <span class="gi">↑</span>脚
+                                             <span class="gi">→→</span>脚
+                                           跳跃中拳
+                                           跳跃中脚
+                                         跳跃中<span class="gi">→</span>拳
+                                         跳跃中<span class="gi">→</span>脚
+                                     跳跃着地时<span class="gi">↓</span>拳
+                                     跳跃着地时<span class="gi">↓</span>脚
+                                           趴下中拳
+                                           趴下中脚
+                                           奔跑中拳
+                                           奔跑中脚
+<span class="gr">◇</span>                                   敌人在背后时拳
+<span class="gr">◇</span>                                   敌人在背后时脚
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓</span>拳
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓</span>脚
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓</span>拳
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓</span>脚
+<span class="gr">△</span>                                           拳＋脚
+<span class="gr">▽</span>                                         <span class="gi">↓</span>拳＋脚
+<span class="gr">▼</span>                             在敌人的背后时拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→</span>拳
+<span class="gr">○</span>                                         <span class="gi">↓↘→</span>脚
+<span class="gr">○</span>                                         <span class="gi">↓↙←</span>拳
+<span class="gr">◎</span>                                         <span class="gi">↓↙←</span>脚
+
+[兽化时追加基本技]
+                                                 <span class="gi">Ｂ</span>
+                                               <span class="gi">→Ｂ</span>
+                                               <span class="gi">←Ｂ</span>
+                                               <span class="gi">↓Ｂ</span>
+                                               <span class="gi">↘Ｂ</span>
+                                               <span class="gi">↙Ｂ</span>
+                                               <span class="gi">↑Ｂ</span>
+                                               <span class="gi">↖Ｂ</span>
+                                             <span class="gi">→→Ｂ</span>
+                                           跳跃中<span class="gi">Ｂ</span>
+                                         跳跃中<span class="gi">→Ｂ</span>
+                                     跳跃着地时<span class="gi">↓Ｂ</span>
+                                           趴下中<span class="gi">Ｂ</span>
+                                           奔跑中<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                   敌人在背后时<span class="gi">Ｂ</span>
+<span class="gr">◇</span>                                 敌人在背后时<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                                   敌人倒地中<span class="gi">↓Ｂ</span>
+<span class="gr">◆</span>                           敌人倒地中<span class="gi">↑</span>拳or脚or<span class="gi">Ｂ</span>
+<span class="gr">△</span>                                           拳＋脚
+<span class="gr">○</span>                                         <span class="gi">↓↘→Ｂ</span>
+<span class="gr">○</span>                                         <span class="gi">↓↙←Ｂ</span>
+
+[人类时连携技]
+拳·拳
+拳·拳·拳
+拳·拳·<span class="gi">→</span>拳
+拳·拳·<span class="gi">↓</span>拳
+拳·脚
+拳·脚·<span class="gi">↓↙←</span>脚
+<span class="gi">↑</span>or<span class="gi">↖</span>or<span class="gi">↗</span>拳·拳
+<span class="gi">↑</span>or<span class="gi">↖</span>or<span class="gi">↗</span>拳·<span class="gi">↓</span>拳
+<span class="gi">←</span>拳·<span class="gi">↓</span>拳
+<span class="gi">←</span>拳·<span class="gi">→</span>脚
+<span class="gi">↘</span>拳·拳
+<span class="gi">↘</span>拳·拳·拳
+<span class="gi">↓</span>拳·<span class="gi">↓</span>脚·拳
+<span class="gi">↓</span>拳·<span class="gi">↓</span>脚
+<span class="gi">↓</span>拳·<span class="gi">↓</span>脚·<span class="gi">↓</span>脚
+<span class="gi">↙</span>拳·<span class="gi">↓↘→</span>脚
+<span class="gi">→→</span>拳·拳
+<span class="gi">→→</span>拳·<span class="gi">↓</span>脚
+<span class="gi">↓↙←</span>拳·<span class="gi">←</span>拳
+<span class="gi">↓↙←</span>拳·(<span class="gi">←</span>拳·×2)
+<span class="gi">↓↙←</span>拳·(<span class="gi">←</span>拳·×3)
+<span class="gi">↓↙←</span>拳·(<span class="gi">←</span>拳·×4)
+<span class="gi">↓↙←</span>拳·(<span class="gi">←</span>拳·×5)
+<span class="gi">↓↙←</span>拳·脚
+<span class="gi">←</span>脚·脚
+
+[兽化时追加连携技]
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·拳
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·拳
+<span class="gi">Ｂ</span>·<span class="gi">→Ｂ</span>
+<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">←Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">←Ｂ</span>·<span class="gi">Ｂ</span>·拳
+<span class="gi">←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓</span>拳
+<span class="gi">←Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·拳
+<span class="gi">↖Ｂ</span>·<span class="gi">↓</span>拳
+<span class="gi">↓↘→Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">↓↘→Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">↓↘→Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">↓↘→Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">↓↘→Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+拳·<span class="gi">↓Ｂ</span>
+拳·<span class="gi">↓Ｂ</span>·<span class="gi">↓↘→</span>拳
+<span class="gi">→</span>脚·<span class="gi">→Ｂ</span>
+<span class="gi">→</span>脚·<span class="gi">↓Ｂ</span>
+<span class="gi">←</span>脚·脚·<span class="gi">Ｂ</span>
+<span class="gi">←</span>脚·脚·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">←</span>脚·脚·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gi">←</span>脚·脚·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">←</span>脚·脚·<span class="gi">Ｂ</span>·拳
+<span class="gi">←</span>脚·脚·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">↓Ｂ</span>
+<span class="gi">←</span>脚·脚·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·拳
+<span class="gi">↓↙←</span>拳·<span class="gi">Ｂ</span>
+<span class="gi">→Ｂ</span>·<span class="gi">↓↙←Ｂ</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="bdrdown.html" tppabs="http://jjsnake.mogu-go.com/games/bdrdown.html" title="Previous document">bdrdown 破境怒潮 (C) G.Rev 2003</a>
+        </li>
+        <li>
+          <a href="bestbest.html" tppabs="http://jjsnake.mogu-go.com/games/bestbest.html" title="Next document">bestbest 强中至强 (C) Suna 1994</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="http://jjsnake.mogu-go.com/index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">beastrzr 兽化格斗 (C) Eighting/Raizing 1997</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 指令符号说明 ]</a></li>
+<li><a class="reference internal" href="#yugo">ＹＵＧＯ</a></li>
+<li><a class="reference internal" href="#alice">ＡＬＩＣＥ</a></li>
+<li><a class="reference internal" href="#fox">ＦＯＸ</a></li>
+<li><a class="reference internal" href="#bakuryu">ＢＡＫＵＲＹＵ</a></li>
+<li><a class="reference internal" href="#long">ＬＯＮＧ</a></li>
+<li><a class="reference internal" href="#gado">ＧＡＤＯ</a></li>
+<li><a class="reference internal" href="#mitsuko">ＭＩＴＳＵＫＯ</a></li>
+<li><a class="reference internal" href="#greg">ＧＲＥＧ</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="http://jjsnake.mogu-go.com/search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, gdicnng.
+      
+      |
+      Powered by <a href="javascript:if(confirm('http://sphinx-doc.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://sphinx-doc.org/'" tppabs="http://sphinx-doc.org/">Sphinx 6.1.3</a>
+      &amp; <a href="javascript:if(confirm('https://github.com/bitprophet/alabaster  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://github.com/bitprophet/alabaster'" tppabs="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
