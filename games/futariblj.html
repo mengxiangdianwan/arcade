@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>futariblj 虫姬II 黑标 (C) Cave 2007</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="http://jjsnake.mogu-go.com/_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="http://jjsnake.mogu-go.com/_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="http://jjsnake.mogu-go.com/_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="http://jjsnake.mogu-go.com/_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="http://jjsnake.mogu-go.com/_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="http://jjsnake.mogu-go.com/_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="futariblk 虫姬II 黑标 (C) Cave 2007" href="futariblk.html" />
+    <link rel="prev" title="futaribl 虫姬II 黑标 (C) Cave 2007" href="futaribl.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="http://jjsnake.mogu-go.com/_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="futaribl.html" tppabs="http://jjsnake.mogu-go.com/games/futaribl.html" title="Previous document">futaribl 虫姬II 黑标 (C) Cave 2007</a>
+        </li>
+        <li>
+          <a href="futariblk.html" tppabs="http://jjsnake.mogu-go.com/games/futariblk.html" title="Next document">futariblk 虫姬II 黑标 (C) Cave 2007</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="futariblj-ii-c-cave-2007">
+<h1>futariblj 虫姬II 黑标 (C) Cave 2007<a class="headerlink" href="#futariblj-ii-c-cave-2007" title="此标题的永久链接">¶</a></h1>
+<p>虫姬II 黑标 (C) Cave 2007</p>
+<p>$info=futaribl,futariblj,futariblk</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+─────────────────────────
+<span class="gi">①</span>方向控制
+  <span class="gi">↖↑↗</span>
+  <span class="gi">←Ｎ→</span>
+  <span class="gi">↙↓↘</span>
+
+<span class="gi">②</span>按键
+  <span class="gi">Ａ</span>：射击    
+  <span class="gi">Ｂ</span>：保险   
+  <span class="gi">Ｃ</span>：自动连射    
+
+连打<span class="gi">Ａ</span>的作用等于按住<span class="gi">Ｃ</span>。
+按住<span class="gi">Ａ</span>变激光，威力大，判定点会闪光，但移动速度降低
+不按<span class="gi">Ａ</span>时，会自动吸取一定范围内屏幕上的宝石；
+按<span class="gi">Ａ</span>时，会自动吸取地面上的所有宝石。
+</pre></div>
+</div>
+</section>
+<section id="original">
+<h2>[ Original模式 ]<a class="headerlink" href="#original" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Original模式 ]
+─────────────────────────
+弹速快，密度小。
+
+分数：
+由总倍率数和关卡倍率数共同决定，两者搭配关系不详。
+
+总倍率数：
+屏幕左上方个头大的数字。只要得到宝石就会增加，
+且没有上限。这个数字会从绿色变为蓝色。
+当他的百位是0-4之间时是绿色，当百位是5-9时是蓝色。
+每次死亡，数字都会减少1/3。放保险时，数字也会减少
+
+关卡倍率数：
+屏幕左上方个头小的数字。每关开始时，这个数字都会
+清零，上限为9999。每次死亡，数字都会减少1/3。
+放保险时，数字也会减少。
+
+宝石：
+要得到金色大宝石，必须在总倍率数在绿色时使用连射；
+总倍率数在蓝色时按住<span class="gi">Ａ</span>。
+以下为不同宝石的倍率数增加值
+空中的宝石        增加值
+大宝石             2
+小宝石             1
+绿色光晕大宝石     4
+绿色光晕小宝石     2
+
+地面的宝石        增加值
+大宝石             10
+小宝石             5
+绿色光晕大宝石     20
+绿色光晕小宝石     10
+
+绿色光晕宝石：
+敌人死亡时靠的越近，得到的绿色光晕宝石越多。
+他们在打出后只会存在1-2秒，就会变成金色宝石。
+
+难度提升：
+随着总倍率数的上升，子弹速度也会逐渐提升。
+当总倍率数达到7W时，难度达到最高。
+</pre></div>
+</div>
+</section>
+<section id="maniac">
+<h2>[ Maniac模式 ]<a class="headerlink" href="#maniac" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Maniac模式 ]
+─────────────────────────
+弹速中等，密度大。
+
+分数：
+分数建立在一个倍率数基础上，即总倍率数。
+只有当连击槽为零时按住<span class="gi">Ａ</span>杀死敌人才会触发这个数字。
+这种方式下杀死的敌人得到的都是蓝色光晕宝石。
+总倍率数x吃到的蓝色光晕宝石的分值，成为玩家的宝石
+分数。
+
+总倍率数：
+屏幕左上方的数字，即总倍率数，上限9999，每关开始后
+会清零。金色和绿色光晕宝石会增加这个数字，蓝色光晕
+宝石会减少这个数字。
+每次死亡，数字都会减少1/3。放保险时，数字也会减少。
+
+连击槽：
+用连射攻击敌人就会增加连击槽。当按住<span class="gi">Ａ</span>时，连击槽会
+迅速归零。当连击槽红色时，用激光杀死敌人能得到双倍
+数量宝石。当连击槽空的时候，用激光杀死敌人会打出蓝
+色光晕宝石。
+
+宝石：
+击杀敌人，敌人自身和他的子弹都会变成宝石。为得到金
+色大宝石，必须在连击槽红色时，用连射杀死敌人；
+当连击槽红色时，用激光杀死敌人能得到双倍数量宝石；
+当连击槽空的时候，用激光杀死敌人会打出蓝色光晕宝石
+
+宝石类型           分值
+大宝石             10
+小宝石             5
+绿色光晕大宝石     10x总倍率数
+绿色光晕小宝石     5x总倍率数
+
+宝石类型           总倍率数增加值
+大宝石             5
+小宝石             2
+地面上的大宝石     20        
+地面上的小宝石     10
+蓝色光晕大宝石    -30
+蓝色光晕小宝石    -15
+
+绿色光晕宝石：当连击槽红色时击杀敌人，并且吸收宝石
+时不能按住<span class="gi">Ａ</span>。该宝石维持1-2秒后会变成金色宝石。
+
+蓝色光晕宝石：连击槽空时使用激光杀死敌人可。
+每个蓝色光晕小宝石的分数为总倍率数x5，大宝石为总倍
+率数x10。吸收后，他们就会从总倍率数中减去对应宝石
+增加值。当总倍率数达到最高的9999时，从单个大蓝色
+光晕宝石中得到的最高分数会变为99990分。
+</pre></div>
+</div>
+</section>
+<section id="god">
+<h2>[ God模式 ]<a class="headerlink" href="#god" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ God模式 ]
+─────────────────────────
+弹速中等，密度大。
+
+分数系统和Original模式基本相同，以下为不同点：
+总倍率数每2000会在绿色蓝色间变换。
+关卡倍率数上限超过9999。
+当总倍率数增加时，子弹速度不会变化。
+</pre></div>
+</div>
+</section>
+<section id="up">
+<h2>[ 1-UP ]<a class="headerlink" href="#up" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 1-UP ]
+─────────────────────────
+关卡5：小BOSS战后，中央有个大圆形图案
+(有个红色的大型敌人自下而上向这个圆形图案移动)
+的画面的左侧那栋房子。
+</pre></div>
+</div>
+</section>
+<section id="boss">
+<h2>[ 真BOSS条件 ]<a class="headerlink" href="#boss" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 真BOSS条件 ]
+─────────────────────────
+GOD模式，一币通。
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 版本区别 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 版本区别 ]
+─────────────────────────
+同1.5版比较
+
+-背景颜色改动。例如第3关更暗。
+-宝石颜色变暗。
+-每一关都在敌人类型、位置、子弹方式上有巨大不同。
+-每个模式的子弹更多，比1.5版速度更快。
+-BOSS的子弹提速，大多数BOSS更难打，尤其是Maniac模式。
+-火力类型不再可选，取而代之是每个角色更强的火力。
+-GOD模式替换Ultra模式。
+-添加GOD模式新终极BOSS“Spiritual Larsa”。
+ 一命通GOD模式可见。
+-Original模式中放保险会减少6000倍率数，
+ 比1.5版减少更多。
+-关底分数计算公式为100Wx生命数x保险数。
+ 比如通关时有2条命3个保险，则积分为600W(100x2x3)。
+ 因此，如果关底保险为零，则分数也会为零。
+-奖命分数不同。
+
+-基本操作和1.5版一致。
+
+分数系统：
+ORGINAL模式
+近距离杀死敌人得到更多宝石。
+大型敌人死之前会放小宝石。
+当关卡倍率数达到9999时，关卡倍率数开始闪烁。
+此时，摧毁中型和大型敌人会得到大宝石。
+Rank提升时，弹速更快。倍率数越高，弹速越快。
+
+MANIAC模式
+连击槽变红时，使用连射，倍率数增加迅速。
+距离目标越远，倍率数增加的越慢。
+倍率数会继承至下一关。
+在其它方面和1.5版一样。
+
+GOD模式
+倍率数上限30000
+倍率数会继承至下一关。
+倍率数达到9999以上时会闪光，
+此时如果用连射会快速增加倍率数。
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="futaribl.html" tppabs="http://jjsnake.mogu-go.com/games/futaribl.html" title="Previous document">futaribl 虫姬II 黑标 (C) Cave 2007</a>
+        </li>
+        <li>
+          <a href="futariblk.html" tppabs="http://jjsnake.mogu-go.com/games/futariblk.html" title="Next document">futariblk 虫姬II 黑标 (C) Cave 2007</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="http://jjsnake.mogu-go.com/index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">futariblj 虫姬II 黑标 (C) Cave 2007</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#original">[ Original模式 ]</a></li>
+<li><a class="reference internal" href="#maniac">[ Maniac模式 ]</a></li>
+<li><a class="reference internal" href="#god">[ God模式 ]</a></li>
+<li><a class="reference internal" href="#up">[ 1-UP ]</a></li>
+<li><a class="reference internal" href="#boss">[ 真BOSS条件 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 版本区别 ]</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="http://jjsnake.mogu-go.com/search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, gdicnng.
+      
+      |
+      Powered by <a href="javascript:if(confirm('http://sphinx-doc.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://sphinx-doc.org/'" tppabs="http://sphinx-doc.org/">Sphinx 6.1.3</a>
+      &amp; <a href="javascript:if(confirm('https://github.com/bitprophet/alabaster  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://github.com/bitprophet/alabaster'" tppabs="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
