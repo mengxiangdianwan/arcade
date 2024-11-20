@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>ddpsdoj 怒首领蜂-最大往生 完 (C) Cave 2012</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="http://jjsnake.mogu-go.com/_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="http://jjsnake.mogu-go.com/_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="http://jjsnake.mogu-go.com/_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="http://jjsnake.mogu-go.com/_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="http://jjsnake.mogu-go.com/_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="http://jjsnake.mogu-go.com/_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="ddr2m 劲舞革命 2nd Mix (C) Konami 1999" href="ddr2m.html" />
+    <link rel="prev" title="ddpdojt 怒首领蜂-大往生 魂 (C) IGS 2010" href="ddpdojt.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="http://jjsnake.mogu-go.com/_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="ddpdojt.html" tppabs="http://jjsnake.mogu-go.com/games/ddpdojt.html" title="Previous document">ddpdojt 怒首领蜂-大往生 魂 (C) IGS 2010</a>
+        </li>
+        <li>
+          <a href="ddr2m.html" tppabs="http://jjsnake.mogu-go.com/games/ddr2m.html" title="Next document">ddr2m 劲舞革命 2nd Mix (C) Konami 1999</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="ddpsdoj-c-cave-2012">
+<h1>ddpsdoj 怒首领蜂-最大往生 完 (C) Cave 2012<a class="headerlink" href="#ddpsdoj-c-cave-2012" title="此标题的永久链接">¶</a></h1>
+<p>怒首领蜂-最大往生 完 (C) Cave 2012</p>
+<p>$info=ddpsdoj</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+───────────────────────
+<span class="gi">①</span>操纵杆
+  <span class="gi">↖↑↗</span>
+  <span class="gi">←Ｎ→</span>
+  <span class="gi">↙↓↘</span>
+
+<span class="gi">②</span>按钮
+  <span class="gi">Ａ</span>：射击(连打为散射；按住为激光)
+  <span class="gi">Ｂ</span>：爆弹/启动HYPER(当HYPER为1或更多时)
+  <span class="gi">Ｃ</span>：散射(按住不放是连射)
+
+<span class="gr">■</span>角色
+<span class="gr">○</span>Type-A朱理
+火力特性：前方集中型
+移动速度：最快
+机体特征：速度快就是最大的武器，火力也是最强，
+但是攻击范围非常狭小。本作中整体优势最大的机体
+，本机体适合于新手等诸多人群。
+
+<span class="gr">○</span>Type-B光
+火力特性：可变型
+移动速度：中等
+机体特征：技巧型机体。火力、速度、攻击范围都有
+一定平衡。可以配合左右键来改变连射攻击方向。
+操作较有难度。
+
+<span class="gr">○</span>Type-C真璃亚
+火力特性：广范围型
+移动速度：慢
+机体特征：清兵一流，但无法持续锁定单机且高血量
+的中、大型敌人是其最大的弱点，需用激光弥补低攻
+击能力。
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 道具简介 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 道具简介 ]
+───────────────────────
+<span class="gr">○</span>星道具
+主要有三个作用：
+1．增加连击数
+2．增加连击槽(GP槽)
+3．增加HYPER槽(主要是大星星)
+
+<span class="gr">○</span>1UP
+关卡４，不放爆弹击毁中BOSS
+
+<span class="gr">○</span><span class="gi">Ｂ</span>
+爆弹量+１。
+如果爆弹全满时吃到，爆弹槽会变成MAXIMUM字样，
+此时携带的爆弹数量不会增加，但是自机在保持
+MAXIMUM状态的时候会有额外的分数加成(较少)。
+
+<span class="gr">○</span>蜂道具
+每关共７个蜂道具，位于每个关卡的特定位置，初
+始处于隐藏状态，使用激光头(不是激光持续打击，
+需要激光的最上端碰到)打出变成实体，然后才能够
+吃掉。
+效果：
+1、获得一定分数。每关蜂道具全部收集完成，且自
+机从吃到第一个蜂道具至最后一个蜂道具之间没有死
+命时，最后一个蜂道具的分数*2，且获得分数的数字
+变大。
+2、Hyper槽的增长。每关蜂道具全部收集完成，且自
+机从吃到第一个蜂道具至最后一个蜂道具之间没有死
+命时，最后一个蜂道具直接增加一整槽Hyper。
+3、真Boss出现的条件之一
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>[ 系统简介 ]<a class="headerlink" href="#id3" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 系统简介 ]
+───────────────────────
+<span class="gr">■</span>变装系统
+选择完机体，就进入服装选择界面。
+注意，选择战斗服和私服时“敌人强度不变”，但在
+选择泳装时敌人强度大幅提升。
+
+选择服装时，<span class="gi">←→</span>选择服装、<span class="gi">↓↑</span>选择是否开启自动
+放爆弹。
+关闭自动时，每次死命后炸弹拥有量会增加。
+开启自动时，接触或被敌人击中时会自动发射一枚爆
+弹。死命不会增加。
+
+<span class="gr">○</span>战斗服(散射强化)
+机体会搭载四台子机一同出击，借此提升射击武器的
+火力以及攻击范围，对付数量庞大的小型敌机颇具功
+效，但在此状态下使用激光时，移动速度会变得相当
+地慢，连带影响了激光的贯通能力而容易让累积的连
+击断掉。另外选择此服装出击时，最初可持有３颗炸
+弹，而能够持有的最大炸弹数则为６颗是所有服装中
+最多的。
+
+<span class="gr">○</span>私服(激光强化)
+强化激光武器的攻击范围、贯通力以及破坏力，在对
+付中、大型敌机或BOSS机体时就能展现出其优势，此
+外攻击范围变大之后也能够一次给予数台敌机伤害，
+然而由于射击武器的攻击范围变窄，面对一次出现数
+名遍布在画面中的敌机时会难以应付，因此最好是稍
+微记忆一下敌机的配置与出现地点。选择此服装出击
+时，最初可持有２颗炸弹，而能够持有的最大炸弹数
+则为４颗。
+
+<span class="gr">○</span>泳装(EX强化)
+同时强化散射与激光武器，结合上述两套服装的优点
+能够发挥最理想的火力来迅速歼灭所有敌机，然而选
+择此服装后同时也会进入困难模式，不仅玩家所持有
+与可携带的炸弹数皆减到最少(可持有１颗，最多可
+携带２颗)，敌人的攻击频率与子弹数量也会激增，
+让通关也跟着变得困难起来，适合熟练老手玩家来挑
+战。
+
+
+<span class="gr">■</span>连击系统
+连击数主要决定了玩家当前击破的敌机的击破分数，
+连击数越高，击破当前敌机获得的击破分也越高。
+(注：此击破分并非指的是玩家击破敌机最终所获得
+的得分)，此击破分数会累积到玩家的累积分上面。
+
+<span class="gr">○</span>连击数增长的条件
+1.击破敌机
+2.使用激光持续打击敌人
+3.获得星道具
+
+<span class="gr">○</span>连击数减少的条件
+  连击数大约减少1/3，打分需要尽量避免
+1.在非hyper条件下连击槽归0
+2.主动BOMB发动
+
+<span class="gr">○</span>断连的条件
+  连击数归0，重新开始累计，对打分是极大损失
+1.在hyper条件下连击槽归0
+2.自动BOMB发动
+3.自机死亡
+
+<span class="gr">○</span>累积分
+累积分就是HYPER槽上方那个＋数字。
+值同玩家击破敌人后获得的分数直接相关，累积分值
+越高，玩家击破敌人后获得的分数也越高。累积分的
+变化情况同连击数的变化基本一致，一般随连击数的
+增加而增加，随连击数减少而减少，连击数归0时累
+积分也归0。
+
+你所击破的当前敌人的分数同你从当前时间点至上一
+次未断连的时间点之间所击破的有敌人的击破分数总
+和相关。
+
+<span class="gr">○</span>累积分值与hyper
+当发动hyper的时候，根据自机所携带的hyper等级，
+累积分值会有一个倍率的加成，此时收获的分数更多
+，hyper等级对累积分的影响如下所示。
+
+hyper等级:累积分提高倍率
+  Level 1: 1.1x
+  Level 2: 1.2x
+  Level 3: 1.3x
+  Level 4: 1.4x
+  Level 5: 1.5x
+  Level 6: 2.2x
+  Level 7: 2.4x
+  Level 8: 2.6x
+  Level 9: 2.8x
+ Level 10: 3.0x
+
+<span class="gr">○</span>连击槽
+画面最上方角落的竖条是GP槽，俗称连击槽。
+GP是GET POINT的缩写。
+连击槽直接决定了连击数能否维持，本作中这个槽不
+只是有这一个作用，还同星星获得的数量相关。
+
+连击槽减少条件：随着时间按照一定的速率下降，这
+是唯一使得连击槽减少的可能。
+
+连击槽增加的条件
+1.击破敌机。激光击破比散枪击破连击槽增加的少。
+2.开hyper。连击槽瞬间全满，而且长度加倍。
+3.吃到蜂道具。
+4.吃到星星。
+
+※如果使用激光持续打击敌人，连击槽会持续维持在
+一个较低的位置，不会变成空。
+
+※连击槽的新作用：
+连击槽从下到上分为三段：
+较细的一段，较粗的一段，最上方小梯形段。
+当连击槽位于不同位置的时候，自机击破敌机的时候
+获得的星道具是不同的。
+
+击毁敌兵  连击槽细段  连击槽粗段  最上方段
+杂兵          无         小星       小星
+中性机        无         大星(少)   大星(多)
+
+激光火力下，自动吸取全屏星道具；
+散射火力下，星道具自由落体。
+
+
+<span class="gr">■</span>HYPER系统
+HYPER槽满时，即会得到一个hyper。<span class="gi">Ｂ</span>可发动Hyper
+，开启hyper后主要表现为自机攻击力提升，连击数
+获得增加，敌弹速增加。
+
+发动后自机周围出现一个不断减少的圈环。圆环消失
+的时候，退出HYPER状态。HYPER发动状态中，按<span class="gi">Ｂ</span>可
+直接退出HYPER状态。
+
+※关卡１BOSS守雀左右两端有两个部件，如果击破部
+件的话会获得Hyper。在部件未旋转的情况下击破获
+得一个Hyper，旋转情况下击破获得两个Hyper。
+
+<span class="gr">○</span>Hyper槽增加条件
+1.激光持续打击敌人：Hyper槽缓慢增加。
+2.吃到星道具：获得Hyper槽的最主要方式。
+  小星星获得的较少，大星星获得的要多很多。
+3.吃到蜂道具：Hyper槽会增加一小段。
+  自机从吃到第一个蜂道具至最后一个蜂道具期间，
+  蜂道具没有遗漏，且自机无死命，那么吃到最后一
+  个蜂道具时，增加一整个Hyper槽。
+4.自机死命：增加一段Hyper槽。
+
+<span class="gr">○</span>HYPER等级
+当hyper槽满的时候，自机会获得一个hyper，自机尾
+部将增加一个hyper的小盒子。当已经有一个hyper的
+时候，小盒子内的数字会加１，最大值是１０。
+
+本作hyper主要分为两段：
+１-５级：
+弱Hyper，Hyper发动时屏幕上所有的子弹变为小星星
+，自机激光以及散枪小幅强化。
+６-１０级：
+强Hyper，Hyper发动时屏幕上所有的子弹变为大星星
+，自机攻击大幅强化。
+
+※６级的hyper是一个分水岭，攻击相比５级有大幅
+提升，其余情况下Hyper高等级相比低等级威力均只
+有小幅强化。
+
+<span class="gr">○</span>RANK
+位于屏幕上方中心的数字，当玩家发动Hyper时数字
+会增加，发动一次Hyper后的增加数同自身的Hyper等
+级相关，具体数值如下：
+Hyper level １-２ 　　+１
+Hyper level ３-４ 　　+２
+Hyper level ５-６ 　　+３
+Hyper level ７-８     +４
+Hyper level ９-１０   +５
+
+Hyper Rank增加造成的影响：主要表现为敌机弹速会
+随着Hyper Rank的提高而提高，Boss以及道中敌兵的
+硬度并没有明显增加。
+
+Hyper Rank减少的条件：
+1.主动BOMB，减少２。
+2.自动BOMB，减少１。
+3.自机死命，减少３。
+</pre></div>
+</div>
+</section>
+<section id="boss">
+<h2>[ 各关BOSS ]<a class="headerlink" href="#boss" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 各关BOSS ]
+─────────────────────
+关卡     中BOSS         BOSS   隐藏BOSS
+<span class="gr">○</span>１      飞扫          守雀
+<span class="gr">○</span>２      雷扫          辟虎
+<span class="gr">○</span>３    IGS-彩音-       源武
+<span class="gr">○</span>４      震颚          晴龙
+<span class="gr">○</span>５ 飞扫、雷扫、灾光   幸龙   阳蜂/阴蜂
+
+<span class="gr">□</span>关卡５中BOSS
+关卡５从第一个中Boss出现的时候开始，至直线
+前进的道中结束的时候。如果自机能够以很快的
+速度击破中BOSS的话，中BOSS将会源源不断的出
+现，同种中BOSS再次出现的时候攻击模式都会加
+强。从现在的状况来看最多能见到5个中BOSS。
+
+<span class="gr">■</span>阳蜂条件
+<span class="gi">①</span>至少三关吃满蜜蜂
+<span class="gi">②</span>游戏开始到BOSS幸龙击毁前不死命
+
+<span class="gr">■</span>阴蜂条件
+<span class="gi">①</span>五关都吃满蜜蜂
+<span class="gi">②</span>游戏开始到BOSS幸龙击毁前不死命不放爆弹
+<span class="gi">③</span>Rank在30以上，最大连击数20000以上
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>[ 人物简介 ]<a class="headerlink" href="#id4" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 人物简介 ]
+─────────────────────
+<span class="gr">■</span>朱理
+CV：田村ゆかり
+具有压倒性的火力，极具攻击性。常抱着“攻击
+就是最好的防御”的想法。喜欢野蛮而强气的武
+装风格。性格上有些自我意识过剩，即便是自己
+的Master，如果实力不过关的话则会不愿服从。
+是一个很有攻击性的Model。
+她很尊重过去一场场战争的记忆。对于坚持到战
+斗最后，被置于死地而复生这样的事情，她具有
+非常强的信心。
+【喜欢的东西】历史，遵循传统的事物
+【讨厌的东西】新潮
+
+<span class="gr">■</span>光
+CV：喜多村英梨
+对事物不会擅自做出决断，而是向Master征求意
+见。这一点给人的感觉似乎是没有自信，因而会
+让人对其性能感到不放心。但这是为了表达“对
+Master的意见表示尊重”的态度。相比之下比较
+新的Model。
+也拥有过去战斗的记忆，但经验告诉她，Master
+的意见要放在第一位来考虑。有的时候也会因为
+一些意见分歧而不知所措。
+【喜欢的东西】狗，武士
+【讨厌的东西】猫，优柔寡断
+
+<span class="gr">■</span>真璃亚
+CV：能登麻美子
+稳重冷静，本着“忠诚于自己的主人”的概念而
+开发的Model。
+对事物判断和分析的时候几乎冷静得过了头，是
+最为标准的Model。虽然也掌握着过去战斗的记
+忆，但她会综合当时的状况以及Master的想法来
+考虑，而后做出判断，进行支援。
+她的存在证明了“普通的才是优秀的”这理论。
+【喜欢的东西】欣赏河流和波浪的风景
+【讨厌的东西】干花（脱水干燥后的花）
+
+<span class="gr">■</span>阳蜂
+CV：悠木碧
+据说是对人很友善，无论何时都带着甜美微笑，
+性格很开朗。
+经常会尽自己的全力来为对方做事。对任何事情
+都非常努力，散发着一种任何人都会不知不觉喜
+欢上的气场。
+她是过去在Element Doll·Electronics里进行
+的实验和研究中被制造出来的究极元素人偶。
+“把人类思考在第一位，尽可能地帮助人类”是
+他们制造的理念。
+但是，她却陷入了“把人变成非人的存在”这样
+的谬论中，因而导致实验中断，自己也被冻结。
+【喜欢的东西】
+人类、生物、植物，尤其是花
+【讨厌的东西】
+不健康的事物、毒
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="ddpdojt.html" tppabs="http://jjsnake.mogu-go.com/games/ddpdojt.html" title="Previous document">ddpdojt 怒首领蜂-大往生 魂 (C) IGS 2010</a>
+        </li>
+        <li>
+          <a href="ddr2m.html" tppabs="http://jjsnake.mogu-go.com/games/ddr2m.html" title="Next document">ddr2m 劲舞革命 2nd Mix (C) Konami 1999</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="http://jjsnake.mogu-go.com/index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">ddpsdoj 怒首领蜂-最大往生 完 (C) Cave 2012</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 道具简介 ]</a></li>
+<li><a class="reference internal" href="#id3">[ 系统简介 ]</a></li>
+<li><a class="reference internal" href="#boss">[ 各关BOSS ]</a></li>
+<li><a class="reference internal" href="#id4">[ 人物简介 ]</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="http://jjsnake.mogu-go.com/search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, gdicnng.
+      
+      |
+      Powered by <a href="javascript:if(confirm('http://sphinx-doc.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://sphinx-doc.org/'" tppabs="http://sphinx-doc.org/">Sphinx 6.1.3</a>
+      &amp; <a href="javascript:if(confirm('https://github.com/bitprophet/alabaster  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://github.com/bitprophet/alabaster'" tppabs="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
