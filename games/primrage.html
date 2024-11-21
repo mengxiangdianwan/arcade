@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>primrage 恐龙格斗 (C) Atari 1994</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="../_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="progear 逆转之岚 (C) Capcom 2001" href="progear.html" />
+    <link rel="prev" title="primrag2 恐龙格斗2 (C) Atari 1996" href="primrag2.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="primrag2.html" tppabs="../games/primrag2.html" title="Previous document">primrag2 恐龙格斗2 (C) Atari 1996</a>
+        </li>
+        <li>
+          <a href="progear.html" tppabs="../games/progear.html" title="Next document">progear 逆转之岚 (C) Capcom 2001</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="primrage-c-atari-1994">
+<h1>primrage 恐龙格斗 (C) Atari 1994<a class="headerlink" href="#primrage-c-atari-1994" title="此标题的永久链接">¶</a></h1>
+<p>恐龙格斗 (C) Atari 1994</p>
+<p>抖音《梦想电玩》粉丝专属街机秘籍  抖音橱窗、直播间均可下单    街机游戏名称代码：primrage</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+───────────────────────
+  <span class="gi">↖↑↗</span>  后跳/垂直跳跃/前跳
+  <span class="gi">←Ｎ→</span>  后退&amp;站立防御/回中/前进
+  <span class="gi">↙↓↘</span>  下蹲&amp;下蹲防御/下蹲/下蹲
+
+  大跳：快速<span class="gi">↙</span>or<span class="gi">↓</span>or<span class="gi">↘</span>＋<span class="gi">↖</span>or<span class="gi">↑</span>or<span class="gi">↗</span>
+
+  <span class="gi">Ａ</span>：轻拳  <span class="gi">Ｂ</span>：中拳  <span class="gi">ＡＢ</span>：重拳
+  <span class="gi">Ｃ</span>：轻脚  <span class="gi">Ｄ</span>：中脚  <span class="gi">ＣＤ</span>：重脚
+
+<span class="gr">○</span>防御槽
+  体力槽下方的黄色槽，被击中时会减少
+  槽为空时会进入昏迷状态，此时不可使用任何指令
+  昏迷时被敌人攻击会恢复行动，
+  或者<span class="gi">←→</span>摇动摇杆可增加防御槽，当槽满时也会
+  恢复行动。
+
+<span class="gr">○</span>吃信徒
+  打出连击或对手昏迷时，人类信徒会上场
+  吃掉信徒可恢复体力
+
+<span class="gr">○</span>终结技
+  每个决胜局，对手空血昏迷，画面出现
+  TOTAL DOMINATION时使用
+  中近距离使用、出招不用太快但必须连贯
+
+<span class="gr">○</span>死亡对决
+  决胜局平局告终时会进入３０秒
+  &quot;SUDDEN DEATH&quot;加时赛
+  &quot;SUDDEN DEATH&quot;中双方体力会不断减少
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 指令符号说明 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 指令符号说明 ]
+───────────────────────
+<span class="gr">○</span>：近距离用（投技）
+<span class="gr">◎</span>：必杀技
+<span class="gr">△</span>：吃人类信徒（体力恢复）
+<span class="gr">☆</span>：终结技（K.O.后敌人空血站立昏迷时输入）
+()：()表示括号中的按键要按住不放
+</pre></div>
+</div>
+</section>
+<section id="sauron">
+<h2>[ Sauron 暴龙 ]<a class="headerlink" href="#sauron" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Sauron 暴龙 ]
+───────────────────────
+<span class="gr">○</span>空中暴落                      空中近敌时<span class="gi">ＢＤ</span>
+<span class="gr">○</span>龙咬投                      近敌时(<span class="gi">ＢＤ</span>)<span class="gi">→←</span>
+<span class="gr">◎</span>冲天顶                            (<span class="gi">ＡＤ</span>)<span class="gi">↓↑</span>
+<span class="gr">◎</span>暴龙捕猎                        (<span class="gi">ＢＣ</span>)<span class="gi">↓↑↓</span>
+<span class="gr">◎</span>地震踏(空中可)                  (<span class="gi">ＡＢＤ</span>)<span class="gi">↑↓</span>
+<span class="gr">◎</span>狂龙吼                            (<span class="gi">ＡＣ</span>)<span class="gi">↓↑</span>
+<span class="gr">◎</span>超声波                            (<span class="gi">ＡＣ</span>)<span class="gi">←→</span>
+
+<span class="gr">△</span>吃信徒                      (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↓↓↑</span>
+<span class="gr">☆</span>颈部放血                (<span class="gi">ＡＢＣＤ</span>)<span class="gi">←→←→←</span>
+<span class="gr">☆</span>血肉吞食          (<span class="gi">ＡＣ</span>)<span class="gi">↓↓</span>·(<span class="gi">ＡＢＣＤ</span>)<span class="gi">↑↑</span>
+<span class="gr">☆</span>尸骨粉碎(2.3版限定)     (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↑↓↑↓↓</span>
+</pre></div>
+</div>
+</section>
+<section id="talon">
+<h2>[ Talon 迅猛龙 ]<a class="headerlink" href="#talon" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Talon 迅猛龙 ]
+───────────────────────
+<span class="gr">◎</span>头部破坏                    近敌时(<span class="gi">ＢＤ</span>)<span class="gi">↓→</span>
+<span class="gr">◎</span>头部践踏                        (<span class="gi">ＢＣ</span>)<span class="gi">←↑→</span>
+<span class="gr">◎</span>狂暴连爪                        (<span class="gi">ＡＣＤ</span>)<span class="gi">↓→</span>
+<span class="gr">◎</span>颈部咬杀         攻击对手至少1次后(<span class="gi">ＢＤ</span>)<span class="gi">←→</span>
+<span class="gr">◎</span>连爪突袭                        (<span class="gi">ＢＣ</span>)<span class="gi">→↓↘</span>
+<span class="gr">◎</span>高速移动·前                        (<span class="gi">ＡＣ</span>)<span class="gi">→</span>
+<span class="gr">◎</span>高速移动·后                        (<span class="gi">ＡＣ</span>)<span class="gi">←</span>
+<span class="gr">◎</span>暴风之爪                按住(<span class="gi">ＡＤ</span>)不放·<span class="gi">↓→</span>
+
+<span class="gr">△</span>吃信徒                      (<span class="gi">ＡＢＣＤ</span>)<span class="gi">→↓←</span>
+<span class="gr">☆</span>腥风血雨                    (<span class="gi">ＡＤ</span>)<span class="gi">→↓←↑→</span>
+<span class="gr">☆</span>吞食心脏                  (<span class="gi">ＡＣＤ</span>)<span class="gi">→↓←↑↓</span>
+<span class="gr">☆</span>夺命军团(2.3版限定)       (<span class="gi">ＡＢＣＤ</span>)<span class="gi">→←↑↓</span>
+</pre></div>
+</div>
+</section>
+<section id="vertigo">
+<h2>[ Vertigo 鞍龙 ]<a class="headerlink" href="#vertigo" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Vertigo 鞍龙 ]
+───────────────────────
+<span class="gr">◎</span>尾部牵引                          (<span class="gi">ＡＣ</span>)<span class="gi">←←</span>
+<span class="gr">◎</span>蝎式尾刺                          (<span class="gi">ＢＣ</span>)<span class="gi">→→</span>
+<span class="gr">◎</span>毒液(慢)                          (<span class="gi">ＡＣ</span>)<span class="gi">→→</span>
+<span class="gr">◎</span>毒液(快)                          (<span class="gi">ＢＤ</span>)<span class="gi">→→</span>
+<span class="gr">◎</span>魅惑之音(令对手昏迷)              (<span class="gi">ＢＣ</span>)<span class="gi">←←</span>
+<span class="gr">◎</span>地面传送(2.3版限定)               (<span class="gi">ＢＤ</span>)<span class="gi">↓↓</span>
+<span class="gr">◎</span>空中传送(可连续、2.3版限定)       (<span class="gi">ＢＤ</span>)<span class="gi">↓↑</span>
+
+<span class="gr">△</span>吃信徒                      (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↓→↑</span>
+<span class="gr">☆</span>石化术          (<span class="gi">ＢＤ</span>)<span class="gi">←←←</span>·(<span class="gi">ＡＢＣＤ</span>)<span class="gi">→→</span>
+<span class="gr">☆</span>缩小术          (<span class="gi">ＢＤ</span>)<span class="gi">←←←</span>·(<span class="gi">ＡＢＣＤ</span>)<span class="gi">↓↑</span>
+<span class="gr">☆</span>奶牛术(2.3版限定)       (<span class="gi">ＡＢＣＤ</span>)<span class="gi">←←←↓→</span>
+</pre></div>
+</div>
+</section>
+<section id="blizzard">
+<h2>[ Blizzard 雪山野人 ]<a class="headerlink" href="#blizzard" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Blizzard 雪山野人 ]
+───────────────────────
+<span class="gr">○</span>扪面连击                      (<span class="gi">ＡＤ</span>)<span class="gi">→↓←↑</span>
+├<span class="gr">○</span>掌掴                      扪面连击中连打<span class="gi">Ａ</span>
+└<span class="gr">○</span>击飞                  扪面连击中<span class="gi">Ｂ</span>or<span class="gi">Ｃ</span>or<span class="gi">Ｄ</span>
+<span class="gr">○</span>野蛮扣杀                近敌时(<span class="gi">ＢＣ</span>)<span class="gi">→↓←↑</span>
+<span class="gr">○</span>高空扣杀                      空中近敌时<span class="gi">ＢＣ</span>
+<span class="gr">◎</span>寒冰吐息                        (<span class="gi">ＡＢＤ</span>)<span class="gi">←→</span>
+<span class="gr">◎</span>寒冰喷泉                        (<span class="gi">ＡＢＤ</span>)<span class="gi">↓↑</span>
+<span class="gr">◎</span>冲击拳·近                        (<span class="gi">ＡＣ</span>)<span class="gi">←→</span>
+<span class="gr">◎</span>冲击拳·远                        (<span class="gi">ＢＤ</span>)<span class="gi">←→</span>
+<span class="gr">◎</span>冲击拳·中                    +(<span class="gi">ＡＢＣＤ</span>)<span class="gi">←→</span>
+<span class="gr">◎</span>闪避(可躲避所有攻击)              (<span class="gi">ＡＣ</span>)<span class="gi">↓↑</span>
+
+<span class="gr">△</span>吃信徒                    (<span class="gi">ＡＢＣＤ</span>)<span class="gi">←↑→↓</span>
+<span class="gr">☆</span>暴力锤杀                  (<span class="gi">ＡＢＤ</span>)<span class="gi">↓↓←↑→</span>
+<span class="gr">☆</span>致命连击                (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↓↓↓↓↑</span>
+<span class="gr">☆</span>亡魂超度(2.3版限定)     (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↓→↑↓↑</span>
+</pre></div>
+</div>
+</section>
+<section id="diablo">
+<h2>[ Diablo 异特龙 ]<a class="headerlink" href="#diablo" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Diablo 异特龙 ]
+───────────────────────
+<span class="gr">◎</span>跳踩(PS版限定)                  (<span class="gi">ＡＤ</span>)<span class="gi">↑→↓</span>
+<span class="gr">◎</span>火球(快)                          (<span class="gi">ＡＣ</span>)<span class="gi">↓→</span>
+<span class="gr">◎</span>火球(慢)                          (<span class="gi">ＢＤ</span>)<span class="gi">↓→</span>
+<span class="gr">◎</span>火焰移动                          (<span class="gi">ＢＣＤ</span>)<span class="gi">↑</span>
+<span class="gr">◎</span>头槌冲击                        (<span class="gi">ＡＤ</span>)<span class="gi">←↓→</span>
+<span class="gr">◎</span>火焰吐息(可按住<span class="gi">ＡＣ</span>不放延长时间)  (<span class="gi">ＡＣ</span>)<span class="gi">↑→</span>
+<span class="gr">◎</span>灼热火焰                        (<span class="gi">ＢＤ</span>)<span class="gi">←→↓</span>
+
+<span class="gr">△</span>吃信徒                      (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↓↑↓</span>
+<span class="gr">☆</span>焚尸业火                    (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↖↓→</span>
+<span class="gr">☆</span>爆裂火焰                  (<span class="gi">ＢＣＤ</span>)<span class="gi">→→→→→</span>
+<span class="gr">☆</span>遁入地狱(2.3版限定)       (<span class="gi">ＡＣＤ</span>)<span class="gi">↑↓↑↓↓</span>
+</pre></div>
+</div>
+</section>
+<section id="armadon">
+<h2>[ Armadon 开角龙 ]<a class="headerlink" href="#armadon" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Armadon 开角龙 ]
+───────────────────────
+<span class="gr">○</span>角投                      近敌时(<span class="gi">ＡＢＣ</span>)<span class="gi">→←</span>
+<span class="gr">◎</span>飞刺                              (<span class="gi">ＢＤ</span>)<span class="gi">←↑</span>
+<span class="gr">◎</span>冲天顶                        (<span class="gi">ＡＢＣ</span>)<span class="gi">↘→↗</span>
+<span class="gr">◎</span>飞身压                          (<span class="gi">ＢＣ</span>)<span class="gi">←↑→</span>
+<span class="gr">◎</span>急冲顶                          (<span class="gi">ＡＣ</span>)<span class="gi">←↓→</span>
+<span class="gr">◎</span>死亡螺旋                        (<span class="gi">ＡＤ</span>)<span class="gi">←→↓</span>
+<span class="gr">◎</span>背甲刺(可按住<span class="gi">ＢＣ</span>不放延长时间)    (<span class="gi">ＢＣ</span>)<span class="gi">↓↑</span>
+
+<span class="gr">△</span>吃信徒                      (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↑→↓</span>
+<span class="gr">☆</span>吞食内脏                  (<span class="gi">ＡＢＣ</span>)<span class="gi">↓↓↓↓↑</span>
+<span class="gr">☆</span>毁灭电击                (<span class="gi">ＡＢＣＤ</span>)<span class="gi">→↓←→→</span>
+<span class="gr">☆</span>针雨刺杀(2.3版限定)       (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↓←↑↓</span>
+</pre></div>
+</div>
+</section>
+<section id="chaos">
+<h2>[ Chaos 巨猿 ]<a class="headerlink" href="#chaos" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ Chaos 巨猿 ]
+───────────────────────
+<span class="gr">○</span>后抛摔                      近敌时(<span class="gi">ＢＤ</span>)<span class="gi">→←</span>
+<span class="gr">◎</span>大地震动(空中可)                (<span class="gi">ＢＣ</span>)<span class="gi">←↖↓</span>
+<span class="gr">◎</span>高空贯落                        (<span class="gi">ＢＤ</span>)<span class="gi">→↗↓</span>
+<span class="gr">◎</span>野蛮冲撞                          (<span class="gi">ＡＣ</span>)<span class="gi">→→</span>
+<span class="gr">◎</span>瓦斯排放(令对手昏迷)          (<span class="gi">ＢＣ</span>)<span class="gi">↓→↑←</span>
+<span class="gr">◎</span>酸液(快)                          (<span class="gi">ＡＤ</span>)<span class="gi">↑→</span>
+<span class="gr">◎</span>酸液(慢)                          (<span class="gi">ＢＣ</span>)<span class="gi">↑→</span>
+
+<span class="gr">△</span>吃信徒                    (<span class="gi">ＡＢＣＤ</span>)<span class="gi">→↓←↑</span>
+<span class="gr">☆</span>猿人跳水                  (<span class="gi">ＡＢＣＤ</span>)<span class="gi">↙↑→↙</span>
+            (有水的场景才可跳水，否则只有音乐)
+<span class="gr">☆</span>酸液排泄      (<span class="gi">ＡＣ</span>)<span class="gi">↓↓</span>·(<span class="gi">ＡＢＣＤ</span>)<span class="gi">←→←→</span>
+<span class="gr">☆</span>呼吸吐纳(2.3版限定)   (<span class="gi">ＡＢＣＤ</span>)<span class="gi">→→→←←←</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>[ 隐藏要素 ]<a class="headerlink" href="#id3" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 隐藏要素 ]
+───────────────────────
+<span class="gr">○</span>选择角色颜色
+  角色选择界面，<span class="gi">Ａ</span>、<span class="gi">Ａ</span>＋<span class="gi">Ｂ</span>、<span class="gi">Ａ</span>＋<span class="gi">Ｃ</span>、<span class="gi">Ａ</span>＋<span class="gi">Ｄ</span>
+  选定角色各对应一种颜色
+
+<span class="gr">○</span>保龄球 
+  ２<span class="gi">Ｐ</span>玩家加入时，双方都选用Armadon。
+  双方都发动死亡旋转(<span class="gi">ＡＤ</span>)<span class="gi">←→↓</span>，
+  一次技能连续碰撞３次就会触发保龄球游戏。
+
+<span class="gr">○</span>牛跳水
+  都市废墟场景，使用CHAOS对战
+  战斗剩余２时，发动毒屁(<span class="gi">ＢＣ</span>)<span class="gi">↓→↑←</span>
+  就能让背景的牛一个个跳水。
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>[ 背景故事 ]<a class="headerlink" href="#id4" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 背景故事 ]
+───────────────────────
+[ 故事背景 ]
+一颗陨石的坠落摧毁了地球；现代科技不复存在，
+文明已完全变成废墟，而人类已经倒退为石器时
+代居民的部落。
+在这个被辐射损坏的新世界，原始地被称为&quot;Urth&quot;，
+原始雨林已覆盖了大陆以及许多新物种已进化出来。
+
+[<span class="gi">Ｕ</span>ｒｔｈ]
+Urth是游戏故事发生的地方。
+这世界是由一颗流星撞击以前的地球并重新划分了
+其大陆板块的结果。
+这世界有七个已知的大陆：
+海湾、加沙地带、空洞、陵墓、悬崖、遗迹、
+熔岩地区
+
+从他们的行列中脱颖而出的七个生物为控制新世界
+而发起战争；他们在谁希望维持[Urth]的和平，
+以及谁企图为自己的利益让世界陷入进一步混乱之间
+难以抉择。
+这些生物有超凡的或超自然的能力且每一位据说都
+代表了一种不同方面的自然属性，如生和死，火与冰
+；他们在各自的领域被奉为神。他们是四位美德之神
+和三位邪恶破坏之神。
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2>[ 角色设定 ]<a class="headerlink" href="#id5" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 角色设定 ]
+───────────────────────
+[ Armadon 阿曼多 生命之神 ]
+象征属性：生命 冥想 心灵感应 雷霆
+隶属：美德兽
+物种：开角龙
+体长：27英尺
+身高：17英尺
+体重：2.25吨
+愤怒系数：+121%
+消耗率：每天570磅
+领域：空洞
+
+微妙和脆弱的生态平衡的守护者，阿曼多，一只23岁
+的三角龙般的野兽，是来自摆脱地下洞穴生存限制的
+最后一只恐龙兽。
+与[Urth]的生命之力和能量流动相连，阿曼多必须拯
+救这个星球，对抗像恐惧这样想要最终控制世界的恐
+龙兽。讽刺的是，野兽之间狂暴的争夺权力的战争，
+已造成了他们正在争夺统治的这个星球上一个几乎不
+可逆转的最终生态失衡。无法忍受这些巨神对星球的
+破坏，阿曼多的使命是结束这争夺霸权和引起巨大灾
+害的战争。
+
+【通版结局】
+一百万年以来，阿曼多都在他的地底洞穴过着和平安
+稳的生活，通过心灵感应与众生相连。而大灾难和争
+霸这不断变化的星球的战争折磨着他。于是他出来彻
+底解决所有问题。
+
+如今，这种威胁已经过去，他在地底安定下来享受一
+些他理所应得的休息。大地已是伤痕累累，但平静，
+至少现在如此……
+
+
+[ Blizzard 暴雪 美好和道德之神 ]
+象征属性：善良 高贵 智慧 冰
+隶属：美德兽
+物种：雪山野人
+体长：不适用
+身高：20英尺
+体重：1.8吨
+愤怒系数：+153%
+消耗率：每天715磅
+领域：悬崖
+
+为了使生命继续顺其自然地发展，一个微妙的平衡必
+须坚守。这就是在大气中的暴雪，一只10岁的人猿，
+已经为之坚守了百万年。当他从原始的沉睡中醒来时
+，被他所见到的大规模破坏给激怒了，暴雪已开始着
+手进行一个严酷的执行任务。作为自然演化的守护者
+，作为美德兽的首领，暴雪为恢复[Urth]的生态平衡
+而战斗。就算这意味着在此过程中要摧毁每一只恐龙
+兽。
+
+【通版结局】
+暴雪是一位高贵的神，动物之灵的本质。在喜马拉雅
+山一个巨大冰川的心脏地带冻结了数千年，当[Urth]
+遭遇了巨大流星时，暴雪被释放了出来。他居住在高
+山上，只在受到威胁时才会下来，并以他的巨兽之力
+和古老的智慧，他是不可阻挡的。
+
+不在余下任何的威胁，他回到了他的山区隐居。
+尽管总有一天，一股新势力将会越过无尽的海洋入侵
+他的土地……
+
+
+[  Talon 禽爪 生存之神 ]
+象征属性：生存 保护 和谐 空气
+隶属：美德兽
+物种：迅猛龙
+体长：30英尺
+身高：16英尺
+体重：0.9吨
+愤怒系数：+109.77%
+消耗率：每天408磅
+领域：加沙地带
+
+当要守护他的迅猛龙家族时，禽爪会是他最凶猛的状
+态。在灾变之前，禽爪的家园曾是平静和谐的，但现
+在禽爪和他的追随者们被强行推入了一个权力斗争的
+陌生生活，在部落与恐龙兽之间战斗着。通过击败他
+的敌人，禽爪，一只35岁的迅猛龙，只是为了可能在
+[Urth]找到他的新家园。
+
+【通版结局】
+亿万年来，禽爪曾是一个隐蔽的南太平洋岛国的迅猛
+龙家族的伟大首领。当巨大流星撞击重新排列了各个
+大陆后，禽爪的海岛被带到了与内陆相连的地方。为
+了保障妻小的安全，他动身去消除一切家族安宁的危
+险。
+
+现在迅猛龙们过着奢侈的生活，而人类被当作牛或迅
+猛龙们在阳光下休息时捕猎运动的猎物，他的家族完
+全地安全，而在新来者到来前禽爪都会很高兴……
+
+
+[ Chaos 混沌 衰败之神 ]
+象征属性：衰败 力量 进化 大地
+隶属：破坏兽
+物种：巨猿
+体长：不适用
+身高：17英尺
+体重：1.1吨
+愤怒系数：+181.4%
+消耗率：每天634磅
+领域：遗迹
+
+在他寻求控制和统治世界时，混沌已变成自己最可怕
+的梦魇。在灾变之后，他成为了一个想要掌控新世界
+[Urth]的叛变科学家。但当他进行了一个发生了可怕
+错误的遗传实验后，他主宰人类进化过程的渴望被证
+明是失败的。取而代之，他被变成了一只丑陋恶心的
+野兽。混沌祈求释放并且现在必须为挽回他的名誉而
+战。
+
+【通版结局】
+混沌曾是第一大陆最强大的巫医。他最大的愿望是控
+制人类的进化。在他寻求力量时，他施放了一个强大
+的咒语，事与愿违并将他变成了一只恶心的野兽，不
+得不永远自甘堕落。在大灾变时，混沌向腐尸死神
+Throshti祈求释放。但是，要挽回他的名誉，他必须
+击败所有敌人。
+
+现在，他的任务已经完成了，他重获了他的人生并带
+领他的部落走向强大。总有一天，虽然，他的人民会
+再次受到威胁，而他将不得不再次寻求力量……
+
+(Throshti)
+[Throshti]腐尸死神索思提被认为是一位残酷但是公
+平的神。他给人类仅有一次的机会来证明自己，如果
+他们失败了，他们的灵魂之后则会坠入地狱。当混沌
+向他祈祷时，索思提告诉混沌如果他杀掉其他的
+[Urth]统治者，他将恢复混沌昔日的荣誉。但如果混
+吨注定要死，索思提则不会再给混沌机会并将他的灵
+魂永远打入地狱。
+
+
+[ Diablo 恐惧 邪恶和毁灭之神 ]
+象征属性：邪恶 毁灭 折磨 火
+隶属：破坏兽
+物种：异特龙
+体长：29英尺
+身高：17英尺
+体重：1.2吨
+愤怒系数：+155.9%
+消耗率：每天525磅
+领域：熔岩地区
+
+如今的恐惧，首要的敌手以及破坏兽的首领，从
+[Urth]深处的炽热监狱被释放出来，他企图将世界变
+成熊熊的火海地狱。为了寻求他邪恶统治[Urth]的梦
+想，他以给予其敌人巨大的疼痛和痛苦为乐。他的追
+随者和敌人都认为恐惧是邪恶的化身。歼灭其他所有
+的恐龙兽对恐惧继续他对[Urth]的恐怖统治和可怕梦
+想是至关重要的。
+
+【通版结局】
+恐惧是其最纯粹形式上的邪恶。他从他的炽热监狱中
+释放出来，[Urth]的最深处，由大灾变引起的痛苦和
+折磨所形成。现在，他已经征服了这个星球，他的生
+活就是折磨它。没有留下任何反抗者，他开始燃烧整
+个星球。仅仅留下残酷和邪恶，他把世界变成了一个
+活生生的地狱。
+
+几个世纪以来，他将陶醉在他所创造的地狱里，直到
+最终他的统治将受到来自越过大海的旅行者的挑战。
+
+
+[ Vertigo 眩晕 疯狂女神 ]
+象征属性：疯狂 秘学 巫术 月亮
+隶属：破坏兽
+物种：鞍龙
+体长：48英尺
+身高：18英尺
+体重：1.3吨
+愤怒系数：+120.37%
+消耗率：每天587磅
+领域：陵墓
+
+所有的疯狂支配着眩晕的每一个行为。通过她的精神
+控制催眠能力和未知能力的精通，她在其追随者之间
+已是神一样的地位。眩晕的追随者忠诚和完全热诚，
+狂热和盲目。她认为只有利用她的巫术和她的虔诚信
+徒的力量才能达到击败所有恐龙兽统治[Urth]的目的
+，如果她没有先毁掉他们的大脑。
+
+【通版结局】
+很久以前，一个名为眩晕的女巫从另一个空间出现。
+然后，在一场中生代的魔法大战中，眩晕被大法师
+[Balsafas]巴尔萨法斯放逐到了月球。流星碰撞，
+然而，削弱了古老的防护罩而足以使她返回并再次
+奴役地球。
+
+陶醉在她的胜利中，眩晕奴役了一大群人类，让他们
+在多重空间为她建造一座疯狂的宫殿。少数人可以承
+受精神折磨，但大部分人都崩溃了。有一天，当她在
+练习她的神秘法术时，她发现了一块她还未曾统治的
+大陆。
+
+(Balsafas 巴尔萨法斯)
+一位拥有强大力量，智慧和先见之明的大法师，巴尔
+萨法斯来自于与我们不同的另一个空间。数百万年前
+，在中生代大战中，他观察了我们的空间并预见到龙
+族的战争有朝一日可能会对银河系的其余地方造成一
+个威胁。跨越空间界限，他采取了行动进行干预。
+
+尽管拥有不可思议的力量，他也没有能力直接杀死一
+个神。但是，他仍然有了一个计划。在长年的魔法大
+战中，他对上了邪恶女巫眩晕，疯狂女神。通过魔法
+和法术反制战斗越发激烈，双方各有输赢得失，直到
+最后，战场由于两股强大力量的冲突伤痕累累，巴尔
+萨法斯击败了眩晕。
+
+这就是他的机会。巴尔萨法斯将眩晕放逐到了月球，
+并紧锣密鼓地进行了一个可结束战争的项目。他希望
+，直到永远。而力量的突然失衡致使大规模的灾难发
+生，最终导致了一场大爆炸，火山灰覆盖了整个地球
+，杀死了地球上的大部分生物。
+
+但巴尔萨法斯成功了 - 他投下的保险已经生效，而
+恐龙在地球上灭绝了。
+
+或者说，他起初以为 - 直到他看到一个可怕的幻像
+：他看到的是，有一天，在一场大灾变中，众神会
+被再次释放，而在永无休止的战斗中再次掀起他们
+的战争。
+
+在绝望中，现在才知道他的巨大努力是徒劳的，他
+祈祷他能获得和平。在此之后他便下落不明了，虽
+然已假设他已经在6500万年间的某个时候去世。
+
+
+[ Sauron 索隆 饥饿之神 ]
+象征属性：饥饿 口渴 永恒 水
+隶属：中立者
+物种：暴龙
+体长：27英尺
+身高：20英尺
+体重：2.5吨
+愤怒系数：+195%
+消耗率：无法满足的
+领域：海湾
+
+对于一些恐龙兽来说，不朽是要付出代价的。对于索
+隆，一只年轻的17岁暴龙，代价无非就是一个贪得无
+厌的胃口。从他首次出现在新世界[Urth]时，作为美
+德兽的一员，他吸引了众多信徒。[Urth]的所有地方
+都是索隆的战场，正如他不断地赢得一个个战斗的胜
+利，在他寻求统治的道路上！向原始巨神们发动战争
+是索隆的生存动力，因为他们的败北就是其明日的午
+餐。索隆是中立的，他是一个正面角色。
+
+【通版结局】
+索隆是饥饿之神。当灾变将他从长眠之中释放时，他
+很快意识到，他必须吞食人肉以维持不朽。大群饥饿
+的人类崇拜他，但生活在惧怕他的存在的恐惧之中。
+许多人不久便去寻求了星球上其他统治者的庇护。
+索隆别无选择，只好去击败其他统治者为了享用他们
+的追随者。
+
+现在，他已将这块大陆吞食殆尽，他开始寻求新的大
+陆，新的大餐……
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="primrag2.html" tppabs="../games/primrag2.html" title="Previous document">primrag2 恐龙格斗2 (C) Atari 1996</a>
+        </li>
+        <li>
+          <a href="progear.html" tppabs="../games/progear.html" title="Next document">progear 逆转之岚 (C) Capcom 2001</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="../index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">primrage 恐龙格斗 (C) Atari 1994</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 指令符号说明 ]</a></li>
+<li><a class="reference internal" href="#sauron">[ Sauron 暴龙 ]</a></li>
+<li><a class="reference internal" href="#talon">[ Talon 迅猛龙 ]</a></li>
+<li><a class="reference internal" href="#vertigo">[ Vertigo 鞍龙 ]</a></li>
+<li><a class="reference internal" href="#blizzard">[ Blizzard 雪山野人 ]</a></li>
+<li><a class="reference internal" href="#diablo">[ Diablo 异特龙 ]</a></li>
+<li><a class="reference internal" href="#armadon">[ Armadon 开角龙 ]</a></li>
+<li><a class="reference internal" href="#chaos">[ Chaos 巨猿 ]</a></li>
+<li><a class="reference internal" href="#id3">[ 隐藏要素 ]</a></li>
+<li><a class="reference internal" href="#id4">[ 背景故事 ]</a></li>
+<li><a class="reference internal" href="#id5">[ 角色设定 ]</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      抖音《梦想电玩》
+      
+      |
+      街机摇杆游戏机粉丝专属秘籍
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
