@@ -1,0 +1,904 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>doa 死或生 (C) Sega 1996</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="../_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="doa2 死或生2 (C) Tecmo 1999" href="doa2.html" />
+    <link rel="prev" title="dmnfrnt 魔域战线 (C) IGS 2002" href="dmnfrnt.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="dmnfrnt.html" tppabs="../games/dmnfrnt.html" title="Previous document">dmnfrnt 魔域战线 (C) IGS 2002</a>
+        </li>
+        <li>
+          <a href="doa2.html" tppabs="../games/doa2.html" title="Next document">doa2 死或生2 (C) Tecmo 1999</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="doa-c-sega-1996">
+<h1>doa 死或生 (C) Sega 1996<a class="headerlink" href="#doa-c-sega-1996" title="此标题的永久链接">¶</a></h1>
+<p>死或生 (C) Sega 1996</p>
+<p>枫枫的游戏机 粉丝专属街机游戏秘籍     街机游戏名称代码：doa</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+───────────────────────────────────────
+<span class="gi">①</span>操纵杆
+  <span class="gi">↖↑↗</span>  后跳/垂直跳跃/前跳
+  <span class="gi">←Ｎ→</span>  后退&amp;中段防御/回中/前进
+  <span class="gi">↙↓↘</span>  下蹲后退&amp;下段防御/下蹲/下蹲前进
+
+<span class="gi">②</span>按钮
+  <span class="gi">Ｈ</span>：抓投(当身抓投/主动抓投)
+  拳：拳
+  脚：脚
+
+  <span class="gi">→→</span>  ：突进
+  <span class="gi">←←</span>  ：疾退
+  <span class="gi">→</span>[<span class="gi">→</span>]：奔跑
+───────────────────────────────────────
+·技能相克关系
+  ·打击优先级高于投技
+  ·投技优先级高于抓投技 (共通投技：<span class="gi">Ｈ</span>＋拳)
+  ·抓投技能优先级高于打击技 (站立抓投：<span class="gi">Ｈ</span>  蹲抓投：<span class="gi">↓Ｈ</span>  主动抓投：<span class="gi">→Ｈ</span>)
+
+            ┌<span class="gi">→</span>[打击]─┐
+抓取胜过打击│          │打击胜过投
+            │          <span class="gi">↓</span>
+         [抓投]<span class="gi">←</span>───[投]
+              投胜过抓取
+───────────────────────────────────────
+·倒地回避
+  倒地时<span class="gi">Ｈ</span>＋拳＋脚 (２回以上输入则无效)
+
+·倒地时间缩短
+  倒地中输入方向or攻击键
+
+·倒地起身
+  不输入     ：原地站起
+  <span class="gi">↓</span>         ：原地下蹲
+  <span class="gi">Ｈ</span>·<span class="gi">Ｈ</span>...  ：横转起身(外侧)
+  <span class="gi">↑Ｈ</span>·<span class="gi">Ｈ</span>...：横转起身(内侧)
+  横转中<span class="gi">↓</span>   ：横转中下蹲
+  <span class="gi">←</span>         ：后转起身
+  <span class="gi">↙</span>         ：后转下蹲
+
+·倒地起身攻击(各种起身中输入)
+  脚  ：起身上踢腿(中段)
+  <span class="gi">↓</span>脚：起身下扫腿(下段)
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 指令符号说明 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 指令符号说明 ]
+───────────────────────────────────────
+ <span class="gi">→</span> ：方向瞬间按下
+[<span class="gi">→</span>]：方向长按
+
+<span class="gi">Ｊ</span>着  ：跳跃落地时
+敌蹲  ：敌人蹲下时
+敌背  ：敌人背后时
+敌蹲背：蹲下的敌人背后时
+
+(※1) ：被投的一方<span class="gi">Ｈ</span>＋拳    可投技解拆
+(※2) ：被投的一方<span class="gi">Ｈ</span>＋拳＋脚可投技解拆
+</pre></div>
+</div>
+</section>
+<section id="kasumi">
+<h2>霞 KASUMI<a class="headerlink" href="#kasumi" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>霞 KASUMI
+───────────────────────────────────────
+[基本打击技]        │[背对对手时的攻击]
+ 天刃    拳         │ 里天刃  拳
+ 雾刀    <span class="gi">↘</span>拳       │ 暗刀    <span class="gi">↓</span> 拳
+ 地刃    <span class="gi">↓</span>拳       │ 里地刃  [<span class="gi">↓</span>]拳
+ 闪天脚  脚         │ 里天脚  脚
+ 闪人脚  <span class="gi">↘</span>脚       │ 里人脚  <span class="gi">↓</span> 脚
+ 闪地脚  <span class="gi">↓</span>脚       │ 里地脚  [<span class="gi">↓</span>]脚
+                    │ 月影脚  <span class="gi">↑</span> 脚
+───────────────────────────────────────
+[跳跃攻击]
+ 前天弧空斩   前<span class="gi">Ｊ</span>中拳
+ 弧空斩       上<span class="gi">Ｊ</span>中拳
+ 前天旋空脚   前<span class="gi">Ｊ</span>中脚
+ 旋空脚       上<span class="gi">Ｊ</span>中脚
+ 前天地旋     前<span class="gi">Ｊ</span>着拳
+ 地旋         上<span class="gi">Ｊ</span>着拳
+ 后天地旋     后<span class="gi">Ｊ</span>着拳
+ 前天旋地脚   前<span class="gi">Ｊ</span>着脚
+ 旋地脚       上<span class="gi">Ｊ</span>着脚
+ 后天旋地脚   后<span class="gi">Ｊ</span>着脚
+───────────────────────────────────────
+[对地攻击]
+ 鹰爪脚    <span class="gi">↑</span>脚       │ 瓦碎   <span class="gi">↓</span>拳
+───────────────────────────────────────
+[投技] (近敌时)
+ 虹挂      <span class="gi">Ｈ</span>＋拳
+ 冥土御舆  <span class="gi">←</span>拳
+ 狼颚蹴    <span class="gi">↓↙←Ｈ</span>＋脚
+ 胧        <span class="gi">↘↘</span>拳＋脚
+ 华严圆舞  <span class="gi">↓↘→</span>拳
+ 里燕      敌蹲<span class="gi">→Ｈ</span>＋拳＋脚
+ 翼刈      敌背<span class="gi">Ｈ</span>＋拳
+───────────────────────────────────────
+[当身关节技]
+ 木灵·一式   敌拳时，我方<span class="gi">Ｈ</span>
+ 木灵·二式   敌脚时，我方<span class="gi">Ｈ</span>
+ 爪拂         敌拳时，我方<span class="gi">↓Ｈ</span>
+ 流刃         敌脚时，我方<span class="gi">↓Ｈ</span>
+───────────────────────────────────────
+[抓取关节技]
+ 霞返         <span class="gi">→Ｈ</span>or<span class="gi">Ｊ</span>着<span class="gi">Ｈ</span>
+ 飞燕         <span class="gi">→→Ｈ</span>＋脚
+ └飞燕逆落   飞燕后<span class="gi">←Ｈ</span>
+ 阳炎         <span class="gi">→→Ｈ</span>
+ └茨落       阳炎后<span class="gi">↓</span>脚
+ 梦诱         敌背<span class="gi">→Ｈ</span>or<span class="gi">→→Ｈ</span>
+ 里飞燕       敌背<span class="gi">→→Ｈ</span>＋脚
+───────────────────────────────────────
+[固有打击技]
+ 无影刀      <span class="gi">→→</span>拳
+ 迅枪脚      <span class="gi">↓↘→</span>脚
+ 飞燕升脚    <span class="gi">→→</span>拳＋脚
+ 烈风脚      <span class="gi">↘Ｈ</span>＋脚
+ 升斩斧      <span class="gi">↗</span>拳
+ 天袭脚      <span class="gi">↗</span>脚
+ 飞龙脚      <span class="gi">↑</span>脚
+ 月轮脚      <span class="gi">↖</span>脚
+ 浮天刃      <span class="gi">↑</span>拳
+ 避天刃      <span class="gi">←</span>拳
+ 白雾        <span class="gi">↘</span>拳·拳
+
+ 连天脚      脚·脚
+ 连地脚      脚·<span class="gi">↓</span>脚
+ 连人脚      脚·<span class="gi">↘</span>脚
+ 狼牙        <span class="gi">→→</span>脚
+ 旋          拳＋脚
+ 疾          <span class="gi">Ｈ</span>＋脚
+ 疾风脚      <span class="gi">Ｈ</span>＋脚·<span class="gi">Ｈ</span>＋脚
+ 影疾        <span class="gi">↓Ｈ</span>＋脚
+ 旋·霞蹴    <span class="gi">Ｈ</span>＋拳＋脚
+ 里影狩旋脚  <span class="gi">→←</span>脚
+
+·天刃系 (拳or<span class="gi">←</span>拳or<span class="gi">↑</span>拳or背后拳＝[拳]) 派生
+ 闪连袭      [拳]·脚
+ 二连突      [拳]·拳
+ 三连突      [拳]·拳·拳
+ 连·旋      [拳]·拳·拳·<span class="gi">→</span>拳
+ 连天袭      [拳]·拳·拳·<span class="gi">→</span>脚
+ 连地袭      [拳]·拳·拳·<span class="gi">↓</span>脚
+ 连月碎      [拳]·拳·<span class="gi">↖</span>脚
+ 连·疾      [拳]·拳·脚
+ 连·疾风脚  [拳]·拳·脚·脚
+───────────────────────────────────────
+[特殊行动]
+ 樱缠   <span class="gi">←→←Ｈ</span>＋拳＋脚
+ 里驱   <span class="gi">↖</span>拳
+───────────────────────────────────────
+ 国籍：日本
+ 性别：女  年龄：１７  生日：２月２３日  血型：<span class="gi">Ａ</span>型
+ 身高：１６４ｃｍ    体重：４８ｋｇ  ３围：<span class="gi">Ｂ</span>８８·<span class="gi">Ｗ</span>５２·<span class="gi">Ｈ</span>８９
+ 流派：雾幻天神流忍术
+ 职业：叛忍
+ 喜欢的东西：草莓千层糕
+ 爱好：占卜
+</pre></div>
+</div>
+</section>
+<section id="jann-lee">
+<h2>李剑 JANN LEE<a class="headerlink" href="#jann-lee" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>李剑 JANN LEE
+───────────────────────────────────────
+[基本打击技]   │[背对对手时的攻击]
+  拳           │ 拳
+ <span class="gi">↘</span>拳          │ <span class="gi">↓</span>拳
+ <span class="gi">↓</span>拳          │ [<span class="gi">↓</span>]拳
+ 脚            │ <span class="gi">↑</span>拳
+ <span class="gi">↘</span>脚          │ 脚
+ <span class="gi">↓</span>脚          │ <span class="gi">↓</span>脚
+               │ [<span class="gi">↓</span>]脚
+               │ 拳＋脚
+───────────────────────────────────────
+[跳跃攻击] 
+ 前<span class="gi">Ｊ</span>中拳      │前<span class="gi">Ｊ</span>着拳
+ 上<span class="gi">Ｊ</span>中拳      │上<span class="gi">Ｊ</span>着拳                              
+ 前<span class="gi">Ｊ</span>中脚      │后<span class="gi">Ｊ</span>着拳      
+ 上<span class="gi">Ｊ</span>中脚      │前<span class="gi">Ｊ</span>着脚
+               │上<span class="gi">Ｊ</span>着脚 
+               │后<span class="gi">Ｊ</span>着脚       
+───────────────────────────────────────
+[对地攻击]
+ 践踏 <span class="gi">↑</span>脚            │ <span class="gi">↓</span>拳
+                      │ <span class="gi">↘</span>脚
+───────────────────────────────────────
+[投技] (近敌时)
+            <span class="gi">Ｈ</span>＋拳    │ <span class="gi">←Ｈ</span>＋拳＋脚
+ 肩车投     <span class="gi">↓↙←</span>拳  │ 敌背<span class="gi">Ｈ</span>＋拳
+───────────────────────────────────────
+[当身关节技]          │[抓取关节技]
+ 敌拳时，我方<span class="gi">Ｈ</span>       │                <span class="gi">→Ｈ</span>or<span class="gi">Ｊ</span>着<span class="gi">Ｈ</span>
+ 敌脚时，我方<span class="gi">Ｈ</span>       │                <span class="gi">↓←→Ｈ</span>
+ 敌拳时，我方<span class="gi">↓Ｈ</span>     │                <span class="gi">←←Ｈ</span>
+ 敌脚时，我方<span class="gi">↓Ｈ</span>     │ 折槛打         敌背<span class="gi">→Ｈ</span>or<span class="gi">↓↘→Ｈ</span>
+───────────────────────────────────────
+[固有打击技]
+ 折槛碎         <span class="gi">←</span>拳         │            <span class="gi">←</span>脚
+                <span class="gi">↗</span>拳         │            <span class="gi">←</span>脚·脚
+                <span class="gi">↑</span>拳         │            <span class="gi">↙</span>脚
+                <span class="gi">↖</span>拳         │            <span class="gi">↙</span>脚·<span class="gi">→</span>脚
+                <span class="gi">→</span>拳         │            <span class="gi">↙</span>脚·<span class="gi">↓</span>脚
+                <span class="gi">→</span>拳·拳     │            <span class="gi">↘</span>脚·<span class="gi">→</span>脚
+                <span class="gi">→→</span>拳       │            <span class="gi">↗</span>脚
+                <span class="gi">→→</span>拳·脚   │ 二起脚     <span class="gi">↗</span>脚·脚
+                <span class="gi">→→</span>拳·<span class="gi">↓</span>脚 │            <span class="gi">→</span>脚
+                <span class="gi">←←</span>拳       │            <span class="gi">→</span>脚·<span class="gi">→</span>脚
+                [<span class="gi">↓</span>]<span class="gi">←→</span>拳   │            <span class="gi">↓↘→</span>脚
+                <span class="gi">↓↘→</span>拳     │            <span class="gi">↓Ｈ</span>＋脚
+                拳＋脚 
+
+
+·拳系 (拳or<span class="gi">↖</span>拳or背后拳＝[拳]) 派生
+ [拳]·脚
+ [拳]·拳
+ [拳]·拳·拳
+ [拳]·拳·拳·<span class="gi">→</span>拳
+ [拳]·拳·拳·脚
+ [拳]·<span class="gi">→</span>拳
+ [拳]·<span class="gi">→</span>拳·脚
+ [拳]·<span class="gi">→</span>拳·<span class="gi">↓</span>脚
+───────────────────────────────────────
+[特殊行动]
+ <span class="gi">←→←Ｈ</span>＋拳＋脚or<span class="gi">←→←Ｈ</span>＋拳＋脚
+───────────────────────────────────────
+ 国籍：中国
+ 性别：男  年龄：２０  生日：１１月２７日  血型：<span class="gi">ＡＢ</span>型
+ 身高：１７３ｃｍ  体重：７５ｋｇ  ３围：<span class="gi">Ｂ</span>９９·<span class="gi">Ｗ</span>８０·<span class="gi">Ｈ</span>９２
+ 流派：截拳道
+ 职业：保镖
+ 喜欢的东西：汉堡包、葡萄
+ 爱好：看电影（仅限动作片）
+</pre></div>
+</div>
+</section>
+<section id="lei-fang">
+<h2>雷芳 LEI FANG<a class="headerlink" href="#lei-fang" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>雷芳 LEI FANG
+───────────────────────────────────────
+[基本打击技]
+ 单鞭     拳
+ 懒扎衣   <span class="gi">↘</span>拳
+ 下势单鞭 <span class="gi">↓</span>拳
+ 蹴脚     脚
+ 蹬脚     <span class="gi">↘</span>脚
+ 下蹬脚   <span class="gi">↓</span>脚
+───────────────────────────────────────
+[基本打击技]
+ 单鞭     拳
+ 懒扎衣   <span class="gi">↘</span>拳
+ 下势单鞭 <span class="gi">↓</span>拳
+ 蹴脚     脚
+ 蹬脚     <span class="gi">↘</span>脚
+ 下蹬脚   <span class="gi">↓</span>脚
+───────────────────────────────────────
+[背对对手时的攻击]
+ 转身单鞭     拳
+ 闪通背       <span class="gi">↓</span> 拳
+ 转身下势单鞭 [<span class="gi">↓</span>]拳
+ 转身蹴脚     脚
+ 转身蹬脚     <span class="gi">↓</span> 脚
+ 转身下蹬脚   [<span class="gi">↓</span>]脚
+───────────────────────────────────────
+[跳跃攻击]
+ 飞翔捶击   前<span class="gi">Ｊ</span>中拳
+ 飞上捶击   上<span class="gi">Ｊ</span>中拳
+ 飞翔蹬脚   前<span class="gi">Ｊ</span>中脚
+ 飞上蹬脚   上<span class="gi">Ｊ</span>中脚
+ 飞翔双按   前<span class="gi">Ｊ</span>着拳
+ 飞上双按   上<span class="gi">Ｊ</span>着拳
+ 退身双按   后<span class="gi">Ｊ</span>着拳
+ 飞翔跌叉   前<span class="gi">Ｊ</span>着脚
+ 飞上跌叉   上<span class="gi">Ｊ</span>着脚
+ 退身穿宫腿 后<span class="gi">Ｊ</span>着脚
+───────────────────────────────────────
+[对地攻击]
+ 落双捶击 <span class="gi">↑</span>拳     │ 震脚 <span class="gi">↘</span>脚
+───────────────────────────────────────
+[投技] (近敌时)
+ 倒撵猴    <span class="gi">Ｈ</span>＋拳
+ 野马分鬃  <span class="gi">←Ｈ</span>＋拳＋脚
+ 里拧臂摔  <span class="gi">↓↙←Ｈ</span>＋拳
+ 撇身捶    <span class="gi">→←</span>拳
+ 托肘肩靠  敌背<span class="gi">Ｈ</span>＋拳
+───────────────────────────────────────
+[当身关节技]
+ 采挒   敌拳时，我方<span class="gi">Ｈ</span>
+ 掤势   敌脚时，我方<span class="gi">Ｈ</span>
+ 履势   敌拳时，我方<span class="gi">↓Ｈ</span>
+ 化推   敌脚时，我方<span class="gi">↓Ｈ</span>             
+ 回挤   敌中段脚时，我方<span class="gi">↓↙←Ｈ</span>     
+───────────────────────────────────────
+[抓取关节技]
+ 钻拧臂捶         <span class="gi">→Ｈ</span>or<span class="gi">Ｊ</span>着<span class="gi">Ｈ</span>
+ 挑手打胸         <span class="gi">↓↘→Ｈ</span>
+ └太公钓鱼       挑手打胸后<span class="gi">↘↓↙←Ｈ</span>＋拳
+   └连·太公钓鱼 太公钓鱼后<span class="gi">→→Ｈ</span>＋拳＋脚
+ 揉膝拗步         <span class="gi">→→Ｈ</span>
+ 金鸡独立         敌蹲<span class="gi">↘Ｈ</span>or前<span class="gi">Ｊ</span>着<span class="gi">↓Ｈ</span>or上<span class="gi">Ｊ</span>着<span class="gi">↓Ｈ</span>
+ 上步靠           敌背<span class="gi">→Ｈ</span>or敌背<span class="gi">↓↘→Ｈ</span>or敌背<span class="gi">→→Ｈ</span>
+ 提手上势         敌蹲背<span class="gi">↘Ｈ</span>
+───────────────────────────────────────
+[固有打击技]
+ 双按       <span class="gi">→→</span>拳
+ 双风贯耳   <span class="gi">→←</span>脚
+ 七寸靠     <span class="gi">←→</span>拳
+ 金鸡独立   拳＋脚
+ 当头炮     [<span class="gi">↓</span>]<span class="gi">→</span>拳
+ 跌叉       <span class="gi">↓↓</span>脚
+ 斜飞肘击   <span class="gi">↑</span>拳or<span class="gi">↗</span>拳
+ 翻身单鞭   <span class="gi">↖</span>拳
+ 转身摆莲脚 <span class="gi">↖</span>脚
+ 踹脚       <span class="gi">↑</span>脚or<span class="gi">↗</span>脚
+ 二起脚     <span class="gi">↑</span>脚·脚or<span class="gi">↗</span>脚·脚
+ 抱虎归山   <span class="gi">Ｈ</span>＋拳＋脚
+ 肘击       <span class="gi">→</span>拳
+ 抱头推山   <span class="gi">←</span>拳
+ 前招       <span class="gi">←</span>拳·拳
+ 揪地龙     <span class="gi">↙</span>拳
+ 上步七星   <span class="gi">↙</span>拳·拳
+ 挂面脚     <span class="gi">←</span>脚
+ 穿宫腿     <span class="gi">←</span>脚·脚
+ 穿宫连腿   <span class="gi">←</span>脚·脚·<span class="gi">↓</span>脚
+ 单鞭       拳
+ 高探马     拳·拳
+ 玉女穿梭   拳·拳·<span class="gi">→</span>拳
+ 青龙出水   拳·<span class="gi">↘</span>拳
+───────────────────────────────────────
+ 国籍：中国
+ 性别：女  年龄：１９  生日：４月２３日  血型：<span class="gi">Ｂ</span>型
+ 身高：１６７ｃｍ  体重：５０ｋｇ  ３围：<span class="gi">Ｂ</span>８７·<span class="gi">Ｗ</span>５５·<span class="gi">Ｈ</span>８４
+ 流派：太极拳
+ 职业：学生
+ 喜欢的东西：杏仁豆腐
+ 爱好：卡拉OK
+</pre></div>
+</div>
+</section>
+<section id="bayman">
+<h2>拜曼 BAYMAN<a class="headerlink" href="#bayman" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>拜曼 BAYMAN
+───────────────────────────────────────
+[基本打击技]  │[背对对手时的攻击]
+ 拳           │ 拳
+ <span class="gi">↘</span>拳         │ <span class="gi">↓</span>拳
+ <span class="gi">↓</span>拳         │ [<span class="gi">↓</span>]拳
+ 脚           │ <span class="gi">↑</span>拳
+ <span class="gi">↘</span>脚         │ 脚
+ <span class="gi">↓</span>脚         │ <span class="gi">↓</span>脚
+───────────────────────────────────────
+[跳跃攻击]
+ 前<span class="gi">Ｊ</span>中拳     │ 前<span class="gi">Ｊ</span>着拳
+ 上<span class="gi">Ｊ</span>中拳     │ 上<span class="gi">Ｊ</span>着拳
+ 前<span class="gi">Ｊ</span>中脚     │ 后<span class="gi">Ｊ</span>着拳
+ 上<span class="gi">Ｊ</span>中脚     │ 前<span class="gi">Ｊ</span>着脚
+              │ 上<span class="gi">Ｊ</span>着脚
+              │ 后<span class="gi">Ｊ</span>着脚
+───────────────────────────────────────
+[对地攻击]
+ <span class="gi">↑</span>脚                 │  <span class="gi">↘</span>脚
+───────────────────────────────────────
+[投技] (近敌时)
+         <span class="gi">Ｈ</span>＋拳(※1)  │ 胜利十字固  <span class="gi">↓↘→Ｈ</span>＋脚
+         <span class="gi">←Ｈ</span>＋拳     │ 腕逆十字固  敌背<span class="gi">Ｈ</span>＋拳
+ 风车投  <span class="gi">←↙↓↘→</span>拳 │
+───────────────────────────────────────
+[当身关节技]
+                 敌拳时，我方<span class="gi">Ｈ</span>
+                 敌脚时，我方<span class="gi">Ｈ</span>
+                 敌拳时，我方<span class="gi">↓Ｈ</span>
+                 敌脚时，我方<span class="gi">↓Ｈ</span>
+ 飞膝十字固      敌中段脚时，我方<span class="gi">↓↙←Ｈ</span>
+───────────────────────────────────────
+[抓取关节技]
+ 腕固             <span class="gi">→↘↓Ｈ</span>
+ 立臂锁           <span class="gi">→→Ｈ</span>
+ └首极腕卍       立臂锁后<span class="gi">→↘↓↙←Ｈ</span>(※2)
+   └<span class="gi">ＤＤＴ</span>       首极腕卍后<span class="gi">↓↙←</span>拳                      (※2)
+ 轴足拂           <span class="gi">↓↘→Ｈ</span>
+ └阿基里斯腱固   轴足拂后<span class="gi">→↘↓↙←Ｈ</span>                    (※2)
+   └逆片虾式固   阿基里斯腱固后<span class="gi">←↙↓</span>脚              (※2)
+ 胁固             敌蹲<span class="gi">↘Ｈ</span>or前<span class="gi">Ｊ</span>着<span class="gi">↓Ｈ</span>or上<span class="gi">Ｊ</span>着<span class="gi">↓Ｈ</span>
+
+                  <span class="gr">○</span>敌背<span class="gi">→Ｈ</span>or敌背<span class="gi">→↘↓Ｈ</span>or敌背<span class="gi">↓↘→Ｈ</span>or敌背<span class="gi">→→Ｈ</span>
+                  └<span class="gr">○</span>上一投技后<span class="gi">→↘↓↙←Ｈ</span>          (※2)
+
+                  <span class="gi">→Ｈ</span>or<span class="gi">Ｊ</span>着<span class="gi">Ｈ</span>
+ 后胁固           敌蹲背<span class="gi">↘Ｈ</span>
+───────────────────────────────────────
+[固有打击技]
+ <span class="gi">←</span>拳        │ <span class="gi">←→</span>拳    
+ [<span class="gi">↘</span>]拳      │ <span class="gi">→←</span>拳
+ <span class="gi">↖</span>拳        │ <span class="gi">→←</span>拳·拳
+ <span class="gi">→</span>拳        │ <span class="gi">↙</span>脚
+ <span class="gi">→</span>拳·拳    │ <span class="gi">←</span>脚
+ 拳          │ <span class="gi">↗</span>脚
+ 拳·<span class="gi">→</span>拳    │ <span class="gi">↑</span>脚
+ 拳<span class="gi">→</span>拳·拳  │ <span class="gi">Ｈ</span>＋脚
+ 拳·脚      │ <span class="gi">↓Ｈ</span>＋脚
+ 拳·拳      │ 拳＋脚
+ 拳·拳·<span class="gi">↘</span>拳│
+ 拳·拳·<span class="gi">←</span>拳│
+ 拳·拳·脚  │
+───────────────────────────────────────
+ 国籍：俄罗斯
+ 性别：男  年龄：３１  生日：１０月１０日  血型：<span class="gi">Ｂ</span>型
+ 身高：１８２ｃｍ  体重：１０５ｋｇ  ３围：<span class="gi">Ｂ</span>１２０·<span class="gi">Ｗ</span>９２·<span class="gi">Ｈ</span>９５
+ 流派：桑勃摔跤术
+ 职业：刺客
+ 喜欢的东西：炖牛肉
+ 爱好：武器收集、国际象棋
+</pre></div>
+</div>
+</section>
+<section id="tina">
+<h2>蒂娜 TINA<a class="headerlink" href="#tina" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>蒂娜 TINA
+───────────────────────────────────────
+[基本打击技]│[背对对手时的攻击]
+ 拳         │ 拳
+ <span class="gi">↘</span>拳       │ <span class="gi">↓</span>拳
+ <span class="gi">↓</span>拳       │ [<span class="gi">↓</span>]拳
+ 脚         │ 脚
+ <span class="gi">↘</span>脚       │ <span class="gi">↓</span>脚
+ <span class="gi">↓</span>脚       │ [<span class="gi">↓</span>]脚
+            │ <span class="gi">Ｈ</span>＋脚
+───────────────────────────────────────
+[跳跃攻击]
+ 前<span class="gi">Ｊ</span>中拳   │ 前<span class="gi">Ｊ</span>着拳
+ 上<span class="gi">Ｊ</span>中拳   │ 上<span class="gi">Ｊ</span>着拳
+ 前<span class="gi">Ｊ</span>中脚   │ 后<span class="gi">Ｊ</span>着拳
+ 上<span class="gi">Ｊ</span>中脚   │ 前<span class="gi">Ｊ</span>着脚
+            │ 上<span class="gi">Ｊ</span>着脚
+            │ 后<span class="gi">Ｊ</span>着脚
+───────────────────────────────────────
+[对地攻击]
+ <span class="gi">↑</span>拳               │ <span class="gi">↑Ｈ</span>＋拳＋脚
+ <span class="gi">↘</span>拳               │
+───────────────────────────────────────
+[投技] (近敌时)
+ <span class="gi">Ｈ</span>＋拳 (※1)
+ <span class="gi">↓↘→Ｈ</span>＋脚
+ <span class="gi">←↙↓↘→</span>拳
+ <span class="gi">↓→</span>拳＋脚
+ <span class="gr">○</span><span class="gi">↓↙←</span>拳＋脚
+ └<span class="gr">○</span>上一投技后<span class="gi">←→Ｈ</span>＋拳(※2)
+   └<span class="gr">○</span>上一投技后<span class="gi">↓↑Ｈ</span>＋拳(※2)
+                                                           
+ <span class="gi">Ｈ</span>＋拳＋脚
+ 敌蹲<span class="gi">↓Ｈ</span>＋拳
+ 敌蹲<span class="gi">↘↘Ｈ</span>＋拳＋脚
+ 敌背<span class="gi">Ｈ</span>＋拳
+ 敌背<span class="gi">Ｈ</span>＋拳＋脚
+───────────────────────────────────────
+[当身关节技]
+ 敌拳时，我方<span class="gi">Ｈ</span>
+ 敌脚时，我方<span class="gi">Ｈ</span>
+ 敌拳时，我方<span class="gi">↓Ｈ</span>
+ 敌脚时，我方<span class="gi">↓Ｈ</span>
+ 敌中段脚时，我方<span class="gi">↓↙←Ｈ</span>
+───────────────────────────────────────
+[抓取关节技]
+ 穿锤击                  <span class="gi">→Ｈ</span>or<span class="gi">Ｊ</span>着<span class="gi">Ｈ</span>
+ └<span class="gi">Ｊ</span>·<span class="gi">Ｏ</span>·<span class="gi">Ｓ</span>            穿锤击后<span class="gi">↓↑Ｈ</span>＋拳
+ 逆羽固                  <span class="gi">↓↘→Ｈ</span>
+ └罗迪欧固              逆羽固后摇杆转１圈<span class="gi">Ｈ</span>             (※2)
+ 螺旋打                  <span class="gi">→↘↓Ｈ</span>
+ └大回环                螺旋打后<span class="gi">←↙↓↘→Ｈ</span>             (※2)
+ 弗尼尔森                敌背<span class="gi">→Ｈ</span>or敌背<span class="gi">↓↘→Ｈ</span>or敌背<span class="gi">→↘↓Ｈ</span>
+ └龙打                  弗尼尔森后<span class="gi">→↗↑↖←Ｈ</span>＋拳       (※2)
+───────────────────────────────────────
+[固有打击技]
+ <span class="gi">↙</span>拳        │ [<span class="gi">↘</span>]拳
+ <span class="gi">←</span>拳        │ [<span class="gi">↘</span>]拳·<span class="gi">←</span>拳
+ <span class="gi">↑</span>拳        │ <span class="gi">→→</span>拳
+ <span class="gi">↖</span>拳        │ <span class="gi">→→</span>拳·拳
+ <span class="gi">↗</span>拳        │ <span class="gi">←→</span>拳
+ <span class="gi">↗</span>拳·<span class="gi">←</span>拳  │ <span class="gi">→Ｈ</span>＋拳
+ 拳          │ <span class="gi">↑</span>脚
+ 拳·脚      │ <span class="gi">Ｈ</span>＋脚
+ 拳·拳      │ <span class="gi">↓Ｈ</span>＋脚
+ 拳·拳·拳  │ <span class="gi">→</span>脚
+ <span class="gi">→</span>拳        │ <span class="gi">→</span>脚·<span class="gi">←</span>拳
+ <span class="gi">→</span>拳·拳    │ <span class="gi">→→</span>脚
+ <span class="gi">→</span>拳·拳·脚│ <span class="gi">Ｈ</span>＋拳＋脚
+───────────────────────────────────────
+[特殊行动]
+ <span class="gi">↓</span>拳＋脚
+ <span class="gi">←→←Ｈ</span>＋拳＋脚or<span class="gi">→←→Ｈ</span>＋拳＋脚
+───────────────────────────────────────
+ 国籍：美国
+ 性别：女  年龄：２２  生日：１２月６日  血型：<span class="gi">Ｏ</span>型
+ 身高：１６９ｃｍ  体重：５９ｋｇ  ３围：<span class="gi">Ｂ</span>８９·<span class="gi">Ｗ</span>５６·<span class="gi">Ｈ</span>８９
+ 流派：职业摔跤
+ 职业：职业摔跤手
+ 喜欢的东西：和海鲜有关的所有东西
+ 爱好：格斗游戏、骑单车
+</pre></div>
+</div>
+</section>
+<section id="hayabusa">
+<h2>隼龙 HAYABUSA<a class="headerlink" href="#hayabusa" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>隼龙 HAYABUSA
+───────────────────────────────────────
+[基本打击技]
+ 上段正拳突  拳
+ 升旋刀      <span class="gi">↘</span>拳
+ 下段正拳突  <span class="gi">↓</span>拳
+ 上段回蹴    脚
+ 足刀蹴      <span class="gi">↘</span>脚
+ 下段回蹴    <span class="gi">↓</span>脚
+───────────────────────────────────────
+[背对对手时的攻击]
+ 背击里拳      拳
+ 背击中段手刀  <span class="gi">↓</span> 拳
+ 背击下段手刀  [<span class="gi">↓</span>]拳
+ 背击上段蹴    脚
+ 背击中段蹴    <span class="gi">↓</span> 脚
+ 背击下段蹴    [<span class="gi">↓</span>]脚
+───────────────────────────────────────
+[跳跃攻击]
+ 进空掌  前<span class="gi">Ｊ</span>中拳   │ 进击掌  前<span class="gi">Ｊ</span>着拳
+ 留空掌  上<span class="gi">Ｊ</span>中拳   │ 留击掌  上<span class="gi">Ｊ</span>着拳
+ 进空蹴  前<span class="gi">Ｊ</span>中脚   │ 退击掌  后<span class="gi">Ｊ</span>着拳
+ 留空蹴  上<span class="gi">Ｊ</span>中脚   │ 进刺蹴  前<span class="gi">Ｊ</span>着脚
+                    │ 留刺蹴  上<span class="gi">Ｊ</span>着脚
+                    │ 退刺蹴  后<span class="gi">Ｊ</span>着脚
+───────────────────────────────────────
+[对地攻击]
+ 奈落突  <span class="gi">↑</span>拳       │ 虎牙双弹  <span class="gi">↘</span>拳
+───────────────────────────────────────
+[投技] (近敌时)
+ 十字络       <span class="gi">Ｈ</span>＋拳 (※1)
+ 四方投       <span class="gi">→→←</span>拳＋脚
+ 极光抱反落   <span class="gi">←Ｈ</span>＋拳＋脚
+ 落雷冲       <span class="gi">↓↙←</span>拳＋脚
+ 首切投       <span class="gi">↓↘→</span>拳
+ 升雷冲       <span class="gi">←↙↓↘→Ｈ</span>＋拳＋脚
+ └镰鼬       升雷冲后<span class="gi">↓↘→↗↑Ｈ</span>＋拳
+   └饭纲落   镰鼬后<span class="gi">←↖↑↗→↘↓Ｈ</span>＋脚  
+ 斩首闪       敌蹲<span class="gi">↓Ｈ</span>＋拳
+ 里投         敌背<span class="gi">Ｈ</span>＋拳
+ 落龙冲       敌背<span class="gi">Ｈ</span>＋拳＋脚
+
+───────────────────────────────────────
+[当身关节技]
+ 柳闪掌    敌拳时，我方<span class="gi">Ｈ</span>
+ 柳闪刀    敌脚时，我方<span class="gi">Ｈ</span>
+ 地柳拳舞  敌拳时，我方<span class="gi">↓Ｈ</span>
+ 地柳脚舞  敌脚时，我方<span class="gi">↓Ｈ</span>
+ 蹴击获投  敌中段脚时，我方<span class="gi">↓↙←Ｈ</span>
+───────────────────────────────────────
+[抓取关节技]
+ 枪影狩  <span class="gi">→Ｈ</span>or<span class="gi">Ｊ</span>着<span class="gi">Ｈ</span>
+ 幻影    <span class="gi">→→Ｈ</span>
+ 里雷薙  敌背<span class="gi">→Ｈ</span>or敌背<span class="gi">→→Ｈ</span>
+───────────────────────────────────────
+[固有打击技]
+ 破突        <span class="gi">→</span>拳
+ 雷震击      <span class="gi">→→</span>拳
+ 天突        <span class="gi">↗</span>拳
+ 神突        <span class="gi">↑</span>拳
+ 柳影刀      <span class="gi">↖</span>拳
+ 空旋刀      <span class="gi">←</span>拳
+ 破妖薙蹴    <span class="gi">←</span>拳·脚
+ 地旋刀      <span class="gi">↙</span>拳
+ 苍空斩刀    拳＋脚
+ 日轮脚      <span class="gi">↗</span>脚
+ 破幻蹴      <span class="gi">↑</span>脚
+ 月轮脚      <span class="gi">↖</span>脚
+ 足刀蹴      <span class="gi">↘</span>脚
+ 破魔枪蹴    <span class="gi">↘</span>脚·<span class="gi">↘</span>脚
+ 破邪膝蹴    <span class="gi">→</span>脚
+ 地滑        <span class="gi">→→</span>脚
+ 地升脚      <span class="gi">→↘↓</span>脚
+ 地扫脚      <span class="gi">↙↙</span>脚
+ 里影狩旋脚  <span class="gi">→←</span>脚
+
+·拳or背拳or<span class="gi">↖</span>拳（[拳]）派生
+ 连弾          [拳]·拳
+ 连刀击        [拳]·拳·<span class="gi">→</span>拳
+ 升连弾        [拳]·拳·脚
+ 正拳·上段蹴  [拳]·脚
+───────────────────────────────────────
+ 国籍：日本
+ 性别：男  年龄：２３  生日：６月１５日  血型：<span class="gi">Ａ</span>型
+ 身高：１７７ｃｍ  体重：７０ｋｇ  ３围：<span class="gi">Ｂ</span>１０５·<span class="gi">Ｗ</span>８３·<span class="gi">Ｈ</span>９２
+ 流派：隼流忍术
+ 职业：经营古董店
+ 喜欢的东西：寿司
+ 爱好：登山、钓鱼
+</pre></div>
+</div>
+</section>
+<section id="zack">
+<h2>扎克 ZACK<a class="headerlink" href="#zack" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>扎克 ZACK
+───────────────────────────────────────
+[基本打击技]      │[背对对手时的攻击]
+ 拳               │ 拳
+ <span class="gi">↘</span>拳             │ <span class="gi">↓</span> 拳
+ <span class="gi">↓</span>拳             │ [<span class="gi">↓</span>]拳
+ 脚               │ 脚
+ <span class="gi">↘</span>脚             │ <span class="gi">↓</span> 脚
+ <span class="gi">↓</span>脚             │ [<span class="gi">↓</span>]脚
+───────────────────────────────────────
+[跳跃攻击]
+ 前<span class="gi">Ｊ</span>中拳         │ 前<span class="gi">Ｊ</span>着拳
+ 上<span class="gi">Ｊ</span>中拳         │ 上<span class="gi">Ｊ</span>着拳
+ 前<span class="gi">Ｊ</span>中脚         │ 后<span class="gi">Ｊ</span>着拳
+ 上<span class="gi">Ｊ</span>中脚         │ 前<span class="gi">Ｊ</span>着脚
+                  │ 上<span class="gi">Ｊ</span>着脚
+                  │ 后<span class="gi">Ｊ</span>着脚
+───────────────────────────────────────
+[对地攻击]
+ <span class="gi">↑</span>脚        │ <span class="gi">↘</span>脚
+───────────────────────────────────────
+[投技] (近敌时)
+ <span class="gi">Ｈ</span>＋拳 (※1)│ <span class="gi">↘</span>[<span class="gi">↘</span>]拳＋脚 
+ <span class="gi">→←</span>拳＋脚  │ 敌背<span class="gi">Ｈ</span>＋拳
+───────────────────────────────────────
+[当身关节技]              │[抓取关节技]
+ 敌拳时，我方<span class="gi">Ｈ</span>         │ <span class="gi">→Ｈ</span>or<span class="gi">Ｊ</span>着<span class="gi">Ｈ</span>
+ 敌脚时，我方<span class="gi">Ｈ</span>         │ <span class="gi">→→Ｈ</span>
+ 敌拳时，我方<span class="gi">↓Ｈ</span>       │ <span class="gi">→↘↓Ｈ</span>
+ 敌脚时，我方<span class="gi">↓Ｈ</span>       │ 敌背<span class="gi">→Ｈ</span>or敌背<span class="gi">→→Ｈ</span>or敌背<span class="gi">→↘↓Ｈ</span>     
+───────────────────────────────────────
+[固有打击技] 
+ <span class="gi">↓↘→</span>拳     │ <span class="gi">→</span>脚
+ <span class="gi">→</span>拳         │ <span class="gi">→</span>脚·脚
+ <span class="gi">→</span>拳·<span class="gi">←</span>拳   │ <span class="gi">↙</span>脚
+ <span class="gi">→</span>拳·脚     │ <span class="gi">↑</span>脚
+ <span class="gi">→→</span>拳       │ <span class="gi">→→</span>脚
+ <span class="gi">←</span>拳         │ <span class="gi">↓↘→</span>脚
+ <span class="gi">↑</span>拳or<span class="gi">↗</span>拳   │ <span class="gi">Ｈ</span>＋脚
+ <span class="gi">↖</span>拳         │ <span class="gi">→→</span>拳＋脚
+ <span class="gi">↘</span>拳
+ <span class="gi">↘</span>拳·<span class="gi">→</span>拳
+ <span class="gi">↘</span>拳·<span class="gi">→</span>拳·拳
+ <span class="gi">↓↘→Ｈ</span>＋拳＋脚
+
+·拳or背拳or<span class="gi">↖</span>拳（[拳]）派生
+ [拳]·脚
+ [拳]·拳
+ [拳]·拳·拳
+ [拳]·拳·<span class="gi">→</span>拳
+ [拳]·拳·<span class="gi">→</span>拳·拳
+ [拳]·拳·<span class="gi">→</span>拳·<span class="gi">←</span>拳
+ [拳]·拳·<span class="gi">→</span>拳·脚
+ [拳]·拳·脚
+ [拳]·拳·<span class="gi">→</span>脚
+ [拳]·拳·<span class="gi">→</span>脚·脚
+───────────────────────────────────────
+[特殊行动]
+ <span class="gi">↓↘→</span>＋<span class="gi">Ｈ</span>
+───────────────────────────────────────
+ 国籍：美国
+ 性别：男  年龄：２５  生日：４月３日  血型：<span class="gi">Ｏ</span>型
+ 身高：１８０ｃｍ  体重：７８ｋｇ  ３围：<span class="gi">Ｂ</span>１０６·<span class="gi">Ｗ</span>８４·<span class="gi">Ｈ</span>９５
+ 流派：泰拳
+ 职业：<span class="gi">ＤＪ</span>
+ 喜欢的东西：冰淇淋
+ 爱好：台球
+</pre></div>
+</div>
+</section>
+<section id="gen-fu">
+<h2>玄风 GEN FU<a class="headerlink" href="#gen-fu" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>玄风 GEN FU
+───────────────────────────────────────
+[基本打击技]                       
+ 顺步捶    拳
+ 丹凤朝阳  <span class="gi">↘</span>拳
+ 崩捶      <span class="gi">↓</span>拳
+ 高弾腿    脚
+ 弾腿      <span class="gi">↘</span>脚
+ 斧刃脚    <span class="gi">↓</span>脚
+───────────────────────────────────────
+[背对对手时的攻击]
+ 转身崩捶     拳
+ 转身挑领     <span class="gi">↓</span> 拳
+ 转身下崩捶   [<span class="gi">↓</span>]拳
+ 转身蹴腿     脚
+ 后蹴腿       <span class="gi">↓</span> 脚
+ 转身下蹬脚   [<span class="gi">↓</span>]脚
+───────────────────────────────────────
+[跳跃攻击]
+ 中空上步捶   前<span class="gi">Ｊ</span>中拳
+ 中空顺步捶   上<span class="gi">Ｊ</span>中拳
+ 中空蹬脚     前<span class="gi">Ｊ</span>中脚
+ 中空落蹬脚   上<span class="gi">Ｊ</span>中脚
+ 飞跃搨把     前<span class="gi">Ｊ</span>着拳
+ 跳跃搨把     上<span class="gi">Ｊ</span>着拳
+ 退身搨把     后<span class="gi">Ｊ</span>着拳
+ 飞跃扫腿     前<span class="gi">Ｊ</span>着脚
+ 跳跃扫腿     上<span class="gi">Ｊ</span>着脚
+ 退身扫腿     后<span class="gi">Ｊ</span>着脚
+───────────────────────────────────────
+[对地攻击]
+ 落地撑掌  <span class="gi">↑</span>拳    │ 地撑掌  <span class="gi">↓</span>拳
+───────────────────────────────────────
+[投技] (近敌时)
+ 十字裹横    <span class="gi">Ｈ</span>＋拳
+ 云闭日月把  <span class="gi">↓→Ｈ</span>＋拳＋脚
+ 硬开三皇锁  <span class="gi">←↓↙</span>拳
+ 真意把      <span class="gi">←Ｈ</span>＋拳
+ 虎摆尾      敌背<span class="gi">Ｈ</span>＋拳
+───────────────────────────────────────
+[当身关节技]
+ 采手    敌拳时，我方<span class="gi">Ｈ</span>
+ 搂手    敌脚时，我方<span class="gi">Ｈ</span>
+ 挂手    敌拳时，我方<span class="gi">↓Ｈ</span>
+ 勾挂    敌脚时，我方<span class="gi">↓Ｈ</span>
+ 龙调膀  敌中段脚时，我方<span class="gi">↓↙←Ｈ</span>
+───────────────────────────────────────
+[抓取关节技]
+ 圧手  <span class="gi">→Ｈ</span>or<span class="gi">Ｊ</span>着<span class="gi">Ｈ</span>or敌背<span class="gi">→Ｈ</span>or敌背<span class="gi">→←Ｈ</span>
+ 揪腿  <span class="gi">→←Ｈ</span>
+───────────────────────────────────────
+[固有打击技]
+ 顺步捶      拳
+ 连捶        拳·拳
+ 丹凤朝阳    <span class="gi">↘</span>拳
+ 虎蹲山      <span class="gi">↘</span>拳·<span class="gi">↘</span>拳
+ 虎抱头      <span class="gi">↗</span>拳
+ 撑掌        <span class="gi">↑</span>拳
+ 盘肘        <span class="gi">→</span>拳
+ 怀抱顽石    <span class="gi">←</span>拳
+ 挑领        [<span class="gi">↘</span>]拳
+ 单把        <span class="gi">→→</span>拳
+ 虎蹲山      <span class="gi">↘↘</span>拳
+ 箭疾步      <span class="gi">→→Ｈ</span>·拳
+ 虎扑把      拳＋脚
+ 鹰捉把      <span class="gi">→←</span>拳
+ 乌牛摆头    <span class="gi">↙→</span>拳
+ 双把        <span class="gi">→→</span>拳＋脚
+ 斩捶        <span class="gi">↓</span>拳＋脚
+ 鹞子栽肩    <span class="gi">↓</span>拳＋脚·<span class="gi">←→</span>拳
+ 搨把        <span class="gi">Ｈ</span>＋拳＋脚
+ 弾腿        <span class="gi">↘</span>脚
+ 蛇出洞      <span class="gi">↘</span>脚·拳
+ 半旋风      <span class="gi">↗</span>脚
+ 旋风脚      <span class="gi">↑</span>脚
+ 转身后蹴腿  <span class="gi">↖</span>脚
+ 侧踹脚      <span class="gi">→→</span>脚
+ 双飞脚      <span class="gi">Ｈ</span>＋脚
+ 前扫腿      <span class="gi">↓Ｈ</span>＋脚
+───────────────────────────────────────
+ 国籍：中国
+ 性别：男  年龄：６５  生日：１月５日  血型：<span class="gi">Ａ</span>型
+ 身高：１７０ｃｍ  体重：７８ｋｇ  ３围：<span class="gi">Ｂ</span>９６·<span class="gi">Ｗ</span>１０２·<span class="gi">Ｈ</span>９９
+ 流派：心意六合拳
+ 职业：经营古书店
+ 喜欢的东西：麻婆豆腐
+ 爱好：水墨画
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>[ 隐藏要素 ]<a class="headerlink" href="#id3" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 隐藏要素 ]
+───────────────────────────────────────
+·胜利重放
+  胜利后回放时<span class="gi">Ｈ</span>＋脚按住不放，按拳重放。
+
+·胜利动作选择
+  胜利时按住<span class="gi">Ｈ</span>or拳or脚各对应一种动作。
+
+·视角操作
+  胜利回放中<span class="gi">Ｈ</span>＋拳＋脚同时按住不放，摇杆控制视角
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="dmnfrnt.html" tppabs="../games/dmnfrnt.html" title="Previous document">dmnfrnt 魔域战线 (C) IGS 2002</a>
+        </li>
+        <li>
+          <a href="doa2.html" tppabs="../games/doa2.html" title="Next document">doa2 死或生2 (C) Tecmo 1999</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="../index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">doa 死或生 (C) Sega 1996</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 指令符号说明 ]</a></li>
+<li><a class="reference internal" href="#kasumi">霞 KASUMI</a></li>
+<li><a class="reference internal" href="#jann-lee">李剑 JANN LEE</a></li>
+<li><a class="reference internal" href="#lei-fang">雷芳 LEI FANG</a></li>
+<li><a class="reference internal" href="#bayman">拜曼 BAYMAN</a></li>
+<li><a class="reference internal" href="#tina">蒂娜 TINA</a></li>
+<li><a class="reference internal" href="#hayabusa">隼龙 HAYABUSA</a></li>
+<li><a class="reference internal" href="#zack">扎克 ZACK</a></li>
+<li><a class="reference internal" href="#gen-fu">玄风 GEN FU</a></li>
+<li><a class="reference internal" href="#id3">[ 隐藏要素 ]</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      枫枫的游戏机
+      
+      |
+      粉丝专属秘籍
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
