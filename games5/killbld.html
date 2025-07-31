@@ -1,0 +1,951 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>killbld 傲剑狂刀 (C) IGS 1998</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="../_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="killbldp 傲剑狂刀 加强版 (C) IGS 2005" href="killbldp.html" />
+    <link rel="prev" title="ket 绊地狱 (C) Cave 2002" href="ket.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="ket.html" tppabs="../games/ket.html" title="Previous document">ket 绊地狱 (C) Cave 2002</a>
+        </li>
+        <li>
+          <a href="killbldp.html" tppabs="../games/killbldp.html" title="Next document">killbldp 傲剑狂刀 加强版 (C) IGS 2005</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="killbld-c-igs-1998">
+<h1>killbld 傲剑狂刀 (C) IGS 1998<a class="headerlink" href="#killbld-c-igs-1998" title="此标题的永久链接">¶</a></h1>
+<p>傲剑狂刀 (C) IGS 1998</p>
+<p>枫枫的游戏机 粉丝专属街机游戏秘籍     街机游戏名称代码：killbld</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+────────────────────────────────────
+<span class="gi">↖↑↗</span>  后跳/垂直跳/前跳
+<span class="gi">←Ｎ→</span>  后退&amp;站立防御/回中/前进
+<span class="gi">↙↓↘</span>  下蹲&amp;下蹲防御/下蹲/下蹲
+
+轻斩            <span class="gi">Ａ</span>键
+轻脚            <span class="gi">Ｂ</span>键
+重斩            <span class="gi">Ｃ</span>键
+重脚            <span class="gi">Ｄ</span>键
+前冲            <span class="gi">→→</span> / <span class="gi">→→</span>·按住<span class="gi">→</span>不放(各角色的性能不同)
+疾退            <span class="gi">←←</span>(各角色的性能不同)
+投技            近敌时<span class="gi">←</span>or<span class="gi">→</span>＋<span class="gi">Ｃ</span>
+二段跳跃        跳跃中<span class="gi">↖</span>or<span class="gi">↑</span>or<span class="gi">↗</span>
+空中防御        空中<span class="gi">←</span>or<span class="gi">↙</span>
+闪避            <span class="gi">ＡＢ</span>
+中段攻击        <span class="gi">ＢＣ</span>
+防御槽能量恢复  按住<span class="gi">ＡＣ</span>不放
+
+<span class="gi">①</span>挑衅
+  “龙吟风”、“诸葛雄”、“一真和尚”、“阴阳判官”
+  以外的角色只要不按方向和攻击键，过一会儿人物会自动
+  作出挑衅动作。另外“司徒翎”挑衅时防御槽会有所增加
+
+<span class="gi">②</span>能量槽
+  游戏共有两种能量槽，
+  分别为攻击能量槽(红色)和防御能量槽(蓝色)
+
+  攻击能量槽为红色，以下几种情况下会有所增加：
+  <span class="gi">①</span>挥空发动攻击(部分轻攻击挥空攻击能量槽不会上升)
+  <span class="gi">②</span>己方的攻击击中对手(对手增加的攻击能量会比较多，
+  自己增加的攻击能量比较少)。
+  <span class="gi">③</span>被对手的攻击击中(自己增加的攻击能量会比较多，
+  对手增加的攻击能量比较少)。
+  <span class="gi">④</span>己方发动的攻击被对手成功防御(发动攻击的一方攻击
+  能量槽增加，成功防御的一方攻击能量槽不会增加。)
+
+  防御能量槽为蓝色，以下几种情况下会有所增加：
+  <span class="gi">①</span>成功防御对手的攻击时，双方的防御能量槽便会增加，
+  不过攻击方加的较少，而成功防御的那一边会加的较多
+  <span class="gi">②</span>按住<span class="gi">ＡＣ</span>不放。
+  <span class="gi">③</span>向对手作出挑衅动作。(“司徒翎”特有)
+
+<span class="gi">③</span>换手
+  攻击能量槽(红色槽)闪动时，同时按下<span class="gi">ＡＤ</span>键即可进行换
+  人 (会消耗部分攻击能量；能在防御中发动)
+
+<span class="gi">④</span>连锁技
+  顺序输入特定的通常技或特殊技，可发出连续通常技攻击
+
+<span class="gi">⑤</span>空中必杀技
+  部分角色的前冲或疾退，人物会稍稍跃起，此时是判定为
+  处于空中的，所以在此状态下也一样可以发动空中版的
+  必杀技。总之本作的空中必杀技限制还是比较宽松的。
+
+  如以下特例：“独孤残”的“孤鸿穿林式”指令为空中
+  <span class="gi">↓↙←↙↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>但他的密传套路最后一击会用双剑
+  把对手挑飞，由于他是以剑代足，所以双剑离地即判定
+  其为空中状态，所以在此状态下也一样可以马上输入
+  <span class="gi">↓↙←↙↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>来发动“孤鸿穿林式”。
+ 
+<span class="gi">⑥</span>超必杀技
+  攻击能量槽(红色槽)全满状态即可发动。
+ 
+<span class="gi">⑦</span>密传套路
+  防御能量槽(蓝色槽)全满状态时，
+  <span class="gi">ＣＤ</span>击中对手后连续输入角色的特定按键。
+  如果按照出招的节奏按对应的按键，节奏对上，
+  身体会闪红光，同时增加秘传套路的攻击力。
+ 
+<span class="gi">⑧</span>潜能爆发
+  同时按下<span class="gi">ＡＢＣ</span>即可发动；可用来中断对手连击，作为自
+  救的功能。“潜能爆发”后游戏的计时会暂停，两个能量
+  槽会变成两条逐渐减少的时间槽，“潜能爆发”后，攻击
+  能量槽会消失  (虽然仍能看到攻击能量槽，不过该槽已经
+  不会再增加能量了)，不能再使用“换手”和“超必杀技”
+ 
+<span class="gi">⑨</span>逆袭灭
+  “潜能爆发”后，两个能量槽变成黄色并向后倒数，在倒
+  数完结前的时间内，同时按下<span class="gi">ＢＣＤ</span>三个按键即可发动。
+  “逆袭灭”的杀伤力是依照血量剩余多寡而计算的，原则
+  上血量越少，使用“逆袭灭”给对手造成杀伤力就越大。
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 指令符号说明 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 指令符号说明 ]
+────────────────────────────────────
+<span class="gr">○</span>：特殊技
+<span class="gr">◎</span>：必杀技
+<span class="gr">☆</span>：超必杀技
+<span class="gr">■</span>：密传套路
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>龙吟风<a class="headerlink" href="#id3" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>龙吟风
+────────────────────────────────────
+<span class="gr">○</span>背踢                近敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>三连踢              近敌时<span class="gi">→</span>＋<span class="gi">Ｄ</span>
+<span class="gr">○</span>肘击                前冲中<span class="gi">Ａ</span>
+<span class="gr">○</span>劈斩                前冲中<span class="gi">Ｃ</span>
+<span class="gr">○</span>滑踢                前冲中<span class="gi">Ｄ</span>
+<span class="gr">◎</span>流星光              <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>撩剑式(空中可)      <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>起剑式              <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+├<span class="gr">◎</span>落剑式(落剑追击)  起剑式击中或被防住时<span class="gi">↓↘→</span>＋<span class="gi">Ｄ</span>
+└<span class="gr">◎</span>翔天式            起剑式击中时<span class="gi">↓↙←</span>＋<span class="gi">Ｃ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>落剑式              空中<span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+                      空中<span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>翔天式              空中<span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>or<span class="gi">Ｄ</span>
+                      空中<span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>or<span class="gi">Ｄ</span>
+<span class="gr">☆</span>华山翔影荡剑式      空中<span class="gi">↓↘→↘↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">☆</span>华山翔影荡剑式2     “密传套路”最后一击中<span class="gi">↓↘→↘↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>
+
+[派生技]
+                       ┌─────────┐
+                       │                  <span class="gi">↓</span>
+           起剑式─<span class="gi">→</span>翔天式─<span class="gi">→</span>落剑式─<span class="gi">→</span>撩剑式
+             <span class="gi">↓</span>        │        <span class="gi">↓</span>
+           落剑追击    └─<span class="gi">→</span>华山翔影荡剑式 
+
+[连携技]
+
+            ┌───────┐
+            │              <span class="gi">↓</span>
+           近<span class="gi">Ａ</span>─<span class="gi">→</span>近<span class="gi">Ｂ</span>─<span class="gi">→</span>近<span class="gi">Ｄ</span>─<span class="gi">→</span>远<span class="gi">Ｄ</span>
+            │       <span class="gi">↓</span>     │
+            └──<span class="gi">→</span>*近<span class="gi">Ｃ</span> <span class="gi">←</span>┘
+
+           *：可用必杀技取消
+
+           跳<span class="gi">Ａ</span>─<span class="gi">→</span>跳<span class="gi">Ｃ</span>─<span class="gi">→</span>跳<span class="gi">Ｄ</span>
+                    <span class="gi">↑</span>     │
+                   跳<span class="gi">Ｂ←</span>─┘
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>诸葛雄<a class="headerlink" href="#id4" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>诸葛雄
+────────────────────────────────────
+<span class="gr">○</span>低踢                近敌时<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>高踢                近敌时<span class="gi">→</span>＋<span class="gi">Ｄ</span>
+<span class="gr">○</span>刀突                <span class="gi">→</span>＋<span class="gi">Ａ</span>
+└<span class="gr">◎</span>疾风踢            刀突击中时<span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">○</span>下劈斩              <span class="gi">→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>滑踢                前冲中<span class="gi">Ｂ</span>
+<span class="gr">○</span>回转踢              前冲中<span class="gi">Ｄ</span>
+<span class="gr">◎</span>格刀炎              <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>飞天斩              <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>烈斩格刀            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>烈斩格刀追击      烈斩格刀击中后<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>
+<span class="gr">◎</span>空中格刀炎          空中<span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>弧月落              空中<span class="gi">↓↙←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>追风赶月式          空中<span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>抡天掼地式          远距离<span class="gi">Ｃ</span>击中时<span class="gi">←↓↙</span>＋<span class="gi">Ｃ</span>
+                      前冲中<span class="gi">Ｃ</span>击中时<span class="gi">←↓↙</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>疾风踢              蹲<span class="gi">Ａ</span>击中时<span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">☆</span>擒锁斩              <span class="gi">↓↘→↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">☆</span>舞影狂刀            空中<span class="gi">↓↙←↓↙←</span>＋<span class="gi">Ａ</span>(方向键可控制人物移动)
+<span class="gr">☆</span>落火殒杀            空中<span class="gi">↓↙←↓↙←</span>＋<span class="gi">Ｃ</span>(方向键可控制人物移动)
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>
+
+[派生技]
+
+              蹲<span class="gi">Ａ</span>/刀突─<span class="gi">→</span>疾风踢
+          远<span class="gi">Ｃ</span>/前冲中<span class="gi">Ｃ</span>─<span class="gi">→</span>抡天掼地式
+               烈斩格刀─<span class="gi">→</span>飞天斩
+
+[连携技]
+
+          刀突─<span class="gi">→</span>近<span class="gi">Ｂ</span>─<span class="gi">→</span>远<span class="gi">Ｂ</span>
+          │└───┐     │
+          <span class="gi">↓</span>        <span class="gi">↓</span>     <span class="gi">↓</span>
+          *近<span class="gi">Ｃ</span>   *近<span class="gi">Ｄ</span>  *远<span class="gi">Ｄ</span>
+
+          *：可用必杀技取消
+
+          跳<span class="gi">Ａ</span>─<span class="gi">→</span>跳<span class="gi">Ｂ</span>
+           <span class="gi">↑</span>      <span class="gi">↓</span>
+          跳<span class="gi">Ｄ←</span>─跳<span class="gi">Ｃ</span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2>一真和尚<a class="headerlink" href="#id5" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>一真和尚
+────────────────────────────────────
+<span class="gr">○</span>气蹴                <span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>棍劈                <span class="gi">→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>拳突                前冲中<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>回旋踢              前冲中<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>低棍突              前冲中<span class="gi">→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>回钩扫腿原型        前冲中<span class="gi">→</span>＋<span class="gi">Ｄ</span>
+<span class="gr">◎</span>抡劈                <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>(可按<span class="gi">Ａ</span>强制取消)
+└<span class="gr">◎</span>当头棒喝          抡劈中<span class="gi">↓↙←</span>＋<span class="gi">Ｄ</span>
+<span class="gr">◎</span>挥天                <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+├<span class="gr">◎</span>一柱擎天          挥天击中或被防住时<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>当头棒喝          挥天击中或被防住时<span class="gi">↓↙←</span>＋<span class="gi">Ｄ</span>
+<span class="gr">◎</span>回钩扫腿            <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+└<span class="gr">◎</span>当头棒喝          回钩扫腿中<span class="gi">↓↙←</span>＋<span class="gi">Ｄ</span>
+<span class="gr">◎</span>一柱擎天(当身技)    <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>水月挽花          一柱擎天中<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>百裂棍              <span class="gi">→↓↘</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>泰山压顶            <span class="gi">←↓↙</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>三味棍              空中<span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+                      空中<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+                      空中<span class="gi">→↘↓</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">☆</span>密传鹞翻旋棍        <span class="gi">↓↙←↙↓↘→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>
+
+[派生技]
+
+          回钩扫腿
+             <span class="gi">↓</span>
+            抡劈─<span class="gi">→</span>挥天─<span class="gi">→</span>一柱擎天─<span class="gi">→</span>水月挽花
+             │┌──┘
+             <span class="gi">↓↓</span>
+          当头棒喝─<span class="gi">→</span>泰山压顶─<span class="gi">→</span>密传鹞翻旋棍
+ 
+[连携技]
+                          抡劈<span class="gi">←</span>回钩扫腿
+                           <span class="gi">↓</span>      <span class="gi">↑</span>
+          近<span class="gi">Ｂ</span>─<span class="gi">→</span>远<span class="gi">Ｂ</span>─<span class="gi">→</span>近<span class="gi">Ａ</span>─<span class="gi">→</span>远<span class="gi">Ａ</span>
+                           <span class="gi">↓</span>      <span class="gi">↓</span>
+                  蹲<span class="gi">Ｂ</span>─<span class="gi">→</span>近<span class="gi">Ｄ</span>    远<span class="gi">Ｃ</span>
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h2>司徒翎<a class="headerlink" href="#id6" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>司徒翎
+────────────────────────────────────
+<span class="gr">○</span>二段蹴              <span class="gi">→</span>＋<span class="gi">Ｄ</span>
+<span class="gr">○</span>下蹴                <span class="gi">↘</span>＋<span class="gi">Ｄ</span>
+<span class="gr">○</span>膝落马              二段跳跃中<span class="gi">↓</span>＋<span class="gi">Ｄ</span>
+<span class="gr">◎</span>策马鞭              <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>拐马鞭              <span class="gi">↓↘→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>玉带围腰(卷回)      <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>(鞭头以外的部分击中对手时)
+<span class="gr">◎</span>玉带围腰(鞭打)      <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>(鞭头部分击中对手时)
+<span class="gr">◎</span>玉带围腰(气绝)      <span class="gi">↓↙←</span>＋<span class="gi">Ｃ</span>(鞭头部分击中对手时)
+<span class="gr">◎</span>臀撞                <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>挂腿                <span class="gi">↓↙←</span>＋<span class="gi">Ｄ</span>
+<span class="gr">◎</span>虎爪爬山            <span class="gi">←↓↙</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>空中拐马鞭          空中<span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>	
+<span class="gr">◎</span>空中策马鞭          空中<span class="gi">↓↘→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">☆</span>浑元烈扫鞭          <span class="gi">↓↘→↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">☆</span>蹴裂破              空中<span class="gi">↓↙←↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>
+
+[连携技]
+
+             近<span class="gi">Ａ</span>─<span class="gi">→</span>*近<span class="gi">Ｃ</span>─<span class="gi">→</span>下蹴
+             │└───┐ 
+             <span class="gi">↓</span>        <span class="gi">↓</span>
+             近<span class="gi">Ｄ</span>    远<span class="gi">Ｃ</span>
+
+            *可用必杀技取消
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h2>独孤残<a class="headerlink" href="#id7" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>独孤残
+────────────────────────────────────
+<span class="gr">○</span>单剑突              近敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｂ</span>
+<span class="gr">○</span>上方斩              前冲中<span class="gi">Ｃ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>回光破(地面)        <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>回光破(空中)        <span class="gi">↓↘→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>截地剪              <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>回旋双剑            <span class="gi">←↓↙</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>天残腾天剪        回旋双剑中<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>竹破剪              <span class="gi">←↓↙</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>反剔穿云(空中可)    <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+├<span class="gr">◎</span>龙抬头            反剔穿云后<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>怒裂空刺          反剔穿云后<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+  └<span class="gr">◎</span>天残腾天剪      怒裂空刺中<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>燕掠剪              空中<span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>天残腾天剪        燕掠剪中<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>天龙地旋            蹲<span class="gi">Ａ</span>or蹲<span class="gi">Ｂ</span>or站<span class="gi">Ａ</span>or站<span class="gi">Ｂ</span>击中时<span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">☆</span>孤鸿穿林式          空中<span class="gi">↓↙←↙↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>
+
+[派生技]
+
+          回旋双剑┐
+                  │
+          怒裂空刺┼─<span class="gi">→</span>天残腾天剪
+                  │ 
+            燕掠剪┘
+ 
+[连携技]
+
+          近<span class="gi">Ａ</span>or近<span class="gi">Ｂ</span>┬─<span class="gi">→Ａ</span>or<span class="gi">Ｂ</span>─<span class="gi">→</span>*近<span class="gi">Ｃ</span>
+                    │
+          远<span class="gi">Ａ</span>or远<span class="gi">Ｂ</span>┼─<span class="gi">→</span>天龙地旋
+                    │
+          蹲<span class="gi">Ａ</span>or蹲<span class="gi">Ｂ</span>┘
+
+          *：可用必杀技取消
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h2>金轮童子<a class="headerlink" href="#id8" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>金轮童子
+────────────────────────────────────
+<span class="gr">○</span>幻影轮打            <span class="gi">→</span>＋<span class="gi">Ｃ</span> / <span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>虎咬              幻影轮打中<span class="gi">↓↙←</span>＋<span class="gi">Ｃ</span>
+  └<span class="gr">◎</span>龙腾            虎咬中<span class="gi">↓↘→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>滑轮击              <span class="gi">↘</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>飞燕连环腿          <span class="gi">→</span>＋<span class="gi">Ｄ</span>
+<span class="gr">○</span>点水                空中<span class="gi">↘</span>＋<span class="gi">Ｄ</span>
+<span class="gr">◎</span>激震环              <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+                      (攻击槽或防御槽全满时为LV.2版)
+                      (攻击槽和防御槽全满时为LV.3版)
+<span class="gr">◎</span>浪影环              二段跳跃中<span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+                      (攻击槽或防御槽全满时为LV.2版)
+                      (攻击槽和防御槽全满时为LV.3版)
+<span class="gr">◎</span>鲤鱼打挺            <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>火环升龙            <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>童擒罗汉            <span class="gi">↓↙←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>伪蜻蜓点水(空中可)  <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>蜻蜓点水(空中可)    <span class="gi">↓↙←</span>＋<span class="gi">Ｄ</span>(空中可)
+│                    (弹墙后可用方向控制左右移动)
+├<span class="gr">◎</span>鵺摘              蜻蜓点水弹墙后·<span class="gi">Ａ</span>
+├<span class="gr">◎</span>空中伪蜻蜓点水    蜻蜓点水弹墙后·<span class="gi">Ｂ</span>
+├<span class="gr">◎</span>鹰突              蜻蜓点水弹墙后·<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>点水              蜻蜓点水弹墙后·<span class="gi">Ｄ</span>
+<span class="gr">☆</span>怒环九叠            空中<span class="gi">↓↘→↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>
+
+[派生技]
+
+幻影轮打─<span class="gi">→</span>虎咬─<span class="gi">→</span>龙腾
+
+火环升龙─<span class="gi">→</span>怒环九叠
+ 
+[连携技]
+
+     近<span class="gi">Ａ</span>─<span class="gi">→</span>近<span class="gi">Ａ</span>─<span class="gi">→</span>*远<span class="gi">Ｃ</span>┐
+                       <span class="gi">↓</span> │
+                       <span class="gi">Ｃ</span> ├─<span class="gi">→</span>*<span class="gi">Ｄ</span> ※<span class="gi">Ｄ</span>第4段可取消
+                       <span class="gi">↑</span> │
+                      近<span class="gi">Ｃ</span>┘
+
+     跳<span class="gi">Ｂ</span>─<span class="gi">→</span>跳<span class="gi">Ａ</span>─<span class="gi">→</span>跳<span class="gi">Ｃ</span>
+              <span class="gi">↓</span>
+            *跳<span class="gi">Ｄ</span>
+
+     *：可用必杀技取消
+</pre></div>
+</div>
+</section>
+<section id="id9">
+<h2>秦虎<a class="headerlink" href="#id9" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>秦虎
+────────────────────────────────────
+<span class="gr">○</span>下踢                近敌时<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>槌打                近敌时<span class="gi">→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>踏进槌突            <span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>低蹴                <span class="gi">→</span>＋<span class="gi">Ｄ</span>
+<span class="gr">○</span>中腰蹴              <span class="gi">↘</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>双槌上击            <span class="gi">↘</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>雷吼槌              <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>扛鼎槌              <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>龙擒槌              <span class="gi">→↘↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>龙抱槌·拔          <span class="gi">→↘↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">◎</span>龙抱槌·虎抱        <span class="gi">→↘↓↙←</span>＋<span class="gi">Ｄ</span>
+<span class="gr">☆</span>猛虎出甲天崩地裂槌  <span class="gi">↓↙←↙↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>
+
+[连携技]
+
+             近<span class="gi">Ａ</span>┐
+              <span class="gi">↓</span> │
+             远<span class="gi">Ｃ</span>├─<span class="gi">→</span>近<span class="gi">Ｄ</span>
+              <span class="gi">↑</span> │
+             近<span class="gi">Ｂ</span>┘
+</pre></div>
+</div>
+</section>
+<section id="id10">
+<h2>阴阳判官<a class="headerlink" href="#id10" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>阴阳判官
+────────────────────────────────────
+<span class="gr">○</span>生死簿              <span class="gi">→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>双蹴击              <span class="gi">→</span>＋<span class="gi">Ｄ</span>
+└<span class="gr">◎</span>律令腾天勒        双蹴击击中时<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">○</span>滑蹴                <span class="gi">↘</span>＋<span class="gi">Ｄ</span> / 前冲中<span class="gi">Ｄ</span>
+<span class="gr">○</span>笔突                前冲中<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>律令腾天勒        笔突击中时<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">○</span>飞蹴                前冲中<span class="gi">Ｂ</span>
+<span class="gr">◎</span>鬼影符(上段)        <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>鬼影符(下段)        <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>勾消笔点            <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+                      (可破坏飞行道具)
+<span class="gr">◎</span>诡退                <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+├<span class="gr">◎</span>诡退笔点          诡退中<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+└<span class="gr">◎</span>诡退滑蹴          诡退中<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>厉鬼附身            空中<span class="gi">↓↘→</span>＋<span class="gi">Ａ</span> / 空中<span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>厉鬼附身·前行      空中<span class="gi">↓↘→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>厉鬼附身·后移      空中<span class="gi">↓↙←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>落鬼火              空中<span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>鬼唤                空中<span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｂ</span>or<span class="gi">Ｃ</span>or<span class="gi">Ｄ</span>	
+<span class="gr">☆</span>魄鬼符              <span class="gi">↓↘→↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">☆</span>巫蛊鬼电            <span class="gi">↓↙←↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>
+
+[派生&amp;连携技]
+
+            双蹴击─<span class="gi">→</span>律令腾天勒
+                         <span class="gi">↑</span>
+             ┌─────┘
+            笔突─<span class="gi">→</span> 近<span class="gi">Ｂ</span>─<span class="gi">→</span>近<span class="gi">Ｄ</span>─<span class="gi">→</span>远<span class="gi">Ｃ</span>
+                       <span class="gi">↑</span>      <span class="gi">↑</span>
+                       │┌──┘
+                      近<span class="gi">Ａ</span>─<span class="gi">→</span>*远<span class="gi">Ｃ</span>
+
+            *：可用必杀技取消
+</pre></div>
+</div>
+</section>
+<section id="id11">
+<h2>普陀使者<a class="headerlink" href="#id11" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>普陀使者
+────────────────────────────────────
+<span class="gr">○</span>片刀                <span class="gi">→</span>＋<span class="gi">Ａ</span> / 前冲中<span class="gi">Ａ</span>
+<span class="gr">○</span>蹴突                <span class="gi">→</span>＋<span class="gi">Ｂ</span> / 前冲中<span class="gi">Ｂ</span>
+<span class="gr">○</span>横斩                <span class="gi">→</span>＋<span class="gi">Ｃ</span> / 前冲中<span class="gi">Ｃ</span>
+<span class="gr">○</span>重蹴突              <span class="gi">→</span>＋<span class="gi">Ｄ</span> / 前冲中<span class="gi">Ｄ</span>
+<span class="gr">◎</span>柳叶旋刀            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>金刚升天斩(空中可)  <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>背滚摔              <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>盘坐龙卷斩          <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>百烈斩              <span class="gi">←↓↙</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>法轮下连斩          <span class="gi">←↓↙</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>(攻击)or<span class="gi">Ｄ</span>(取消)
+<span class="gr">◎</span>踩头跳              二段跳跃中<span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">☆</span>释天镇地佛六字大明咒(空中可)                
+                      <span class="gi">↓↘→↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>
+
+[连携技]
+              ┌────────┐
+              │                <span class="gi">↓</span>
+          法轮下连斩─<span class="gi">→</span>近<span class="gi">Ｄ</span>┬<span class="gi">→</span>近<span class="gi">Ｂ</span>┬<span class="gi">→</span>*远<span class="gi">Ｃ</span>
+              │         <span class="gi">↑</span> └─┐<span class="gi">↑</span>└──┐
+              │         │     <span class="gi">↓↓</span>      <span class="gi">↓</span>
+              └───<span class="gi">→</span>近<span class="gi">Ａ</span>─<span class="gi">→</span>*近<span class="gi">Ｃ</span>    远<span class="gi">Ｄ</span>
+
+          蹲<span class="gi">Ａ</span>─<span class="gi">→</span>蹲<span class="gi">Ｂ</span>─<span class="gi">→</span>蹲<span class="gi">Ｃ</span>
+                   <span class="gi">↓</span>
+                 *蹲<span class="gi">Ｄ</span>
+
+          跳<span class="gi">Ｃ</span>─<span class="gi">→</span>跳<span class="gi">Ａ</span>
+                   <span class="gi">↑</span>
+                   <span class="gi">↓</span>
+          跳<span class="gi">Ｄ</span>─<span class="gi">→</span>跳<span class="gi">Ｂ</span>
+
+          *：可用必杀技取消
+</pre></div>
+</div>
+</section>
+<section id="id12">
+<h2>神算子<a class="headerlink" href="#id12" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>神算子
+────────────────────────────────────
+<span class="gr">○</span>手打                前冲中<span class="gi">Ａ</span>
+<span class="gr">○</span>低蹴                前冲中<span class="gi">Ｂ</span>
+<span class="gr">○</span>侧掌打              前冲中<span class="gi">Ｃ</span>
+<span class="gr">○</span>炎蹴                前冲中<span class="gi">Ｄ</span>
+<span class="gr">◎</span>珠算火              <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>飞天炎              <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>盘走倒打            <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>车轮斩              <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>扫地盘              <span class="gi">←↓↙</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>挪移蹴              <span class="gi">←↓↙</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>·<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>(攻击)or<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>(取消)
+<span class="gr">☆</span>弹指神通            <span class="gi">↓↙←↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｃ</span>
+
+[连携技]
+
+             *手打───┐
+               │       │
+               <span class="gi">↓</span>       <span class="gi">↓</span>
+             *近<span class="gi">Ａ</span>─<span class="gi">→</span>*近<span class="gi">Ｃ</span>
+         
+             *：可用必杀技取消
+</pre></div>
+</div>
+</section>
+<section id="id13">
+<h2>鬼塚客<a class="headerlink" href="#id13" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>鬼塚客
+────────────────────────────────────
+<span class="gr">○</span>斩劈                <span class="gi">→</span>＋<span class="gi">Ｃ</span>
+<span class="gr">○</span>二段回蹴            <span class="gi">→</span>＋<span class="gi">Ｄ</span>
+<span class="gr">○</span>翻转踢              <span class="gi">↘</span>＋<span class="gi">Ｄ</span>
+<span class="gr">◎</span>气垒                <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>(防御槽全满时为加强版)
+<span class="gr">◎</span>凤还                <span class="gi">↓↙←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>虫走                <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>龙潜                <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>蟹刀(空中可)        <span class="gi">←↓↙</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>(可用摇杆控制方向)
+<span class="gr">◎</span>蝉                  <span class="gi">←↓↙</span>＋<span class="gi">Ｄ</span>·<span class="gi">←</span>or<span class="gi">Ｎ</span>or<span class="gi">→</span>
+<span class="gr">☆</span>怒忍风              <span class="gi">↓↙←↙↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">☆</span>神风乱舞            <span class="gi">↓↙←↙↓↘→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｃ</span>
+
+[派生技]
+
+             龙潜─<span class="gi">→</span>蟹刀
+ 
+[连携技]
+
+             近<span class="gi">Ａ</span>─<span class="gi">→</span>*近<span class="gi">Ｃ</span>
+              <span class="gi">↓</span>
+             近<span class="gi">Ｄ</span>
+
+             *：可用必杀技取消
+</pre></div>
+</div>
+</section>
+<section id="id14">
+<h2>上官羽<a class="headerlink" href="#id14" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>上官羽
+────────────────────────────────────
+<span class="gr">○</span>刀突                近敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>平踢                近敌时<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>残影斩              近敌时<span class="gi">↘</span>＋<span class="gi">Ｃ</span>
+<span class="gr">◎</span>回成惊刀            <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+                      (<span class="gi">Ａ</span>键发动可连续输入5次)
+                      (<span class="gi">Ｃ</span>键发动可连续输入7次)
+<span class="gr">◎</span>掀天破              <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>掷天斩              <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>胡旋破              <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+└<span class="gr">◎</span>紫炎突            胡旋破后<span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>饿虎扑羊            空中<span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">☆</span>烽火追魂            <span class="gi">↓↘→↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｃ</span>
+
+[派生技]
+
+            胡旋破─<span class="gi">→</span>紫炎突
+
+            回成惊刀─<span class="gi">→</span>掀天破
+</pre></div>
+</div>
+</section>
+<section id="id15">
+<h2>西域双怪<a class="headerlink" href="#id15" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>西域双怪
+────────────────────────────────────
+<span class="gr">○</span>小怪飞蹴            <span class="gi">→</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>毒雾                <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>回旋斩              <span class="gi">→↓↘</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>背斩投              <span class="gi">→↘↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">◎</span>回旋投              <span class="gi">→↘↓↙←</span>＋<span class="gi">Ｃ</span>
+<span class="gr">☆</span>鬼火焰              <span class="gi">↓↙←↙↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｃ</span>
+
+[连携技]
+
+            前跳<span class="gi">Ｄ</span>    跳<span class="gi">Ａ</span>
+            │┌────┤
+            <span class="gi">↓↓</span>        <span class="gi">↓</span>
+            跳<span class="gi">Ｄ</span>──<span class="gi">→</span>跳<span class="gi">Ｃ</span>
+              <span class="gi">↑</span>        <span class="gi">↑</span>
+              └───跳<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id16">
+<h2>千幻邪魔<a class="headerlink" href="#id16" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>千幻邪魔
+────────────────────────────────────
+<span class="gr">○</span>拳突                近敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>邪炎(空中可)        <span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>邪炎射              <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>空中邪炎射          空中<span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">◎</span>火炎旋蹴            <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+<span class="gr">◎</span>空中火炎旋蹴        空中<span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>
+                      (可用方向键控制人物进行移动)
+<span class="gr">◎</span>入地                <span class="gi">←↓↙</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>(<span class="gi">←</span>or<span class="gi">→</span>控制人物左右移动)
+<span class="gr">◎</span>上天                <span class="gi">←↓↙</span>＋<span class="gi">Ｂ</span>or<span class="gi">Ｄ</span>(<span class="gi">←</span>or<span class="gi">→</span>控制人物左右移动)
+<span class="gr">☆</span>邪魔幻电(空中可)    <span class="gi">↓↘→↓↘→</span>＋<span class="gi">Ａ</span>or<span class="gi">Ｃ</span>
+<span class="gr">■</span>密传套路            <span class="gi">Ｃ</span>＋<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ｄ</span>·<span class="gi">Ａ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>·<span class="gi">Ｃ</span>
+
+[连携技]
+
+            近<span class="gi">Ａ</span>─<span class="gi">→</span>近<span class="gi">Ｃ</span>─<span class="gi">→</span>近<span class="gi">Ｂ</span>─<span class="gi">→</span>近<span class="gi">Ｄ</span>
+
+            蹲<span class="gi">Ａ</span>─<span class="gi">→</span>蹲<span class="gi">Ｃ</span>─<span class="gi">→</span>蹲<span class="gi">Ｂ</span>─<span class="gi">→</span>蹲<span class="gi">Ｄ</span>
+
+            跳<span class="gi">Ａ</span>─<span class="gi">→</span>跳<span class="gi">Ｃ</span>─<span class="gi">→</span>跳<span class="gi">Ｂ</span>─<span class="gi">→</span>跳<span class="gi">Ｄ</span>
+</pre></div>
+</div>
+</section>
+<section id="id17">
+<h2>[ 游戏秘技 ]<a class="headerlink" href="#id17" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 游戏秘技 ]
+────────────────────────────────────
+<span class="gr">●</span>选用BOSS - 西域双怪
+  遇到“西域双怪”时故意输给他后，原来1P进行游戏的话就用2P来接关，
+  原来是2P进行游戏的话用1P来接关。
+  选择任意两名角色，进入游戏后就会发现你控制的1号角色已经变成
+  “西域双怪”了。
+  (2号人物还是你原来选的人物，一样可以按<span class="gi">ＡＤ</span>来替换“西域双怪”)
+ 
+<span class="gr">●</span>“千幻邪魔”登场
+  遇到“西域双怪”时，玩家只要不输一回合将其打败，
+  最终BOSS - “千幻邪魔”便会登场，向玩家发起挑战。
+ 
+<span class="gr">●</span>满气模式
+  1P VS COM
+  选完角色后，在出现人物VS特写画面时(当然选完人物后马上输入以下指令也可
+  以，不过其实根本就不用那么早按的)，同时按住1P和2P的<span class="gi">ＡＤ</span>键不放直到对战
+  开始，那么双方的两个能量槽一开始就会处于满气状态。
+  (注意打败该队对手后，在与新队伍对战之前的人物VS特写画面时还是要重新输
+  入指令，即打每队时都要重新输入指令。)
+ 
+  1P VS 2P
+  选完角色后，在出现人物VS特写画面时(当然选完人物后马上输入以下指令也可
+  以，不过其实根本就不用那么早按的)，同时按住1P和2P的开始键键不放直到对战开
+  始，那么双方的两个能量槽一开始就会处于满气状态。
+  与对电脑战的满气模式不同的是，1P VS 2P的满气模式中，人物在发动“超必
+  杀技”或“密传套路”后，能量槽都会马上重新灌满，不像对电脑战时的满气
+  模式那样能量槽用一次就恢复到正常状态了。
+  (注意1P VS 2P的满气模式中，发动“超必杀技”或“密传套路”后，虽然能量
+  槽看起来是变为0后迅速灌满，不过其实那只是假像，就算能量槽还没灌满，也
+  一样可以随意启动“超必杀技”或“密传套路”的。)
+</pre></div>
+</div>
+</section>
+<section id="id18">
+<h2>[ 角色资料 ]<a class="headerlink" href="#id18" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 角色资料 ]
+────────────────────────────────────
+    姓名：龙吟风
+　　武器：长剑
+　　流派：华山派
+　　年龄：24
+　　出身：洛阳
+　　嗜好：棋弈
+
+    简介：
+华山掌门青松子首徒，武当遭受伏击之后，江湖盛传是少林
+、华山、昆仑三派暗中联手所为，为重建师门清誉，奉命下
+山追查真相。与诸葛雄友善，俱为一时瑜亮。师承青松子
+傲厉剑法，人称其剑为“傲剑”。
+ 	 
+ 
+　　姓名：诸葛雄
+　　武器：断门刀
+　　流派：武当
+　　年龄：29
+　　出身：山东
+　　嗜好：饮酒，复仇
+
+    简介：
+山东五虎断门刀传人，武当祖师张真人之再传弟子，身负
+内外功绝学，武功韬略皆一时之选，不满二十岁时便已名
+闻江湖，以其少年得志及刀法狂豪，被世人号为“狂刀”
+。在遭到伏击时，受蒙面剑客华山剑法断臂引为毕生恨事
+，立志诛凶复仇。
+ 
+  
+　　姓名：一真和尚
+　　武器：达摩棍
+　　流派：少林
+　　年龄：21
+　　出身：河南嵩山
+　　嗜好：打坐，研习武学经书
+
+    简介：
+少林寺一字辈的年轻和尚，是个弃婴，身世不明，对武学
+有过人天赋，十八岁时便被选为护寺罗汉，因英雄贴之邀
+请，出寺参与大会。性格朴质敦厚，沉静少言。
+ 	 
+
+　　姓名：司徒翎
+　　武器：长鞭
+　　流派：师承喇嘛
+　　年龄：23
+　　出身：蒙古贵族(大元洛阳王郡主)
+　　嗜好：游山玩水，杂剧
+
+    简介：
+聪明刁钻的蒙古郡主，是元顺帝最疼爱的皇女，本名敏特
+尔沁，为汉化的蒙人，司徒翎即其汉名。自幼好武，喜欢
+模仿江湖侠女，是大喇嘛国师的得意门生。性格聪明刁钻
+，我行我素，不顾皇族反对，对汉人龙吟风颇有好感。
+ 
+ 
+　　姓名：独孤残
+　　武器：双剑
+　　流派：无
+　　年龄：53
+　　出身：四川
+　　嗜好：沉思
+
+    简介：
+以双剑为足的苦行武者。真实身份是十五年前威震大江南
+北的金银双剑，由于仗义独闯血衣教总坛欲替天行道，却
+不幸惨败于千幻邪魔之手，被斩断双足，自此隐姓埋名，
+避居长江三峡，不问江湖中事，唯血衣教的计谋及断足的
+深仇大恨使其复出江湖。五十三岁，十五年的埋首剑术，
+终于让他能够以剑代足，克服残疾，成为一代宗师。
+ 	 
+ 
+　　姓名：金轮童子
+　　武器：双环
+　　流派：昆仑
+　　年龄：17
+　　出身：不详
+　　嗜好：吃糖葫芦，逛庙会
+
+    简介：
+本名颜思齐，昆仑掌门长生真人爱徒，因十岁时顽皮偷吃
+师父一百零八颗“还少丹”，自此身形便未再长大，但也
+因此练成本门密传混元一气功，成为最年轻的武林高手，
+因见其身如童子，善使金轮，江湖人称金轮童子。因听闻
+“血衣大法”能够炼筋锻骨，使其恢复常人之姿，
+于是自告奋勇加入了追察真像的行列。
+ 
+ 
+　　姓名：秦虎
+　　武器：双槌
+　　流派：黑风寨
+　　年龄：42
+　　出身：河北沧州
+　　嗜好：与元兵作对，劫官饷
+
+    简介：
+黑风寨寨主，为太行山群盗之首，因喇嘛教护教国师普陀
+使者重金相酬，参与掠夺密诏，没想到因此卷入这场阴谋
+之中。声雄力猛、臂力过人，双槌威震河北，如宋朝梁山
+英雄一般的绿林好汉，出没河北山东一带，专爱劫掠宫银
+，被官兵视如瘟神。
+ 	 
+ 
+　　姓名：阴阳判官
+　　武器：判官笔、生死簿
+　　流派：地狱门
+　　年龄：不详
+　　出身：云南大理
+　　嗜好：巫虫之术
+  
+    简介：
+如鬼魅一般的巫虫幻术，云南地狱门护法王，大理国为元
+所灭后，他作为当地反元势力的领袖，因行事神秘诡异，
+加上武功中融合巫蛊幻术，常被中原武林中人视为邪门外
+道。此次北上少林参加英雄大会，想藉此机会结合中原反
+元势力复国，个性阴郁，令人捉摸不定。
+ 
+ 
+　　姓名：普陀使者
+　　武器：双弯刀
+　　流派：喇嘛教
+　　年龄：54
+　　出身：护教使者
+　　嗜好：冥思、弘法、云游四方
+
+    简介：
+身兼印度和西藏武学的护教使者，是元朝喇嘛教护教使者
+，奉活佛之命暗中夺取密诏，结合中原武林对抗血衣教，
+反被其它门派误为元朝奸细。武功深不可测。
+ 	 
+ 
+　　姓名：神算子
+　　武器：算盘
+　　流派：盐帮
+　　年龄：50
+　　出身：扬州江都
+　　嗜好：赚钱、数钱、屯积居奇
+
+    简介：
+武功高强的盐商。本名计无双，准南盐帮大当家，个性捉
+狎，使用金算盘为防身武器，故常人不识其名，只知其号
+。盐帮为防元兵掠夺，习武只为保产防身，对江湖中反元
+活动本无兴趣，但还是被卷入这场武林纷争中。
+身材肥胖，是个殷实干练的掌柜。
+ 
+ 
+　　姓名：鬼塚客
+　　武器：长剑、护盾
+　　流派：菊九流
+　　年龄：25
+　　出身：九州鹿儿岛
+　　嗜好：忍术、奇门遁甲之术
+
+    简介：
+来自扶桑。菊九流刀客，擅长奇门遁甲，由于仰慕中原武
+学，几番苦求终得师父首肯，渡海西来与中原刀客切磋武
+艺，恰逢中国武林大乱，想藉此机会以其武学称霸中原武
+林。身裁矮小。
+ 	 
+ 
+　　姓名：上官羽
+　　武器：关刀
+　　流派：青城派
+　　年龄：33
+　　出身：湖北
+　　嗜好：行伍军旅生活、权势
+
+    简介：
+原隶青城派，江湖中有其盛名，为人好客，轻财重义，有
+“小孟尝”之美名，但其实本性深沉，深具野心，因未能
+成为青城派继任掌门，转而投靠元军为将。其后率兵围剿
+太行山诸盗，与秦虎成为仇敌。由于顺帝密诏事件，认为
+机不可失，故设计各派高手互相残杀，坐收渔翁之利。
+33岁，刚猛轻灵兼而有之，已到炉火纯青地步，
+对郡主司徒翎不怀好意，想借此平步青云。
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="ket.html" tppabs="../games/ket.html" title="Previous document">ket 绊地狱 (C) Cave 2002</a>
+        </li>
+        <li>
+          <a href="killbldp.html" tppabs="../games/killbldp.html" title="Next document">killbldp 傲剑狂刀 加强版 (C) IGS 2005</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="../index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">killbld 傲剑狂刀 (C) IGS 1998</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 指令符号说明 ]</a></li>
+<li><a class="reference internal" href="#id3">龙吟风</a></li>
+<li><a class="reference internal" href="#id4">诸葛雄</a></li>
+<li><a class="reference internal" href="#id5">一真和尚</a></li>
+<li><a class="reference internal" href="#id6">司徒翎</a></li>
+<li><a class="reference internal" href="#id7">独孤残</a></li>
+<li><a class="reference internal" href="#id8">金轮童子</a></li>
+<li><a class="reference internal" href="#id9">秦虎</a></li>
+<li><a class="reference internal" href="#id10">阴阳判官</a></li>
+<li><a class="reference internal" href="#id11">普陀使者</a></li>
+<li><a class="reference internal" href="#id12">神算子</a></li>
+<li><a class="reference internal" href="#id13">鬼塚客</a></li>
+<li><a class="reference internal" href="#id14">上官羽</a></li>
+<li><a class="reference internal" href="#id15">西域双怪</a></li>
+<li><a class="reference internal" href="#id16">千幻邪魔</a></li>
+<li><a class="reference internal" href="#id17">[ 游戏秘技 ]</a></li>
+<li><a class="reference internal" href="#id18">[ 角色资料 ]</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      枫枫的游戏机
+      
+      |
+      粉丝专属秘籍
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
