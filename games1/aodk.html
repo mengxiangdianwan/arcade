@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>aodk 痛快进行曲 (C) SNK 1994</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="../_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="aof 龙虎之拳 (C) SNK 1992" href="aof.html" />
+    <link rel="prev" title="androdun 勇者之击 (C) Visco 1992" href="androdun.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="androdun.html" tppabs="../games/androdun.html" title="Previous document">androdun 勇者之击 (C) Visco 1992</a>
+        </li>
+        <li>
+          <a href="aof.html" tppabs="../games/aof.html" title="Next document">aof 龙虎之拳 (C) SNK 1992</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="aodk-c-snk-1994">
+<h1>aodk 痛快进行曲 (C) SNK 1994<a class="headerlink" href="#aodk-c-snk-1994" title="此标题的永久链接">¶</a></h1>
+<p>痛快进行曲 (C) SNK 1994</p>
+<p>枫枫的游戏机 粉丝专属街机游戏秘籍     街机游戏名称代码：aodk</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+───────────────────────
+<span class="gi">①</span>操纵杆
+  <span class="gi">↖↑↗</span>  
+  <span class="gi">←Ｎ→</span>  ８方向移动
+  <span class="gi">↙↓↘</span>  
+
+  防御          <span class="gi">↖</span>or<span class="gi">←</span>or<span class="gi">↙</span>
+  (防御普通攻击也会消耗体力)
+  前冲          轻按<span class="gi">→</span>
+  疾退          轻按<span class="gi">←</span>
+  向上快速移动  轻按<span class="gi">↑</span>
+  向下快速移动  轻按<span class="gi">↓</span>
+
+<span class="gi">②</span>按键
+  轻拳          轻按<span class="gi">Ａ</span>
+  重拳          长按<span class="gi">Ａ</span>
+  轻脚          轻按<span class="gi">Ｂ</span>
+  重脚          长按<span class="gi">Ｂ</span>
+  跳跃          <span class="gi">Ｃ</span>
+
+  挑衅          <span class="gi">↓</span>＋<span class="gi">Ｃ</span>
+  前冲攻击      前冲中<span class="gi">Ａ</span>or<span class="gi">Ｂ</span>      
+
+  拾起武器      在武器处<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+  武器攻击      手持武器时<span class="gi">Ａ</span>
+  丢掉武器      手持武器时<span class="gi">ＡＢ</span> / <span class="gi">↓</span>＋<span class="gi">Ｃ</span>
+  特殊攻击      手持武器时<span class="gi">↓↘→</span>＋<span class="gi">Ａ</span>
+
+下降攻击   爬上车子后才可发动的特殊技能。
+
+超必杀技   体力槽出现闪烁的“GANGAN”字样时便
+           可使用。
+
+抓住对手   近敌时<span class="gi">→</span>＋<span class="gi">ＡＢ</span>；
+           敌倒地晕眩中，在敌头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+投技       抓住敌人后<span class="gi">Ａ</span>or<span class="gi">Ｂ</span>
+转换方向   抓住敌人后<span class="gi">Ｃ</span>
+           如果在正面抓住对手，转换方向会到
+           背部；反之是到正面。抓住对手一次
+           只能转换一次方向。
+
+※投掷详解—抓住对手的场合
+    抓住对手时，角色会向前滑行两小步。如果对手
+在被你抓住时快速摇动摇杆，便只有向前滑行一小步
+。如果在滑行的时间内不作出回应的话，会转成被对
+手抓住。
+    抓住对手时，角色会向前滑行两小步。如果在滑
+行的时间内不作出回应，而对手在这段时间内按下<span class="gi">Ａ</span>
+<span class="gi">ＢＣ</span>中任一键，时间过后双方会自行跳开。
+如果对手是快速连打<span class="gi">ＡＢＣ</span>中任一键，那便只有向前
+滑行一小步。
+
+反抓对手   对手使出投技时头上闪光的瞬间输入
+           <span class="gi">Ａ</span>or<span class="gi">Ｂ</span>or<span class="gi">Ｃ</span>，可绕到对手身后并抓住
+           对手后背。
+返技       对手使出投技时头上闪光的瞬间，
+           方向转一圈(最后一个方向必须是转到
+           对手所在的方向为止)＋<span class="gi">Ａ</span>or<span class="gi">Ｂ</span>or<span class="gi">Ｃ</span>，
+           可反击对手。 
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 指令符号说明 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 指令符号说明 ]
+───────────────────────
+以1P角色为准(即游戏角色面向右)
+
+<span class="gr">◎</span>超必杀技
+<span class="gr">○</span>通常必杀技
+<span class="gr">☆</span>从敌正面的投技
+<span class="gr">★</span>从敌背后的投技
+<span class="gr">□</span>敌倒地晕眩中，在其头部的攻击
+<span class="gr">■</span>敌倒地晕眩中，在其脚部的攻击
+<span class="gr">▽</span>下降攻击
+
+(地)地面效果(在坚硬地面等威力大)的技能
+(血)流血为目的技能
+(骨)骨折为目的技能
+(足)足腰为目的，敌移动速度下降的技能
+(体)自己的体力红色(1/4以下)时威力增加的技能
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>[ 指令符号说明 ]<a class="headerlink" href="#id3" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 指令符号说明 ]
+───────────────────────
+以1P角色为准(即游戏角色面向右)
+
+<span class="gr">◎</span>剧痛必杀技
+<span class="gr">○</span>通常必杀技
+<span class="gr">☆</span>从敌正面的投技
+<span class="gr">★</span>从敌背后的投技
+<span class="gr">□</span>敌倒地晕眩中，在其头部的攻击
+<span class="gr">■</span>敌倒地晕眩中，在其脚部的攻击
+<span class="gr">▽</span>下降攻击
+
+(地)地面效果(在坚硬地面等威力大)的技能
+(血)流血为目的技能
+(骨)骨折为目的技能
+(足)足腰为目的，敌移动速度下降的技能
+(体)自己的体力红色的时威力增加的技能
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>“本牧的赤豹”条<a class="headerlink" href="#id4" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>“本牧的赤豹”条
+───────────────────────
+Name：Joe
+日文名：“本牧の赤豹”条
+
+<span class="gr">◎</span>友情之合体·热血之拳            <span class="gi">↑↖←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>条之突袭                      <span class="gi">←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>真空三段蹴                      <span class="gi">→↙↓↘</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>电光百烈脚                    <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>连打
+<span class="gr">○</span>通称·豪华投                  <span class="gi">↓↙←</span>＋<span class="gi">ＡＢＣ</span>
+                          (可抓住冲刺中的对手)
+<span class="gr">○</span>胸掴巴投(体)        正面抓敌时<span class="gi">→↗↑↖←</span>＋<span class="gi">Ｂ</span>
+
+<span class="gr">☆</span>胸襟投(地)        
+          正面抓敌时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>头撞(血)                    正面抓敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>膝连打          正面抓敌时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">↓</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>飞膝蹴                      正面抓敌时<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>首挂投                      正面抓敌时<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>里蹴            敌使出正面投技瞬间，使出返技
+
+<span class="gr">★</span>脑天肘连打(血)  抓敌背部时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>头撞(血)                    抓敌背部时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>逆首投(地)                  抓敌背部时<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>延髓踢            抓敌背部时<span class="gi">Ｂ</span>or任一方向＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>反肘打          敌使出背部投技瞬间，使出返技
+
+<span class="gr">□</span>猿之舞              敌倒地晕眩中，在其头部<span class="gi">Ａ</span>
+<span class="gr">□</span>拉起            敌倒地晕眩中，在其头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">□</span>踩踏                敌倒地晕眩中，在其头部<span class="gi">Ｂ</span>
+
+<span class="gr">■</span>摇摆舞              敌倒地晕眩中，在其脚部<span class="gi">Ａ</span>
+<span class="gr">■</span>踩踏                敌倒地晕眩中，在其脚部<span class="gi">Ｂ</span>
+
+<span class="gr">▽</span>俯冲膝落                              <span class="gi">↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▽</span>超级踩踏                              <span class="gi">↑</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2>“浪速的性情男子”刚<a class="headerlink" href="#id5" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>“浪速的性情男子”刚
+───────────────────────
+Name：Goh
+日文名：“浪速のド根性男”刚
+
+<span class="gr">◎</span>大坂名物 龙卷崩           <span class="gi">→↗↑↖←↙↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>斗气之拳                      <span class="gi">←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>飞扑袭                                  <span class="gi">ＢＣ</span>
+<span class="gr">○</span>斗气蹴                            <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>袋叩                正面抓敌时<span class="gi">←↖↑↗→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>过肩摔(体)                抓敌背部时<span class="gi">↑↓</span>＋<span class="gi">Ｂ</span>
+
+<span class="gr">☆</span>椰之实割        正面抓敌时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>打桩机                      正面抓敌时<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>头撞                        正面抓敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>背负投          正面抓敌时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">↓</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>足拂                        正面抓敌时<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>背重扣(骨)                  正面抓敌时<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>头撞回礼(血)    敌使出正面投技瞬间，使出返技
+
+<span class="gr">★</span>眼镜蛇绞(足)      
+          抓敌背部时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>后头部肘打                  抓敌背部时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>延髓踢                          抓敌背部时<span class="gi">Ｂ</span>
+<span class="gr">★</span>延髓斩                抓敌背部时任一方向＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>里拳(血)        敌使出背部投技瞬间，使出返技
+
+<span class="gr">□</span>乘马木屐拳          敌倒地晕眩中，在其头部<span class="gi">Ａ</span>
+<span class="gr">□</span>拉起            敌倒地晕眩中，在其头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">□</span>踏道                敌倒地晕眩中，在其头部<span class="gi">Ｂ</span>
+
+<span class="gr">■</span>木屐落              敌倒地晕眩中，在其脚部<span class="gi">Ａ</span>
+<span class="gr">■</span>踏溃                敌倒地晕眩中，在其脚部<span class="gi">Ｂ</span>
+
+<span class="gr">▽</span>下冲木屐踏                            <span class="gi">↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▽</span>股跳蹴                                <span class="gi">↑</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h2>“闪光的白牙”李<a class="headerlink" href="#id6" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>“闪光的白牙”李
+───────────────────────
+Name：Lee
+日文名：“闪光の白き牙”李
+
+<span class="gr">◎</span>凶鹰爪                          <span class="gi">↘↗↘↗</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>暴杀掌                            <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>青狼牙                            <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>弧鹫脚                          <span class="gi">→↙↓↘</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>螳螂蹴                    <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>·<span class="gi">Ｂ</span>
+<span class="gr">○</span>雷蹴            正面抓敌时<span class="gi">→↗↑↖←↘↖</span>＋<span class="gi">Ｂ</span>
+
+<span class="gr">☆</span>反投    正面抓敌时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>跳腰                        正面抓敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>颜面膝落(血)      
+          正面抓敌时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">↓</span>＋<span class="gi">Ｂ</span>or<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>手固                        正面抓敌时<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>目突            敌使出正面投技瞬间，使出返技
+
+<span class="gr">★</span>肾脏连击          抓敌背部时<span class="gi">Ａ</span>or任一方向＋<span class="gi">Ａ</span>
+<span class="gr">★</span>后头部膝落(血)    抓敌背部时<span class="gi">Ｂ</span>or任一方向＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>白鹭蹴          敌使出背部投技瞬间，使出返技
+
+<span class="gr">□</span>蹴上                敌倒地晕眩中，在其头部<span class="gi">Ａ</span>
+<span class="gr">□</span>拉起            敌倒地晕眩中，在其头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">□</span>蹴上连打            敌倒地晕眩中，在其头部<span class="gi">Ｂ</span>
+
+<span class="gr">■</span>蹴上                敌倒地晕眩中，在其脚部<span class="gi">Ａ</span>
+<span class="gr">■</span>阿基里斯腱固(足)    敌倒地晕眩中，在其脚部<span class="gi">Ｂ</span>
+
+<span class="gr">▽</span>回转膝落                              <span class="gi">↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▽</span>回转踵落                              <span class="gi">↑</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h2>“天真烂漫女孩”琦莎拉<a class="headerlink" href="#id7" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>“天真烂漫女孩”琦莎拉
+───────────────────────
+Name：Kisara
+日文名：“天真烂漫おてんば娘”キサラ
+
+<span class="gr">◎</span>嫉妒炸弹                      <span class="gi">←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>弧月踢                            <span class="gi">↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>啦啦队呼之舞                      <span class="gi">↓↙←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>彩虹跳弹                              <span class="gi">ＡＢＣ</span>
+<span class="gr">○</span>飞蹴                    版边时<span class="gi">←</span>＋<span class="gi">Ｃ</span>·<span class="gi">↓</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>飞溅之舞                      <span class="gi">↙↖↘↗</span>＋<span class="gi">ＡＢ</span>
+<span class="gr">○</span>高空背负投(体)      抓敌背部时<span class="gi">↓↘→↗↑</span>＋<span class="gi">Ｂ</span>
+
+<span class="gr">☆</span>背负投(地)    
+          正面抓敌时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>or<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>大腰(地)                    正面抓敌时<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>北方爆弹(血/地) 正面抓敌时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>钓钟叩                      正面抓敌时<span class="gi">↓</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>巴投(地)                    正面抓敌时<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>足踏付          敌使出正面投技瞬间，使出返技
+
+<span class="gr">★</span>往复平手打       
+          抓敌背部时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">→</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>倒四方固                    抓敌背部时<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>裸缔    抓敌背部时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">↓</span>＋<span class="gi">Ｂ</span>or<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>里首投技(地)                抓敌背部时<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>金的蹴上        敌使出背部投技瞬间，使出返技
+
+<span class="gr">□</span>上四方固            敌倒地晕眩中，在其头部<span class="gi">Ａ</span>
+<span class="gr">□</span>拉起            敌倒地晕眩中，在其头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">□</span>压腕逆十字(骨)      敌倒地晕眩中，在其头部<span class="gi">Ｂ</span>
+
+<span class="gr">■</span>蹴上                敌倒地晕眩中，在其脚部<span class="gi">Ａ</span>
+<span class="gr">■</span>嘲笑(无攻击判定)敌倒地晕眩中，在其脚部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">■</span>断头台              敌倒地晕眩中，在其脚部<span class="gi">Ｂ</span>
+
+<span class="gr">▽</span>俯冲体压                              <span class="gi">↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▽</span>俯冲断头台                            <span class="gi">↑</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h2>“天翔 狮子”慎<a class="headerlink" href="#id8" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>“天翔 狮子”慎
+───────────────────────
+Name：Sheen
+日文名：“天翔る狮子”シン
+
+<span class="gr">◎</span>超级打桩机  按住<span class="gi">Ｂ</span>蓄一会，然后按着<span class="gi">→</span>，放开<span class="gi">Ｂ</span>
+<span class="gr">○</span>翻摔技                        <span class="gi">→↗↑↖←</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>疾风踢                        <span class="gi">←↙↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>超级逆水平                    <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>连打
+<span class="gr">○</span>重击掌投                              <span class="gi">→</span>＋<span class="gi">Ａ</span>
+                          (可抓住冲刺中的对手)
+<span class="gr">○</span>破头击              空中近敌时，任一方向＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>颜面扣                正面抓敌时<span class="gi">←↖↑↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>过肩摔                正面抓敌时<span class="gi">→↗↑↓</span>＋<span class="gi">Ｂ</span>
+
+<span class="gr">☆</span>弓扣    正面抓敌时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>爆弹扣                      正面抓敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>风车式膝撞        
+          正面抓敌时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">↓</span>＋<span class="gi">Ｂ</span>or<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>危险冲击                    正面抓敌时<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>压倒            敌使出正面投技瞬间，使出返技
+
+<span class="gr">★</span>后落            抓敌背部时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>摇摆架                      抓敌背部时<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>延髓打                      抓敌背部时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>打桩机          抓敌背部时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>肘压投(血)                  抓敌背部时<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>腋固(骨)                    抓敌背部时<span class="gi">↓</span>＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>肘打(血)        敌使出背部投技瞬间，使出返技
+
+<span class="gr">□</span>跳肘落              敌倒地晕眩中，在其头部<span class="gi">Ａ</span>
+<span class="gr">□</span>拉起            敌倒地晕眩中，在其头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">□</span>践踏                敌倒地晕眩中，在其头部<span class="gi">Ｂ</span>
+
+<span class="gr">■</span>阿基里斯腱固(足)    敌倒地晕眩中，在其脚部<span class="gi">Ａ</span>
+<span class="gr">■</span>挑衅(无攻击判定)敌倒地晕眩中，在其脚部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">■</span>跳膝踏              敌倒地晕眩中，在其脚部<span class="gi">Ｂ</span>
+
+<span class="gr">▽</span>俯冲肘落                              <span class="gi">↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▽</span>月压                                  <span class="gi">↑</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id9">
+<h2>“褐色 弹丸”巴比<a class="headerlink" href="#id9" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>“褐色 弹丸”巴比
+───────────────────────
+Name：Bobby
+日文名：“褐色の弹丸”ボビー
+
+<span class="gr">◎</span>炼狱火焰流星                <span class="gi">↓↙←↖↑↓</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>旋转攻击                      <span class="gi">←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>喷射勾拳                        <span class="gi">→↙↓↘</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>星空三连星                    <span class="gi">←↙↓↘→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>高速带球                              <span class="gi">Ｂ</span>＋<span class="gi">Ｃ</span>
+├<span class="gr">○</span>上升攻击                      高速带球中<span class="gi">Ａ</span>
+└<span class="gr">○</span>翻滚攻击                      高速带球中<span class="gi">Ｂ</span>
+<span class="gr">○</span>空中扣篮            空中近敌时，任一方向＋<span class="gi">Ａ</span>
+<span class="gr">○</span>连舞拳            抓敌背部时<span class="gi">↑↙↘↖↗↓</span>＋<span class="gi">Ｂ</span>
+
+<span class="gr">☆</span>人体扣篮(地)    正面抓敌时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>头撞(血)                    正面抓敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>外传球投(地)                正面抓敌时<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>振子踢  正面抓敌时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">↓</span>＋<span class="gi">Ｂ</span>or<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>腕折投(骨)                  正面抓敌时<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>奇迹拳          敌使出正面投技瞬间，使出返技
+
+<span class="gr">★</span>后头部球殴        
+          抓敌背部时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>肛门突上                    抓敌背部时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>貘转后方投(地)     抓敌背部时<span class="gi">Ｂ</span>or任一方向+<span class="gi">Ｂ</span>
+<span class="gr">★</span>奇迹脚          敌使出背部投技瞬间，使出返技
+
+<span class="gr">□</span>运球(血)            敌倒地晕眩中，在其头部<span class="gi">Ａ</span>
+<span class="gr">□</span>拉起            敌倒地晕眩中，在其头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">□</span>前宙踢              敌倒地晕眩中，在其头部<span class="gi">Ｂ</span>
+
+<span class="gr">■</span>跳马叩              敌倒地晕眩中，在其脚部<span class="gi">Ａ</span>
+<span class="gr">■</span>捅              敌倒地晕眩中，在其脚部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">■</span>巴比霹雳舞          敌倒地晕眩中，在其脚部<span class="gi">Ｂ</span>
+
+<span class="gr">▽</span>球刺                                  <span class="gi">↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▽</span>超前宙踢                              <span class="gi">↑</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id10">
+<h2>“黑 暴牛”雷恩哈特<a class="headerlink" href="#id10" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>“黑 暴牛”雷恩哈特
+───────────────────────
+Name：Leonhalt
+日文名：“黑き暴牛”レオンハルト
+
+<span class="gr">◎</span>白虎猛击                        <span class="gi">↓↙←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>真·暴杀掌                        <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>跟斗踢                          <span class="gi">→↙↓↘</span>＋<span class="gi">Ｂ</span>
+<span class="gr">○</span>前冲掌打                      <span class="gi">←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>空落                空中近敌时，任一方向＋<span class="gi">Ａ</span>
+<span class="gr">○</span>重扣杀              抓敌背部时<span class="gi">→↗↑↖↘</span>＋<span class="gi">Ｂ</span>
+
+<span class="gr">☆</span>高抛(地)      
+          正面抓敌时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>头撞连打(血)                正面抓敌时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>吊摔(血)正面抓敌时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">↓</span>＋<span class="gi">Ｂ</span>or<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>闪电爆弹                    正面抓敌时<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>押蹴            敌使出正面投技瞬间，使出返技
+
+<span class="gr">★</span>原子膝撞          抓敌背部时<span class="gi">Ａ</span>or任一方向＋<span class="gi">Ａ</span>
+<span class="gr">★</span>原子高抛(地)      抓敌背部时<span class="gi">Ｂ</span>or任一方向＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>肘打            敌使出背部投技瞬间，使出返技
+
+<span class="gr">□</span>跳肘落              敌倒地晕眩中，在其头部<span class="gi">Ａ</span>
+<span class="gr">□</span>拉起            敌倒地晕眩中，在其头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">□</span>跳臀压              敌倒地晕眩中，在其头部<span class="gi">Ｂ</span>
+
+<span class="gr">■</span>跳肘落              敌倒地晕眩中，在其脚部<span class="gi">Ａ</span>
+<span class="gr">■</span>挑衅(无攻击判定)敌倒地晕眩中，在其脚部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">■</span>跳膝落              敌倒地晕眩中，在其脚部<span class="gi">Ｂ</span>
+
+<span class="gr">▽</span>俯冲跳肘落                            <span class="gi">↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▽</span>俯冲跳膝落                            <span class="gi">↑</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+<section id="id11">
+<h2>“疾风怒涛 暴徒”风魔<a class="headerlink" href="#id11" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>“疾风怒涛 暴徒”风魔
+───────────────────────
+Name：Funma
+日文名：“疾风怒涛の暴れん坊”フウマ
+
+<span class="gr">◎</span>木端微尘之术              <span class="gi">→↘↓↙←</span>＋<span class="gi">ＡＢＣ</span>
+<span class="gr">○</span>炎龙破                          <span class="gi">→↙↓↘</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>电光石火之术                      <span class="gi">↓↙←</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>爆裂发劲                      <span class="gi">←↙↓↘→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>猿投                  空中近敌时任一方向＋<span class="gi">Ａ</span>
+<span class="gr">○</span>杀虫拳(血)                正面抓敌时<span class="gi">←→</span>＋<span class="gi">Ａ</span>
+<span class="gr">○</span>爆裂究极落(体)  正面抓敌时<span class="gi">→↗↑↖←↙↓</span>＋<span class="gi">Ｂ</span>
+
+<span class="gr">☆</span>忍者式里投        正面抓敌时<span class="gi">Ａ</span>or任一方向＋<span class="gi">Ａ</span>
+<span class="gr">☆</span>饭纲落(地)        
+          正面抓敌时<span class="gi">Ｂ</span>or<span class="gi">↑</span>＋<span class="gi">Ｂ</span>or<span class="gi">↓</span>＋<span class="gi">Ｂ</span>or<span class="gi">→</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>腕折投(骨)                  正面抓敌时<span class="gi">←</span>＋<span class="gi">Ｂ</span>
+<span class="gr">☆</span>手刀一          敌使出正面投技瞬间，使出返技
+
+<span class="gr">★</span>鬼杀    抓敌背部时<span class="gi">Ａ</span>or<span class="gi">↑</span>＋<span class="gi">Ａ</span>or<span class="gi">↓</span>＋<span class="gi">Ａ</span>or<span class="gi">←</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>鬼面碎(血)                  抓敌背部时<span class="gi">→</span>＋<span class="gi">Ａ</span>
+<span class="gr">★</span>忍者式仔牛之烧印押(血)      
+                    抓敌背部时<span class="gi">Ｂ</span>or任一方向＋<span class="gi">Ｂ</span>
+<span class="gr">★</span>手刀二          敌使出背部投技瞬间，使出返技
+
+<span class="gr">□</span>回转手刀突          敌倒地晕眩中，在其头部<span class="gi">Ａ</span>
+<span class="gr">□</span>拉起            敌倒地晕眩中，在其头部<span class="gi">↓</span>＋<span class="gi">Ａ</span>
+<span class="gr">□</span>回转膝落            敌倒地晕眩中，在其头部<span class="gi">Ｂ</span>
+
+<span class="gr">■</span>回转手刀突          敌倒地晕眩中，在其脚部<span class="gi">Ａ</span>
+<span class="gr">■</span>回转膝落            敌倒地晕眩中，在其脚部<span class="gi">Ｂ</span>
+
+<span class="gr">▽</span>回转手刀突                            <span class="gi">↑</span>＋<span class="gi">Ａ</span>
+<span class="gr">▽</span>回转膝落                              <span class="gi">↑</span>＋<span class="gi">Ｂ</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="androdun.html" tppabs="../games/androdun.html" title="Previous document">androdun 勇者之击 (C) Visco 1992</a>
+        </li>
+        <li>
+          <a href="aof.html" tppabs="../games/aof.html" title="Next document">aof 龙虎之拳 (C) SNK 1992</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="../index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">aodk 痛快进行曲 (C) SNK 1994</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 指令符号说明 ]</a></li>
+<li><a class="reference internal" href="#id3">[ 指令符号说明 ]</a></li>
+<li><a class="reference internal" href="#id4">“本牧的赤豹”条</a></li>
+<li><a class="reference internal" href="#id5">“浪速的性情男子”刚</a></li>
+<li><a class="reference internal" href="#id6">“闪光的白牙”李</a></li>
+<li><a class="reference internal" href="#id7">“天真烂漫女孩”琦莎拉</a></li>
+<li><a class="reference internal" href="#id8">“天翔 狮子”慎</a></li>
+<li><a class="reference internal" href="#id9">“褐色 弹丸”巴比</a></li>
+<li><a class="reference internal" href="#id10">“黑 暴牛”雷恩哈特</a></li>
+<li><a class="reference internal" href="#id11">“疾风怒涛 暴徒”风魔</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      枫枫的游戏机
+      
+      |
+      粉丝专属秘籍
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
