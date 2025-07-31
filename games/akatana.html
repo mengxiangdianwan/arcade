@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>akatana 赤刀 (C) Cave 2010</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" tppabs="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" tppabs="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js" tppabs="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js" tppabs="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js" tppabs="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js" tppabs="../_static/translations.js"></script>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="akiss 麻雀天使之吻 (C) Jaleco 1995" href="akiss.html" />
+    <link rel="prev" title="ajax 飓风直升机 (C) Konami 1987" href="ajax.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" tppabs="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="ajax.html" tppabs="../games/ajax.html" title="Previous document">ajax 飓风直升机 (C) Konami 1987</a>
+        </li>
+        <li>
+          <a href="akiss.html" tppabs="../games/akiss.html" title="Next document">akiss 麻雀天使之吻 (C) Jaleco 1995</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="akatana-c-cave-2010">
+<h1>akatana 赤刀 (C) Cave 2010<a class="headerlink" href="#akatana-c-cave-2010" title="此标题的永久链接">¶</a></h1>
+<p>赤刀 (C) Cave 2010</p>
+<p>枫枫的游戏机 粉丝专属街机游戏秘籍     街机游戏名称代码：akatana</p>
+<section id="id1">
+<h2>[ 基本操作 ]<a class="headerlink" href="#id1" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 基本操作 ]
+──────────────────────────────
+<span class="gi">①</span>操纵杆
+  <span class="gi">↖↑↗</span>
+  <span class="gi">←Ｎ→</span>
+  <span class="gi">↙↓↘</span>
+
+<span class="gi">②</span>按钮
+ 配置<span class="gi">Ａ</span>     配置<span class="gi">Ｂ</span>
+ <span class="gi">Ａ</span>：射击   <span class="gi">Ａ</span>：射击
+ <span class="gi">Ｂ</span>：爆弹   <span class="gi">Ｂ</span>：爆弹
+ <span class="gi">Ｃ</span>：连射   <span class="gi">Ｃ</span>：念身
+ <span class="gi">Ｄ</span>：念身   <span class="gi">Ｄ</span>：连射
+
+ 玩家头像旁边的金色槽是生命值
+ 生命槽旁边的是祈导力(<span class="gi">Ｅ</span>)槽
+ 祈导力(<span class="gi">Ｅ</span>)槽和生命槽关联，死命会增加祈导力(<span class="gi">Ｅ</span>)槽上限
+ 生命槽下方是爆弹(<span class="gi">Ｂ</span>)
+
+<span class="gr">○</span>关于道具
+<span class="gi">Ｂ</span>：爆弹(仅剩一命时中弹会自动释放所有爆弹)
+
+<span class="gi">Ｅ</span>：祈导石(大中小３级变化)
+    只在我方飞机形态时出现：
+    <span class="gi">①</span>防御模式时近距离击毁敌人
+    <span class="gi">②</span>攻击模式时、幻圣魂(子机)近敌时出现
+
+<span class="gi">Ｇ</span>：金币
+    出现条件：
+    <span class="gi">①</span>幻忍击毁敌人
+    <span class="gi">②</span>幻忍攻击模式击毁敌人时的暴风消弹
+    <span class="gi">③</span>祈导炮击毁敌人时出现
+    小：100分
+    中：1000分
+    大：10000分
+
+<span class="gr">○</span>飞机形态
+  攻击模式：按住<span class="gi">Ａ</span>不放。
+  幻圣魂(子机)火力高、自机移动速度慢、
+  幻圣魂(子机)和自机保持固定阵型。
+  幻圣魂近敌时会出现祈导石，屏幕上的所有道具都吸附在幻圣魂上、
+  松开<span class="gi">Ａ</span>会自动吸收所有道具。
+
+※祈导石的成长
+  攻击模式下，敌弹贯穿被幻圣魂吸附的祈导石，石头就会成长。
+  祈导石一段时间后会消失，所以不能拖太久时间。
+
+  防御模式：连打<span class="gi">Ａ</span>or按住连射键。
+  自机火力高、移动速度快、
+  幻圣魂(子机)跟随自机调整阵型。
+  近距离击毁敌人会出现祈导石。
+
+<span class="gr">○</span>幻忍形态
+  幻忍形态下不断消耗祈导力，祈导力耗尽就会解除念身。
+  祈导力未耗尽时按念身键可提前解除念身，但会消耗部分祈导力。
+  解除念身时，会出现一个大光圈，此时全屏敌弹被弹回。
+  
+※金币的成长
+  幻忍形态下，金币会围绕自身旋转，并随着时间的推移而变大。
+  最大形态下是1万分，同屏最多256个金币。
+  返回飞机形态即可吸收所有金币。
+
+  攻击模式：按住<span class="gi">Ａ</span>不放、高火力祈导炮。
+  击毁敌人时形成的爆炸暴风，会消除附近的敌弹并将其变成金币。
+  被敌弹击中会立刻变回飞机，同时清空祈导槽。
+
+  防御模式：连打<span class="gi">Ａ</span>or按住连射键。
+  火力低但拥有使敌弹无效化的祈导壁
+  近距离击毁敌人时会将附近敌弹弹返，弹返弹是红色的。
+  合理利用可提高安全性。
+
+<span class="gr">○</span>敌红色诱导激光
+  部分敌人会发射红色激光。
+  和普通敌弹不同，飞机形态下即使被击中，也不会马上死命，
+  而是随着被攻击时间而不断消耗生命槽，当一条命降到零才死命。
+  幻忍形态，激光攻击无效化。
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>[ 自机简介 ]<a class="headerlink" href="#id2" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 自机简介 ]
+──────────────────────────────
+<span class="gr">○</span>一号机 金盏花
+祈导人 神条椿 19岁 干支：甲
+原十干十人众之一，由于反对使用刀具的愚蠢行为而举旗造反。
+杀死了如同妹妹一般的后辈“堇”，成为了寄宿着灵魂的血晶刀
+的祈导人。为了与过去一刀两断，舍去女性的身份一直穿着男装。
+
+幻忍   朝霞堇 18岁 干支：乙
+椿的后辈，自愿成为幻忍。为椿亲手所杀，灵魂寄宿于椿的血晶刀中。
+帝国芭蕉军最高指挥官柊将其视如己出养育成人并教授技艺。
+
+攻击模式移动速度最慢、防御模式移动速度中
+飞机形态：前方小区域集中射击
+幻忍形态：祈导炮射程远、威力一般
+
+<span class="gr">○</span>二号机 胡蝶兰
+祈导人 西圆寺牡丹 18岁 干支：壬
+通过灵魂仪式夺走了哥哥桔梗的性命、强力的十干之力持有者。
+西园寺家的女儿，但不属于十人众。
+性格活泼，操纵飞行器的水平一流。梦想看到全世界和平。
+灵魂仪式的代价是视力丧失，但获得了感知周围环境的能力。
+
+幻忍   西圆寺桔梗 22岁 干支：丙
+父亲帝国之主“芭蕉”杀害了其母亲“樱”。
+原十干十人众之一，知晓血晶刀的秘密而反叛。
+为向杀国民，夺母亲之命的父亲复仇而坚定不移，
+将自己的性命献于血晶刀，坚定了抗争的决心。
+死于自己所爱的妹妹“牡丹”之手得以幻忍化，增强了力量。
+
+攻击模式移动速度中、防御模式移动速度最快
+飞机形态：比一号机射击范围稍大
+幻忍形态：祈导炮为定点射击，威力不错
+
+<span class="gr">○</span>三号机 八重樱
+祈导人 小早川紫苑 17岁 干支：戊
+击杀庚之印持有者十人众“真田青桐”之后，
+将其妹妹铃兰救出。
+从帝国逃出后，加入了桔梗。
+铃兰决意献出生命，结成血晶刀契约。
+灵魂仪式的代价是失去了青春，衰老了。
+
+幻忍   真田铃兰   16岁 干支：辛
+试图阻止其被帝国利用，疯狂好战的哥哥青桐，
+却被哥哥重伤濒死。
+为紫苑所救，自愿献身成为幻忍。
+
+攻击模式移动速度最快、防御模式移动速度最慢
+飞机形态：三机中最大攻击范围、几乎覆盖全屏
+幻忍形态：三机中最大威力的祈导炮，但射程很近
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>[ 背景设定 ]<a class="headerlink" href="#id3" title="此标题的永久链接">¶</a></h2>
+<div class="highlight-command_chinese notranslate"><div class="highlight"><pre><span></span>[ 背景设定 ]
+──────────────────────────────
+<span class="gr">○</span>故事设定
+故事的背景是以复兴的、充满希望的、高度成长的日本为虚构的时代
+，年号为大照。
+
+急速成长的，技术革新发展的时代，“祈导石”作为被发现的最新资
+源，成为了代替煤炭发电的最新能源而被充分利用，并且，利用这种
+石头加工制成的刀具“祈导刀”，经过特殊能力者使用后会使身体操
+纵强大的念能力。“祈导刀”夺走人的性命后会变化成红色的刀“血
+晶刀”，即使不凭借使用者自身的力量也会展示出强大的力量。
+
+小小的国家在保护自身的同时也为了超越其他的国家而发展着。
+帝国之主“芭蕉”和他集中编制的武装军队，为了展现其强大的实力
+，不断的向近邻诸国发动侵略战争，而其中的部分特殊能力者被称呼
+为“十干十人众”而广泛赞扬着。
+
+作为守护国家的十干众人被赋予了特权——那是“即使牺牲人的性命
+也要使国家变强大”。另一方面，因十干的残暴独裁行为，导致内部
+分裂成两个派别。集结了各路反叛念能力者而兴起的反叛军，领导着
+反叛军的核心人物，就是帝国之王“芭蕉”的长子——西园寺桔梗。
+
+反叛军强力的王牌，三架特殊能力的战斗机完成后，机体和使用祈导
+刀的桔梗同胞们举行了仪式——那是二人其中一人牺牲后得到强大的
+力量的仪式。绝无反悔，拼尽全力也发誓要胜利的桔梗同胞们创造出
+了和帝国一样的“血晶刀”
+
+这样，反帝国组织“月华”组成了。
+正义与邪恶、动摇两种灵魂之间的战斗开始了。
+
+<span class="gr">○</span>人物关系图
+      反帝国军组织·月华                  帝国芭蕉军
+                                   师父
+               ┌──────────<span class="gi">→</span>柊(最高指挥官)
+       ┌───┴───┐              <span class="gi">↑</span>
+一金   │  先辈  后辈  │    养育的亲人│
+号盏 神条椿<span class="gi">←</span>───<span class="gi">→</span>朝霞堇<span class="gi">←</span>─────┘
+机花(祈导人)         (幻忍)       
+
+                亲子               父亲
+               ┌<span class="gi">←</span>─────────<span class="gi">→</span>西园寺芭蕉(帝国之主)
+               │                           <span class="gi">↑</span>
+       ┌───┴───┐                   │养女
+二胡   │     兄妹     │             ┌<span class="gi">←</span>─┴───<span class="gi">→</span>┐
+号蝶 西园寺<span class="gi">←</span>───<span class="gi">→</span>西园寺           │  双胞胎姐妹  │
+机兰  牡丹            桔梗           菖蒲<span class="gi">←</span>────<span class="gi">→</span> 兰
+    (祈导人)         (幻忍)
+
+三八                           兄妹          暗恋
+号重 小早川          真田铃兰<span class="gi">←</span>──<span class="gi">→</span>石楠花<span class="gi">←</span>──秋明菊
+机樱  紫苑            (幻忍)           <span class="gi">↑</span>
+    (祈导人)                           │
+       <span class="gi">↑</span>部下                      长官│
+       └───────────────┘
+
+<span class="gr">○</span>地图
+ 关卡1：帝国上空
+中BOSS：巡洋攻击舰·富士茨
+  BOSS：十干十人众 柊
+        念送兵器：翌桧型战舰一番舰·翌桧
+
+ 关卡2：湖畔
+中BOSS：七六式轨道重炮车·轰罗
+  BOSS：十干十人众 秋明菊
+        念送兵器：重爆击机·戒星
+
+ 关卡3：采掘基地
+中BOSS：大型战车·铠门
+  BOSS：十干十人众 石楠花
+        念送兵器：重装甲列车·龙豪
+
+ 关卡4：海洋基地
+中BOSS：潜水母舰·粗樫
+  BOSS：十干十人众 战鬼·柊
+        念送兵器：航空母舰·白桦
+
+ 关卡5：地下据点
+中BOSS：重攻击机·姬沙罗
+  BOSS：十干十人众 菖蒲＆兰
+        念送兵器：装甲战车·罗刹
+  BOSS：十干帝王 西园寺芭蕉
+        阴我念块：修罗血晶、血晶石
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="ajax.html" tppabs="../games/ajax.html" title="Previous document">ajax 飓风直升机 (C) Konami 1987</a>
+        </li>
+        <li>
+          <a href="akiss.html" tppabs="../games/akiss.html" title="Next document">akiss 麻雀天使之吻 (C) Jaleco 1995</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html" tppabs="../index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">akatana 赤刀 (C) Cave 2010</a><ul>
+<li><a class="reference internal" href="#id1">[ 基本操作 ]</a></li>
+<li><a class="reference internal" href="#id2">[ 自机简介 ]</a></li>
+<li><a class="reference internal" href="#id3">[ 背景设定 ]</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </div>
+ 
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      枫枫的游戏机
+      
+      |
+      粉丝专属秘籍
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
